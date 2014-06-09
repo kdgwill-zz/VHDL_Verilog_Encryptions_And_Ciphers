@@ -1,0 +1,28 @@
+quit -sim;
+vlog tb_FinalProject.v;
+vsim tb_FinalProject;
+add wave -divider Clock_Generator;
+add wave -binary sim:/tb_FinalProject/cG/*;
+add wave -divider Test_Bench;
+add wave  \
+-binary sim:/tb_FinalProject/stage1 \
+-binary sim:/tb_FinalProject/stage2 \
+-binary sim:/tb_FinalProject/stage3 ;
+add wave -divider Main_Memory;
+add wave -ascii sim:/tb_FinalProject/memory/mem; 
+add wave -divider initMemory;
+add wave -binary sim:/tb_FinalProject/testMemory/finished;
+add wave -divider Encryption;
+add wave  \
+-ascii sim:/tb_FinalProject/AES/mem \
+-binary sim:/tb_FinalProject/AES/done \
+-binary sim:/tb_FinalProject/AES/finished;
+add wave -divider Decryption;
+add wave  \
+-ascii sim:/tb_FinalProject/DES/mem \
+-binary sim:/tb_FinalProject/DES/done \
+-binary sim:/tb_FinalProject/DES/finished;
+
+
+run 10000 ns;
+wave zoom full;

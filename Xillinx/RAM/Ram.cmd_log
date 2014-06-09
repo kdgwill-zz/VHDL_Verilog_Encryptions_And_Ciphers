@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/Kyle/Ubuntu One/Xilinx/CSCSI370/Verilog/RAM/Ram.xst" -ofn "C:/Users/Kyle/Ubuntu One/Xilinx/CSCSI370/Verilog/RAM/Ram.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Ram.ngc" Ram.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Ram_map.ncd Ram.ngd Ram.pcf 
+par -w -intstyle ise -ol high -mt off Ram_map.ncd Ram.ncd Ram.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ram.twx Ram.ncd -o Ram.twr Ram.pcf 

@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+//--clockGenerator.v---------------------------------------------------------
+//--By Kyle Williams, 11/20/2012---------------------------------------------
+//--PROJECT DESCRIPTION------------------------------------------------------
+//----This module Acts as a crystal and influences prescion in timing--------
+`timescale 1 ns / 100ps //time unit = 1ns; precision = 1/10 ns
+module ClockGenerator(
+  output reg clock,
+  output reg reset
+);
+   
+  always begin
+    //10 MHz clock as defined in tb(50*1 ns*2) with 50% duty-cycle
+    #50 clock = ~clock;
+  end
+  
+ initial 
+  begin
+    clock = 0;
+    reset = 1;
+    #100 reset = 0;
+  end
+    
+endmodule

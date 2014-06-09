@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Kyle/Ubuntu One/Xilinx/CSCSI370/Verilog/Decryption/Decryption.xst" -ofn "C:/Users/Kyle/Ubuntu One/Xilinx/CSCSI370/Verilog/Decryption/Decryption.syr" 
