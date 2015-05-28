@@ -1,0 +1,48 @@
+
+Release 14.7 SmartXplorer
+Copyright(c) 1995-2010 Xilinx, Inc. All rights reserved.
+"C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\smartxplorer.exe" -p xc3s100e-cp132-4 -b -wd smartxplorer_results rc5.ngd -to "-v 3 -s 4 -n 3 -fastpaths -xml rc5.twx " -host_list hostlistfile.txt -max_runs 7 -ra
+
+SmartXplorer Settings: 
+
+designName=C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\rc5.ngd 
+write_dir=C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\smartxplorer_results 
+host_list=C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\hostlistfile.txt 
+part=xc3s100e-cp132-4 
+strategy_file=None 
+notify=None 
+source_dir=C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl 
+batch_mode=True 
+run_all_strategies=True 
+list_all_strategies=False 
+remote_command=rsh
+area_report="lut;slice_reg"
+power_options=off
+trce_options="-v 3 -s 4 -n 3 -fastpaths -xml rc5.twx "
+max_runs=7
+
+Starting SmartXplorer...
+See file 'smartxplorer.html' for real-time report.
+
+
+Running SmartXplorer strategies...
+
+
+######################################################################
+ BestStrategy : ParHighEffort1
+######################################################################
+ Run index                           : run3
+ Map options                         : -cm area 
+ Par options                         : -ol high 
+ Number of Luts                      : 734 (38%)
+ Number of Slice Registers           : 94 (4%)
+ Achieved Timing Score               : 0
+ Worst Case Slack                : 12.145ns
+
+######################################################################
+
+Total Real Time:358.9(secs)
+SmartXplorer Done
+
+
+SmartXplorer Done. See file 'smartxplorer.txt' for detailed report.

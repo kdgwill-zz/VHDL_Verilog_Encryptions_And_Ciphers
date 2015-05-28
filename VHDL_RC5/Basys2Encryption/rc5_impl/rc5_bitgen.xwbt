@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\rc5.ncd
+OUTFILE=C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\rc5.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl
+LICENSE=WebPack
+USER_INFO=211008696_0_0_076

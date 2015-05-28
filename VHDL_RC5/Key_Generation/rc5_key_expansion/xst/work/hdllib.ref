@@ -1,0 +1,3 @@
+AR rc5_key key_exp C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key.vhd sub00/vhpl02 1426606035
+PH rc5_pkg NULL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_pkg.vhd sub00/vhpl00 1426606033
+EN rc5_key NULL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key.vhd sub00/vhpl01 1426606034

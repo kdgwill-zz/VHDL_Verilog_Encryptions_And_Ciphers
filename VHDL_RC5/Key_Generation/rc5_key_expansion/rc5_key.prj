@@ -1,0 +1,2 @@
+vhdl work "../rc5_pkg.vhd"
+vhdl work "../rc5_key.vhd"

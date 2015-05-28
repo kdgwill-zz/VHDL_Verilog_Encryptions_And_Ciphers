@@ -1,0 +1,1042 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml rc5_key_preroute.twx rc5_key_map.ncd -o
+rc5_key_preroute.twr rc5_key.pcf
+
+Design file:              rc5_key_map.ncd
+Physical constraint file: rc5_key.pcf
+Device,package,speed:     xc3s250e,ft256,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+clr         |    1.961(R)|   -0.241(R)|clk_BUFGP         |   0.000|
+key<0>      |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<1>      |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<2>      |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<3>      |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<4>      |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<5>      |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<6>      |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<7>      |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<8>      |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<9>      |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<10>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<11>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<12>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<13>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<14>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<15>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<16>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<17>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<18>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<19>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<20>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<21>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<22>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<23>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<24>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<25>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<26>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<27>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<28>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<29>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<30>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<31>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<32>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<33>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<34>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<35>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<36>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<37>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<38>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<39>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<40>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<41>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<42>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<43>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<44>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<45>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<46>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<47>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<48>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<49>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<50>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<51>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<52>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<53>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<54>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<55>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<56>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<57>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<58>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<59>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<60>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<61>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<62>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<63>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<64>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<65>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<66>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<67>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<68>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<69>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<70>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<71>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<72>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<73>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<74>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<75>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<76>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<77>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<78>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<79>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<80>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<81>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<82>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<83>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<84>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<85>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<86>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<87>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<88>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<89>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<90>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<91>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<92>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<93>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<94>     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<95>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<96>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<97>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<98>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<99>     |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<100>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<101>    |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<102>    |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<103>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<104>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<105>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<106>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<107>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<108>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<109>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<110>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<111>    |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<112>    |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<113>    |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<114>    |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<115>    |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<116>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<117>    |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<118>    |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key<119>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<120>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<121>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<122>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<123>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<124>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<125>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<126>    |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+key<127>    |    0.152(R)|    1.044(R)|clk_BUFGP         |   0.000|
+key_vld     |   -0.169(R)|    1.301(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+key_rdy     |    7.700(R)|clk_BUFGP         |   0.000|
+skey<0><0>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><1>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><2>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><3>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><4>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><5>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><6>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><7>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><8>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><9>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><10> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><11> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><12> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><13> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><14> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><15> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><16> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><17> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><18> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><19> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><20> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><21> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><22> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><23> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><24> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><25> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><26> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><27> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><28> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><29> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<0><30> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<0><31> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><0>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><1>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><2>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><3>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><4>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><5>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><6>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><7>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><8>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><9>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><10> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><11> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><12> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><13> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><14> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><15> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><16> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><17> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><18> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><19> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><20> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><21> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><22> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><23> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><24> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><25> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><26> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><27> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><28> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><29> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<1><30> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<1><31> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><0>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><1>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><2>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><3>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><4>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><5>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><6>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><7>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><8>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><9>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><10> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><11> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><12> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><13> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><14> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><15> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><16> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><17> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><18> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><19> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><20> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><21> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><22> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><23> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><24> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><25> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><26> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><27> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><28> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><29> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<2><30> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<2><31> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><0>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><1>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><2>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><3>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><4>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><5>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><6>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><7>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><8>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><9>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><10> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><11> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><12> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><13> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><14> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><15> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><16> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><17> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><18> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><19> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><20> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><21> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><22> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><23> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><24> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><25> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><26> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><27> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><28> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><29> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<3><30> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<3><31> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><0>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><1>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><2>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><3>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><4>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><5>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><6>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><7>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><8>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><9>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><10> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><11> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><12> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><13> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><14> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><15> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><16> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><17> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><18> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><19> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><20> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><21> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><22> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><23> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><24> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><25> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><26> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><27> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><28> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><29> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<4><30> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<4><31> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><0>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><1>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><2>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><3>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><4>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><5>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><6>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><7>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><8>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><9>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><10> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><11> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><12> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><13> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><14> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><15> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><16> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><17> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><18> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><19> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><20> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><21> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><22> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><23> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><24> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><25> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><26> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><27> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><28> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><29> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<5><30> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<5><31> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><0>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><1>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><2>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><3>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><4>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><5>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><6>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><7>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><8>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><9>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><10> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><11> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><12> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><13> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><14> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><15> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><16> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><17> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><18> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><19> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><20> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><21> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><22> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><23> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><24> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><25> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><26> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><27> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><28> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><29> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<6><30> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<6><31> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><0>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><1>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><2>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><3>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><4>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><5>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><6>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><7>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><8>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><9>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><10> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><11> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><12> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><13> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><14> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><15> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><16> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><17> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><18> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><19> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><20> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><21> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><22> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><23> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><24> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><25> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><26> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><27> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><28> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><29> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<7><30> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<7><31> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><0>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><1>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><2>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><3>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><4>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><5>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><6>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><7>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><8>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><9>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><10> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><11> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><12> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><13> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><14> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><15> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><16> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><17> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><18> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><19> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><20> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><21> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><22> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><23> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><24> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><25> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><26> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><27> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><28> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><29> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<8><30> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<8><31> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><0>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><1>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><2>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><3>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><4>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><5>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><6>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><7>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><8>  |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><9>  |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><10> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><11> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><12> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><13> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><14> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><15> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><16> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><17> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><18> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><19> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><20> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><21> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><22> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><23> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><24> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><25> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><26> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><27> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><28> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><29> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<9><30> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<9><31> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><1> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<10><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<10><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<11><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<11><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<12><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<12><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<13><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<13><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<14><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<14><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<15><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<15><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<16><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<16><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<17><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<17><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<18><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<18><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<19><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<19><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<20><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<20><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<21><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<21><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<22><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<22><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<23><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<23><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<24><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<24><31>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><0> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><1> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><2> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><3> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><4> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><5> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><6> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><7> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><8> |    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><9> |    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><10>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><11>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><12>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><13>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><14>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><15>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><16>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><17>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><18>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><19>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><20>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><21>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><22>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><23>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><24>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><25>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><26>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><27>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><28>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><29>|    6.896(R)|clk_BUFGP         |   0.000|
+skey<25><30>|    6.892(R)|clk_BUFGP         |   0.000|
+skey<25><31>|    6.896(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   19.040|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Mar 17 01:04:16 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 197 MB
+
+
+

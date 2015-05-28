@@ -1,0 +1,37 @@
+xst -intstyle ise -ifn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.xst" -ofn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-4 rc5_key.ngc rc5_key.ngd  
+map -intstyle ise -p xc3s250e-ft256-4 -cm area -ir off -pr off -c 100 -o rc5_key_map.ncd rc5_key.ngd rc5_key.pcf 
+netgen -intstyle ise -s 4  -pcf rc5_key.pcf -rpw 100 -tpw 0 -ar Structure -tm rc5_key -w -dir netgen/map -ofmt vhdl -sim rc5_key_map.ncd rc5_key_map.vhd 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rc5_key_preroute.twx rc5_key_map.ncd -o rc5_key_preroute.twr rc5_key.pcf 
+map -intstyle ise -p xc3s250e-ft256-4 -cm area -ir off -pr off -c 100 -o rc5_key_map.ncd rc5_key.ngd rc5_key.pcf 
+xst -intstyle ise -ifn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.xst" -ofn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-4 rc5_key.ngc rc5_key.ngd  
+map -intstyle ise -p xc3s250e-ft256-4 -cm area -ir off -pr off -c 100 -o rc5_key_map.ncd rc5_key.ngd rc5_key.pcf 
+par -w -intstyle ise -ol high -t 1 rc5_key_map.ncd rc5_key.ncd rc5_key.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rc5_key.twx rc5_key.ncd -o rc5_key.twr rc5_key.pcf 
+netgen -intstyle ise -s 4  -pcf rc5_key.pcf -rpw 100 -tpw 0 -ar Structure -tm rc5_key -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim rc5_key.ncd rc5_key_timesim.vhd 
+xst -intstyle ise -ifn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.xst" -ofn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-4 rc5_key.ngc rc5_key.ngd  
+map -intstyle ise -p xc3s250e-ft256-4 -cm area -ir off -pr off -c 100 -o rc5_key_map.ncd rc5_key.ngd rc5_key.pcf 
+xst -intstyle ise -ifn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.xst" -ofn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-4 rc5_key.ngc rc5_key.ngd  
+map -intstyle ise -p xc3s250e-ft256-4 -cm area -ir off -pr off -c 100 -o rc5_key_map.ncd rc5_key.ngd rc5_key.pcf 
+par -w -intstyle ise -ol high -t 1 rc5_key_map.ncd rc5_key.ncd rc5_key.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rc5_key.twx rc5_key.ncd -o rc5_key.twr rc5_key.pcf 
+netgen -intstyle ise -s 4  -pcf rc5_key.pcf -rpw 100 -tpw 0 -ar Structure -tm rc5_key -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim rc5_key.ncd rc5_key_timesim.vhd 
+xst -intstyle ise -ifn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.xst" -ofn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-4 rc5_key.ngc rc5_key.ngd  
+map -intstyle ise -p xc3s250e-ft256-4 -cm area -ir off -pr off -c 100 -o rc5_key_map.ncd rc5_key.ngd rc5_key.pcf 
+netgen -intstyle ise -s 4  -pcf rc5_key.pcf -rpw 100 -tpw 0 -ar Structure -tm rc5_key -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim rc5_key.ncd rc5_key_timesim.vhd 
+xst -intstyle ise -ifn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.xst" -ofn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-4 rc5_key.ngc rc5_key.ngd  
+map -intstyle ise -p xc3s250e-ft256-4 -cm area -ir off -pr off -c 100 -o rc5_key_map.ncd rc5_key.ngd rc5_key.pcf 
+netgen -intstyle ise -s 4  -pcf rc5_key.pcf -rpw 100 -tpw 0 -ar Structure -tm rc5_key -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim rc5_key.ncd rc5_key_timesim.vhd 
+xst -intstyle ise -ifn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.xst" -ofn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-4 rc5_key.ngc rc5_key.ngd  
+map -intstyle ise -p xc3s250e-ft256-4 -cm area -ir off -pr off -c 100 -o rc5_key_map.ncd rc5_key.ngd rc5_key.pcf 
+xst -intstyle ise -ifn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.xst" -ofn "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab5/rc5_key_expansion/rc5_key.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-4 rc5_key.ngc rc5_key.ngd  
+map -intstyle ise -p xc3s250e-ft256-4 -cm area -ir off -pr off -c 100 -o rc5_key_map.ncd rc5_key.ngd rc5_key.pcf 
+netgen -intstyle ise -s 4  -pcf rc5_key.pcf -rpw 100 -tpw 0 -ar Structure -tm rc5_key -w -dir netgen/map -ofmt vhdl -sim rc5_key_map.ncd rc5_key_map.vhd 
+netgen -intstyle ise -s 4  -pcf rc5_key.pcf -rpw 100 -tpw 0 -ar Structure -tm rc5_key -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim rc5_key.ncd rc5_key_timesim.vhd 

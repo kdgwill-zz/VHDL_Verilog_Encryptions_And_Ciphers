@@ -1,0 +1,11 @@
+AR rc5_key key_exp C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5_key.vhd sub00/vhpl06 1427906916
+AR rc5 rtl C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5.vhd sub00/vhpl08 1427906918
+AR rotright rtl C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rotRight.vhd sub00/vhpl04 1427906914
+PH rc5_pkg NULL C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5_pkg.vhd sub00/vhpl00 1427906910
+AR rotleft rtl C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rotLeft.vhd sub00/vhpl02 1427906912
+EN rotleft NULL C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rotLeft.vhd sub00/vhpl01 1427906911
+EN rc5_key NULL C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5_key.vhd sub00/vhpl05 1427906915
+EN rc5 NULL C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5.vhd sub00/vhpl07 1427906917
+EN tb_rc5 NULL C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/tb_rc5.vhd sub00/vhpl09 1427906919
+EN rotright NULL C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rotRight.vhd sub00/vhpl03 1427906913
+AR tb_rc5 struct C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/tb_rc5.vhd sub00/vhpl10 1427906920

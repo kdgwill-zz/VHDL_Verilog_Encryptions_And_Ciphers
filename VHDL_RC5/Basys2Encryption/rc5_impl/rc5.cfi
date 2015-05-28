@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            04/07/2015 - 17:31
+SOURCE          C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\rc5.mcs
+DEVICE          XCF02S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x02EA8737
+START_ADDRESS   0x00000000 END_ADDRESS 0x00011BDB DIRECTION_UP   "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab7/rc5_impl/rc5_cclktemp.bit" 3s100ecp132

@@ -1,0 +1,3 @@
+vhdl work "../rotLeft.vhd"
+vhdl work "../hex2sevenseg.vhd"
+vhdl work "../rc5.vhd"

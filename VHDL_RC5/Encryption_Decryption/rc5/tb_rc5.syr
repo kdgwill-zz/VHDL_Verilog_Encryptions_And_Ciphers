@@ -1,0 +1,1977 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Reading design: tb_rc5.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "tb_rc5.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "tb_rc5"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : tb_rc5
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5_pkg.vhd" in Library work.
+Compiling vhdl file "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rotLeft.vhd" in Library work.
+Architecture rtl of Entity rotleft is up to date.
+Compiling vhdl file "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rotRight.vhd" in Library work.
+Architecture rtl of Entity rotright is up to date.
+Compiling vhdl file "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5_key.vhd" in Library work.
+Architecture key_exp of Entity rc5_key is up to date.
+Compiling vhdl file "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5.vhd" in Library work.
+Entity <rc5> compiled.
+Entity <rc5> (Architecture <rtl>) compiled.
+Compiling vhdl file "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/tb_rc5.vhd" in Library work.
+Entity <tb_rc5> compiled.
+Entity <tb_rc5> (Architecture <struct>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <tb_rc5> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <rc5_key> in library <work> (architecture <key_exp>).
+
+Analyzing hierarchy for entity <rc5> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <rotLeft> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <rotRight> in library <work> (architecture <rtl>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <tb_rc5> in library <work> (Architecture <struct>).
+Entity <tb_rc5> analyzed. Unit <tb_rc5> generated.
+
+Analyzing Entity <rc5_key> in library <work> (Architecture <key_exp>).
+WARNING:Xst:790 - "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5_key.vhd" line 45: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5_key.vhd" line 50: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <l> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:790 - "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5_key.vhd" line 160: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5_key.vhd" line 180: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <l> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <rc5_key> analyzed. Unit <rc5_key> generated.
+
+Analyzing Entity <rotLeft> in library <work> (Architecture <rtl>).
+Entity <rotLeft> analyzed. Unit <rotLeft> generated.
+
+Analyzing Entity <rc5> in library <work> (Architecture <rtl>).
+WARNING:Xst:790 - "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5.vhd" line 70: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5.vhd" line 70: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5.vhd" line 74: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5.vhd" line 74: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:819 - "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5.vhd" line 92: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <din>
+WARNING:Xst:819 - "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5.vhd" line 109: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <din>
+WARNING:Xst:819 - "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5.vhd" line 158: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <clr>
+Entity <rc5> analyzed. Unit <rc5> generated.
+
+Analyzing Entity <rotRight> in library <work> (Architecture <rtl>).
+Entity <rotRight> analyzed. Unit <rotRight> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <rotLeft>.
+    Related source file is "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rotLeft.vhd".
+    Found 32-bit shifter rotate left for signal <rot>.
+    Summary:
+	inferred   1 Combinational logic shifter(s).
+Unit <rotLeft> synthesized.
+
+
+Synthesizing Unit <rotRight>.
+    Related source file is "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rotRight.vhd".
+    Found 32-bit shifter rotate right for signal <rot>.
+    Summary:
+	inferred   1 Combinational logic shifter(s).
+Unit <rotRight> synthesized.
+
+
+Synthesizing Unit <rc5_key>.
+    Related source file is "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5_key.vhd".
+WARNING:Xst:646 - Signal <temp<31:5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | clr                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | st_idle                                        |
+    | Power Up State     | st_idle                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit 26-to-1 multiplexer for signal <$varindex0000> created at line 45.
+    Found 32-bit 4-to-1 multiplexer for signal <$varindex0001> created at line 50.
+    Found 32-bit adder for signal <a>.
+    Found 32-bit adder for signal <a$addsub0000> created at line 45.
+    Found 32-bit register for signal <a_reg>.
+    Found 32-bit adder for signal <b>.
+    Found 32-bit adder for signal <b$addsub0000> created at line 50.
+    Found 32-bit register for signal <b_reg>.
+    Found 5-bit up counter for signal <i_cnt>.
+    Found 5-bit up counter for signal <j_cnt>.
+    Found 128-bit register for signal <l>.
+    Found 7-bit up counter for signal <r_cnt>.
+    Found 832-bit register for signal <s>.
+    Found 32-bit adder for signal <temp>.
+INFO:Xst:738 - HDL ADVISOR - 832 flip-flops were inferred for signal <s>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   3 Counter(s).
+	inferred 192 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  64 Multiplexer(s).
+Unit <rc5_key> synthesized.
+
+
+Synthesizing Unit <rc5>.
+    Related source file is "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/rc5.vhd".
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | clr                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | st_idle                                        |
+    | Power Up State     | st_idle                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit addsub for signal <a>.
+    Found 32-bit register for signal <a_reg>.
+    Found 32-bit addsub for signal <a_round>.
+    Found 32-bit xor2 for signal <ab_xor$xor0000> created at line 62.
+    Found 32-bit xor2 for signal <ab_xor$xor0001> created at line 62.
+    Found 32-bit addsub for signal <b>.
+    Found 32-bit register for signal <b_reg>.
+    Found 32-bit addsub for signal <b_round>.
+    Found 32-bit xor2 for signal <ba_xor$xor0000> created at line 66.
+    Found 32-bit xor2 for signal <ba_xor$xor0001> created at line 66.
+    Found 4-bit register for signal <i_cnt>.
+    Found 4-bit addsub for signal <i_cnt$share0000> created at line 164.
+    Found 32-bit 26-to-1 multiplexer for signal <skey$mux0000> created at line 70.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  64 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <rc5> synthesized.
+
+
+Synthesizing Unit <tb_rc5>.
+    Related source file is "C:/OneDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab6/tb_rc5.vhd".
+WARNING:Xst:1780 - Signal <enc_rdy> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <enc_clr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <dout_enc> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <dout_dec> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <dec_rdy> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <dec_clr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <tb_rc5> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 10
+ 32-bit adder                                          : 5
+ 32-bit addsub                                         : 4
+ 4-bit addsub                                          : 1
+# Counters                                             : 3
+ 5-bit up counter                                      : 2
+ 7-bit up counter                                      : 1
+# Registers                                            : 97
+ 1-bit register                                        : 64
+ 32-bit register                                       : 32
+ 4-bit register                                        : 1
+# Multiplexers                                         : 3
+ 32-bit 26-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+# Logic shifters                                       : 5
+ 32-bit shifter rotate left                            : 3
+ 32-bit shifter rotate right                           : 2
+# Xors                                                 : 4
+ 32-bit xor2                                           : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <U2/state/FSM> on signal <state[1:3]> with gray encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ st_idle       | 000
+ st_pre_round  | 001
+ st_round_op   | 011
+ st_post_round | 110
+ st_ready      | 010
+---------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <U1/state/FSM> on signal <state[1:2]> with gray encoding.
+------------------------
+ State      | Encoding
+------------------------
+ st_idle    | 00
+ st_key_in  | 01
+ st_key_exp | 11
+ st_ready   | 10
+------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# Adders/Subtractors                                   : 10
+ 32-bit adder                                          : 4
+ 32-bit addsub                                         : 4
+ 4-bit addsub                                          : 1
+ 5-bit adder                                           : 1
+# Counters                                             : 3
+ 5-bit up counter                                      : 2
+ 7-bit up counter                                      : 1
+# Registers                                            : 1092
+ Flip-Flops                                            : 1092
+# Multiplexers                                         : 3
+ 32-bit 26-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+# Logic shifters                                       : 5
+ 32-bit shifter rotate left                            : 3
+ 32-bit shifter rotate right                           : 2
+# Xors                                                 : 4
+ 32-bit xor2                                           : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: Maddsub_a_cy<21>, Maddsub_a_cy<24>, Maddsub_a_cy<27>, Maddsub_a_cy<7>, Maddsub_a_cy<11>, Maddsub_a_cy<14>, Maddsub_a_cy<17>, Sh32, Maddsub_a_cy<18>, Maddsub_a_cy<2>, Sh, ba_xor_xor0000<0>, a<0>, a<30>, Maddsub_a_cy<20>, Maddsub_a_cy<23>, Maddsub_a_cy<26>, Maddsub_a_cy<29>, Maddsub_a_cy<6>, Maddsub_a_cy<9>, Maddsub_a_cy<13>, Maddsub_a_cy<16>, Maddsub_a_cy<10>, Sh64, Maddsub_a_cy<1>, Maddsub_a_cy<4>, Maddsub_a_cy<19>, Maddsub_a_cy<22>, Maddsub_a_cy<25>, Maddsub_a_cy<28>, ba_xor<0>, Maddsub_a_cy<5>, Maddsub_a_cy<8>, Maddsub_a_cy<12>, Maddsub_a_cy<15>, Maddsub_a_lut<0>, a_reg_30_mux0000, ab_xor<0>, a_mux0000<0>, Maddsub_a_cy<0>, Maddsub_a_cy<3>, ab_xor_xor0001<0>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: ab_xor_xor0001<30>, Maddsub_b_cy<27>, Maddsub_b_cy<24>, Maddsub_a_cy<30>, ba_xor<4>, Maddsub_b_cy<21>, Maddsub_b_cy<18>, Maddsub_b_cy<15>, Sh158, Maddsub_b_cy<12>, Maddsub_b_cy<8>, Maddsub_b_cy<5>, Maddsub_b_cy<2>, ab_xor<4>, a_mux0000<4>, Maddsub_b_cy<10>, Sh94, Sh36, Sh190, ab_xor_xor0001<4>, Maddsub_b_cy<28>, Maddsub_b_cy<25>, Maddsub_b_cy<22>, Maddsub_b_cy<19>, Maddsub_b_cy<16>, Maddsub_b_cy<13>, Maddsub_b_cy<9>, Maddsub_b_cy<6>, Maddsub_b_cy<3>, Maddsub_b_cy<0>, a_reg_31_mux0000, Sh68, Sh62, Maddsub_a_lut<4>, b_mux0000<0>, ba_xor_xor0000<4>, a<4>, Maddsub_b_cy<29>, Maddsub_b_cy<26>, Maddsub_b_cy<23>, Maddsub_b_cy<20>, Sh256, Maddsub_b_cy<17>, Maddsub_b_cy<14>, Maddsub_b_cy<11>, ba_xor<30>, Maddsub_b_cy<7>, Maddsub_b_cy<4>, Maddsub_b_cy<1>, Sh30, Sh4, ab_xor<30>, b<30>, a_mux0000<30>, ba_xor_xor0001<30>, a<31>, Sh126.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: a_mux0000<29>, ab_xor_xor0001<29>, Maddsub_a_lut<29>, a_reg_29_mux0000, Sh61, ba_xor_xor0000<29>, a<29>, Sh29, Sh93, ba_xor<29>, ab_xor<29>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: ba_xor<28>, Sh28, ab_xor<28>, a_mux0000<28>, ab_xor_xor0001<28>, Sh60, a_reg_28_mux0000, Maddsub_a_lut<28>, ba_xor_xor0000<28>, a<28>, Sh92.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: ba_xor_xor0000<25>, a<25>, Sh57, Maddsub_a_lut<25>, ba_xor<25>, ab_xor<25>, a_mux0000<25>, Sh25, Sh89, ab_xor_xor0001<25>, a_reg_25_mux0000.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: ba_xor<27>, ab_xor<27>, Sh91, Sh59, a_mux0000<27>, Sh27, ab_xor_xor0001<27>, a_reg_27_mux0000, ba_xor_xor0000<27>, a<27>, Maddsub_a_lut<27>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: Maddsub_a_lut<26>, ba_xor<26>, ab_xor<26>, a_mux0000<26>, Sh58, Sh26, ab_xor_xor0001<26>, Sh90, a_reg_26_mux0000, ba_xor_xor0000<26>, a<26>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: ab_xor_xor0001<24>, ba_xor_xor0000<24>, a<24>, a_reg_24_mux0000, Sh56, Sh88, ba_xor<24>, Sh24, ab_xor<24>, Maddsub_a_lut<24>, a_mux0000<24>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: a_reg_23_mux0000, a_mux0000<23>, ab_xor_xor0001<23>, Maddsub_a_lut<23>, ba_xor_xor0000<23>, a<23>, Sh55, Sh23, ba_xor<23>, ab_xor<23>, Sh87.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: Sh84, Sh20, ba_xor<20>, ab_xor<20>, a_mux0000<20>, ab_xor_xor0001<20>, a_reg_20_mux0000, Sh52, Maddsub_a_lut<20>, ba_xor_xor0000<20>, a<20>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: ba_xor<22>, ab_xor<22>, Sh22, a_mux0000<22>, ab_xor_xor0001<22>, Sh54, Maddsub_a_lut<22>, ba_xor_xor0000<22>, a<22>, a_reg_22_mux0000, Sh86.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: Sh21, ba_xor<21>, ab_xor<21>, a_reg_21_mux0000, a_mux0000<21>, Maddsub_a_lut<21>, ab_xor_xor0001<21>, ba_xor_xor0000<21>, a<21>, Sh85, Sh53.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: a_reg_19_mux0000, ba_xor_xor0000<19>, a<19>, Maddsub_a_lut<19>, Sh83, Sh19, ba_xor<19>, ab_xor<19>, a_mux0000<19>, Sh51, ab_xor_xor0001<19>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: ab_xor_xor0001<18>, Sh82, a_reg_18_mux0000, ba_xor_xor0000<18>, a<18>, Sh18, Maddsub_a_lut<18>, ba_xor<18>, ab_xor<18>, Sh50, a_mux0000<18>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: Sh79, ba_xor<15>, ab_xor<15>, a_mux0000<15>, ab_xor_xor0001<15>, Sh47, Maddsub_a_lut<15>, a_reg_15_mux0000, Sh15, ba_xor_xor0000<15>, a<15>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: a_mux0000<17>, Sh17, ab_xor_xor0001<17>, a_reg_17_mux0000, ba_xor_xor0000<17>, a<17>, Sh81, Sh49, ba_xor<17>, Maddsub_a_lut<17>, ab_xor<17>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: Sh48, ba_xor<16>, ba_xor_xor0000<16>, ab_xor<16>, a_mux0000<16>, Maddsub_a_lut<16>, ab_xor_xor0001<16>, a_reg_16_mux0000, Sh80, a<16>, Sh16.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: Sh14, Sh46, ba_xor<14>, ba_xor_xor0000<14>, ab_xor<14>, Sh78, a_mux0000<14>, ab_xor_xor0001<14>, a_reg_14_mux0000, Maddsub_a_lut<14>, a<14>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: Sh13, ba_xor_xor0000<13>, a<13>, Maddsub_a_lut<13>, Sh45, a_reg_13_mux0000, ba_xor<13>, ab_xor<13>, Sh77, a_mux0000<13>, ab_xor_xor0001<13>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: Sh74, ba_xor<10>, ab_xor<10>, a_mux0000<10>, ab_xor_xor0001<10>, a_reg_10_mux0000, ba_xor_xor0000<10>, a<10>, Maddsub_a_lut<10>, Sh42, Sh10.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: ab_xor_xor0001<12>, Maddsub_a_lut<12>, Sh12, a<12>, Sh76, a_reg_12_mux0000, ba_xor<12>, ab_xor<12>, a_mux0000<12>, Sh44, ba_xor_xor0000<12>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: a_mux0000<11>, a_reg_11_mux0000, ab_xor_xor0001<11>, Sh43, a<11>, ba_xor_xor0000<11>, ba_xor<11>, Maddsub_a_lut<11>, Sh11, Sh75, ab_xor<11>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: Sh73, Maddsub_a_lut<9>, ba_xor<9>, ab_xor<9>, a_mux0000<9>, ab_xor_xor0001<9>, a_reg_9_mux0000, Sh9, ba_xor_xor0000<9>, a<9>, Sh41.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: ba_xor<8>, Maddsub_a_lut<8>, ab_xor<8>, a_mux0000<8>, Sh8, ab_xor_xor0001<8>, Sh40, a_reg_8_mux0000, ba_xor_xor0000<8>, a<8>, Sh72.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: a_reg_5_mux0000, a_mux0000<5>, ab_xor_xor0001<5>, Maddsub_a_lut<5>, Sh37, Sh5, ba_xor_xor0000<5>, a<5>, Sh69, ba_xor<5>, ab_xor<5>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: ba_xor_xor0000<7>, a<7>, a_reg_7_mux0000, Sh71, Sh7, ba_xor<7>, ab_xor<7>, a_mux0000<7>, Maddsub_a_lut<7>, ab_xor_xor0001<7>, Sh39.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: Maddsub_a_lut<6>, ba_xor_xor0000<6>, a<6>, a_reg_6_mux0000, ba_xor<6>, Sh6, ab_xor<6>, a_mux0000<6>, Sh38, Sh70, ab_xor_xor0001<6>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: Sh3, ba_xor<3>, ab_xor<3>, a_mux0000<3>, Maddsub_a_lut<3>, ab_xor_xor0001<3>, Sh67, Sh35, a_reg_3_mux0000, ba_xor_xor0000<3>, a<3>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: Maddsub_a_lut<2>, a_reg_2_mux0000, Sh66, ba_xor<2>, ab_xor<2>, Sh34, a_mux0000<2>, ab_xor_xor0001<2>, Sh2, ba_xor_xor0000<2>, a<2>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: ba_xor_xor0000<1>, a<1>, Sh65, Sh33, Sh1, ba_xor<1>, a_reg_1_mux0000, ab_xor<1>, a_mux0000<1>, ab_xor_xor0001<1>, Maddsub_a_lut<1>.
+WARNING:Xst:2170 - Unit rc5 : the following signal(s) form a combinatorial loop: Maddsub_b_cy<30>, b_reg_31_mux0000, Sh159, ba_xor<31>, ba_xor_xor0001<31>, b_mux0000<30>, Sh238, Sh286, Sh191, Sh127, b<31>, Sh194.
+
+Optimizing unit <tb_rc5> ...
+
+Optimizing unit <rc5_key> ...
+
+Optimizing unit <rc5> ...
+WARNING:Xst:2677 - Node <j_cnt_2> of sequential type is unconnected in block <rc5_key>.
+WARNING:Xst:2677 - Node <j_cnt_3> of sequential type is unconnected in block <rc5_key>.
+WARNING:Xst:2677 - Node <j_cnt_4> of sequential type is unconnected in block <rc5_key>.
+WARNING:Xst:2677 - Node <j_cnt_2> of sequential type is unconnected in block <rc5_key>.
+WARNING:Xst:2677 - Node <j_cnt_3> of sequential type is unconnected in block <rc5_key>.
+WARNING:Xst:2677 - Node <j_cnt_4> of sequential type is unconnected in block <rc5_key>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block tb_rc5, actual ratio is 88.
+FlipFlop U2/a_reg_0 has been replicated 1 time(s)
+FlipFlop U2/a_reg_1 has been replicated 2 time(s)
+FlipFlop U2/a_reg_2 has been replicated 1 time(s)
+FlipFlop U2/a_reg_3 has been replicated 1 time(s)
+FlipFlop U2/i_cnt_0 has been replicated 4 time(s)
+FlipFlop U2/i_cnt_1 has been replicated 1 time(s)
+FlipFlop U2/i_cnt_2 has been replicated 1 time(s)
+FlipFlop U2/i_cnt_3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1123
+ Flip-Flops                                            : 1123
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : tb_rc5.ngr
+Top Level Output File Name         : tb_rc5
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 135
+
+Cell Usage :
+# BELS                             : 4111
+#      GND                         : 1
+#      INV                         : 11
+#      LUT2                        : 219
+#      LUT2_D                      : 1
+#      LUT2_L                      : 22
+#      LUT3                        : 1443
+#      LUT3_D                      : 75
+#      LUT3_L                      : 21
+#      LUT4                        : 1094
+#      LUT4_D                      : 28
+#      LUT4_L                      : 68
+#      MUXCY                       : 186
+#      MUXF5                       : 590
+#      MUXF6                       : 128
+#      MUXF7                       : 32
+#      XORCY                       : 192
+# FlipFlops/Latches                : 1123
+#      FDC                         : 13
+#      FDCE                        : 621
+#      FDCP                        : 69
+#      FDP                         : 5
+#      FDPE                        : 415
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 134
+#      IBUF                        : 68
+#      OBUF                        : 66
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                     1719  out of   1920    89%  
+ Number of Slice Flip Flops:           1123  out of   3840    29%  
+ Number of 4 input LUTs:               2982  out of   3840    77%  
+ Number of IOs:                         135
+ Number of bonded IOBs:                 135  out of    173    78%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1123  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------+------------------------+-------+
+Control Signal                             | Buffer(FF name)        | Load  |
+-------------------------------------------+------------------------+-------+
+U1/clr_inv(U2/i_cnt_Acst_inv1_INV_0:O)     | NONE(U1/a_reg_0)       | 1054  |
+U2/a_reg_1_and0000(U2/a_reg_1_and00001:O)  | NONE(U2/a_reg_1)       | 3     |
+U2/a_reg_1_and0001(U2/a_reg_1_and00011:O)  | NONE(U2/a_reg_1)       | 3     |
+U2/a_reg_0_and0000(U2/a_reg_0_and00001:O)  | NONE(U2/a_reg_0)       | 2     |
+U2/a_reg_0_and0001(U2/a_reg_0_and00011:O)  | NONE(U2/a_reg_0)       | 2     |
+U2/a_reg_2_and0000(U2/a_reg_2_and00001:O)  | NONE(U2/a_reg_2)       | 2     |
+U2/a_reg_2_and0001(U2/a_reg_2_and00011:O)  | NONE(U2/a_reg_2)       | 2     |
+U2/a_reg_3_and0000(U2/a_reg_3_and00001:O)  | NONE(U2/a_reg_3)       | 2     |
+U2/a_reg_3_and0001(U2/a_reg_3_and00011:O)  | NONE(U2/a_reg_3)       | 2     |
+U2/a_reg_10_and0000(U2/a_reg_10_and00001:O)| NONE(U2/a_reg_10)      | 1     |
+U2/a_reg_10_and0001(U2/a_reg_10_and00011:O)| NONE(U2/a_reg_10)      | 1     |
+U2/a_reg_11_and0000(U2/a_reg_11_and00001:O)| NONE(U2/a_reg_11)      | 1     |
+U2/a_reg_11_and0001(U2/a_reg_11_and00011:O)| NONE(U2/a_reg_11)      | 1     |
+U2/a_reg_12_and0000(U2/a_reg_12_and00001:O)| NONE(U2/a_reg_12)      | 1     |
+U2/a_reg_12_and0001(U2/a_reg_12_and00011:O)| NONE(U2/a_reg_12)      | 1     |
+U2/a_reg_13_and0000(U2/a_reg_13_and00001:O)| NONE(U2/a_reg_13)      | 1     |
+U2/a_reg_13_and0001(U2/a_reg_13_and00011:O)| NONE(U2/a_reg_13)      | 1     |
+U2/a_reg_14_and0000(U2/a_reg_14_and00001:O)| NONE(U2/a_reg_14)      | 1     |
+U2/a_reg_14_and0001(U2/a_reg_14_and00011:O)| NONE(U2/a_reg_14)      | 1     |
+U2/a_reg_15_and0000(U2/a_reg_15_and00001:O)| NONE(U2/a_reg_15)      | 1     |
+U2/a_reg_15_and0001(U2/a_reg_15_and00011:O)| NONE(U2/a_reg_15)      | 1     |
+U2/a_reg_16_and0000(U2/a_reg_16_and00001:O)| NONE(U2/a_reg_16)      | 1     |
+U2/a_reg_16_and0001(U2/a_reg_16_and00011:O)| NONE(U2/a_reg_16)      | 1     |
+U2/a_reg_17_and0000(U2/a_reg_17_and00001:O)| NONE(U2/a_reg_17)      | 1     |
+U2/a_reg_17_and0001(U2/a_reg_17_and00011:O)| NONE(U2/a_reg_17)      | 1     |
+U2/a_reg_18_and0000(U2/a_reg_18_and00001:O)| NONE(U2/a_reg_18)      | 1     |
+U2/a_reg_18_and0001(U2/a_reg_18_and00011:O)| NONE(U2/a_reg_18)      | 1     |
+U2/a_reg_19_and0000(U2/a_reg_19_and00001:O)| NONE(U2/a_reg_19)      | 1     |
+U2/a_reg_19_and0001(U2/a_reg_19_and00011:O)| NONE(U2/a_reg_19)      | 1     |
+U2/a_reg_20_and0000(U2/a_reg_20_and00001:O)| NONE(U2/a_reg_20)      | 1     |
+U2/a_reg_20_and0001(U2/a_reg_20_and00011:O)| NONE(U2/a_reg_20)      | 1     |
+U2/a_reg_21_and0000(U2/a_reg_21_and00001:O)| NONE(U2/a_reg_21)      | 1     |
+U2/a_reg_21_and0001(U2/a_reg_21_and00011:O)| NONE(U2/a_reg_21)      | 1     |
+U2/a_reg_22_and0000(U2/a_reg_22_and00001:O)| NONE(U2/a_reg_22)      | 1     |
+U2/a_reg_22_and0001(U2/a_reg_22_and00011:O)| NONE(U2/a_reg_22)      | 1     |
+U2/a_reg_23_and0000(U2/a_reg_23_and00001:O)| NONE(U2/a_reg_23)      | 1     |
+U2/a_reg_23_and0001(U2/a_reg_23_and00011:O)| NONE(U2/a_reg_23)      | 1     |
+U2/a_reg_24_and0000(U2/a_reg_24_and00001:O)| NONE(U2/a_reg_24)      | 1     |
+U2/a_reg_24_and0001(U2/a_reg_24_and00011:O)| NONE(U2/a_reg_24)      | 1     |
+U2/a_reg_25_and0000(U2/a_reg_25_and00001:O)| NONE(U2/a_reg_25)      | 1     |
+U2/a_reg_25_and0001(U2/a_reg_25_and00011:O)| NONE(U2/a_reg_25)      | 1     |
+U2/a_reg_26_and0000(U2/a_reg_26_and00001:O)| NONE(U2/a_reg_26)      | 1     |
+U2/a_reg_26_and0001(U2/a_reg_26_and00011:O)| NONE(U2/a_reg_26)      | 1     |
+U2/a_reg_27_and0000(U2/a_reg_27_and00001:O)| NONE(U2/a_reg_27)      | 1     |
+U2/a_reg_27_and0001(U2/a_reg_27_and00011:O)| NONE(U2/a_reg_27)      | 1     |
+U2/a_reg_28_and0000(U2/a_reg_28_and00001:O)| NONE(U2/a_reg_28)      | 1     |
+U2/a_reg_28_and0001(U2/a_reg_28_and00011:O)| NONE(U2/a_reg_28)      | 1     |
+U2/a_reg_29_and0000(U2/a_reg_29_and00001:O)| NONE(U2/a_reg_29)      | 1     |
+U2/a_reg_29_and0001(U2/a_reg_29_and00011:O)| NONE(U2/a_reg_29)      | 1     |
+U2/a_reg_30_and0000(U2/a_reg_30_and00001:O)| NONE(U2/a_reg_30)      | 1     |
+U2/a_reg_30_and0001(U2/a_reg_30_and00011:O)| NONE(U2/a_reg_30)      | 1     |
+U2/a_reg_31_and0000(U2/a_reg_31_and00001:O)| NONE(U2/a_reg_31)      | 1     |
+U2/a_reg_31_and0001(U2/a_reg_31_and00011:O)| NONE(U2/a_reg_31)      | 1     |
+U2/a_reg_4_and0000(U2/a_reg_4_and00001:O)  | NONE(U2/a_reg_4)       | 1     |
+U2/a_reg_4_and0001(U2/a_reg_4_and00011:O)  | NONE(U2/a_reg_4)       | 1     |
+U2/a_reg_5_and0000(U2/a_reg_5_and00001:O)  | NONE(U2/a_reg_5)       | 1     |
+U2/a_reg_5_and0001(U2/a_reg_5_and00011:O)  | NONE(U2/a_reg_5)       | 1     |
+U2/a_reg_6_and0000(U2/a_reg_6_and00001:O)  | NONE(U2/a_reg_6)       | 1     |
+U2/a_reg_6_and0001(U2/a_reg_6_and00011:O)  | NONE(U2/a_reg_6)       | 1     |
+U2/a_reg_7_and0000(U2/a_reg_7_and00001:O)  | NONE(U2/a_reg_7)       | 1     |
+U2/a_reg_7_and0001(U2/a_reg_7_and00011:O)  | NONE(U2/a_reg_7)       | 1     |
+U2/a_reg_8_and0000(U2/a_reg_8_and00001:O)  | NONE(U2/a_reg_8)       | 1     |
+U2/a_reg_8_and0001(U2/a_reg_8_and00011:O)  | NONE(U2/a_reg_8)       | 1     |
+U2/a_reg_9_and0000(U2/a_reg_9_and00001:O)  | NONE(U2/a_reg_9)       | 1     |
+U2/a_reg_9_and0001(U2/a_reg_9_and00011:O)  | NONE(U2/a_reg_9)       | 1     |
+U2/b_reg_0_and0000(U2/b_reg_0_and00001:O)  | NONE(U2/b_reg_0)       | 1     |
+U2/b_reg_0_and0001(U2/b_reg_0_and00011:O)  | NONE(U2/b_reg_0)       | 1     |
+U2/b_reg_10_and0000(U2/b_reg_10_and00001:O)| NONE(U2/b_reg_10)      | 1     |
+U2/b_reg_10_and0001(U2/b_reg_10_and00011:O)| NONE(U2/b_reg_10)      | 1     |
+U2/b_reg_11_and0000(U2/b_reg_11_and00001:O)| NONE(U2/b_reg_11)      | 1     |
+U2/b_reg_11_and0001(U2/b_reg_11_and00011:O)| NONE(U2/b_reg_11)      | 1     |
+U2/b_reg_12_and0000(U2/b_reg_12_and00001:O)| NONE(U2/b_reg_12)      | 1     |
+U2/b_reg_12_and0001(U2/b_reg_12_and00011:O)| NONE(U2/b_reg_12)      | 1     |
+U2/b_reg_13_and0000(U2/b_reg_13_and00001:O)| NONE(U2/b_reg_13)      | 1     |
+U2/b_reg_13_and0001(U2/b_reg_13_and00011:O)| NONE(U2/b_reg_13)      | 1     |
+U2/b_reg_14_and0000(U2/b_reg_14_and00001:O)| NONE(U2/b_reg_14)      | 1     |
+U2/b_reg_14_and0001(U2/b_reg_14_and00011:O)| NONE(U2/b_reg_14)      | 1     |
+U2/b_reg_15_and0000(U2/b_reg_15_and00001:O)| NONE(U2/b_reg_15)      | 1     |
+U2/b_reg_15_and0001(U2/b_reg_15_and00011:O)| NONE(U2/b_reg_15)      | 1     |
+U2/b_reg_16_and0000(U2/b_reg_16_and00001:O)| NONE(U2/b_reg_16)      | 1     |
+U2/b_reg_16_and0001(U2/b_reg_16_and00011:O)| NONE(U2/b_reg_16)      | 1     |
+U2/b_reg_17_and0000(U2/b_reg_17_and00001:O)| NONE(U2/b_reg_17)      | 1     |
+U2/b_reg_17_and0001(U2/b_reg_17_and00011:O)| NONE(U2/b_reg_17)      | 1     |
+U2/b_reg_18_and0000(U2/b_reg_18_and00001:O)| NONE(U2/b_reg_18)      | 1     |
+U2/b_reg_18_and0001(U2/b_reg_18_and00011:O)| NONE(U2/b_reg_18)      | 1     |
+U2/b_reg_19_and0000(U2/b_reg_19_and00001:O)| NONE(U2/b_reg_19)      | 1     |
+U2/b_reg_19_and0001(U2/b_reg_19_and00011:O)| NONE(U2/b_reg_19)      | 1     |
+U2/b_reg_1_and0000(U2/b_reg_1_and00001:O)  | NONE(U2/b_reg_1)       | 1     |
+U2/b_reg_1_and0001(U2/b_reg_1_and00011:O)  | NONE(U2/b_reg_1)       | 1     |
+U2/b_reg_20_and0000(U2/b_reg_20_and00001:O)| NONE(U2/b_reg_20)      | 1     |
+U2/b_reg_20_and0001(U2/b_reg_20_and00011:O)| NONE(U2/b_reg_20)      | 1     |
+U2/b_reg_21_and0000(U2/b_reg_21_and00001:O)| NONE(U2/b_reg_21)      | 1     |
+U2/b_reg_21_and0001(U2/b_reg_21_and00011:O)| NONE(U2/b_reg_21)      | 1     |
+U2/b_reg_22_and0000(U2/b_reg_22_and00001:O)| NONE(U2/b_reg_22)      | 1     |
+U2/b_reg_22_and0001(U2/b_reg_22_and00011:O)| NONE(U2/b_reg_22)      | 1     |
+U2/b_reg_23_and0000(U2/b_reg_23_and00001:O)| NONE(U2/b_reg_23)      | 1     |
+U2/b_reg_23_and0001(U2/b_reg_23_and00011:O)| NONE(U2/b_reg_23)      | 1     |
+U2/b_reg_24_and0000(U2/b_reg_24_and00001:O)| NONE(U2/b_reg_24)      | 1     |
+U2/b_reg_24_and0001(U2/b_reg_24_and00011:O)| NONE(U2/b_reg_24)      | 1     |
+U2/b_reg_25_and0000(U2/b_reg_25_and00001:O)| NONE(U2/b_reg_25)      | 1     |
+U2/b_reg_25_and0001(U2/b_reg_25_and00011:O)| NONE(U2/b_reg_25)      | 1     |
+U2/b_reg_26_and0000(U2/b_reg_26_and00001:O)| NONE(U2/b_reg_26)      | 1     |
+U2/b_reg_26_and0001(U2/b_reg_26_and00011:O)| NONE(U2/b_reg_26)      | 1     |
+U2/b_reg_27_and0000(U2/b_reg_27_and00001:O)| NONE(U2/b_reg_27)      | 1     |
+U2/b_reg_27_and0001(U2/b_reg_27_and00011:O)| NONE(U2/b_reg_27)      | 1     |
+U2/b_reg_28_and0000(U2/b_reg_28_and00001:O)| NONE(U2/b_reg_28)      | 1     |
+U2/b_reg_28_and0001(U2/b_reg_28_and00011:O)| NONE(U2/b_reg_28)      | 1     |
+U2/b_reg_29_and0000(U2/b_reg_29_and00001:O)| NONE(U2/b_reg_29)      | 1     |
+U2/b_reg_29_and0001(U2/b_reg_29_and00011:O)| NONE(U2/b_reg_29)      | 1     |
+U2/b_reg_2_and0000(U2/b_reg_2_and00001:O)  | NONE(U2/b_reg_2)       | 1     |
+U2/b_reg_2_and0001(U2/b_reg_2_and00011:O)  | NONE(U2/b_reg_2)       | 1     |
+U2/b_reg_30_and0000(U2/b_reg_30_and00001:O)| NONE(U2/b_reg_30)      | 1     |
+U2/b_reg_30_and0001(U2/b_reg_30_and00011:O)| NONE(U2/b_reg_30)      | 1     |
+U2/b_reg_31_and0000(U2/b_reg_31_and00001:O)| NONE(U2/b_reg_31)      | 1     |
+U2/b_reg_31_and0001(U2/b_reg_31_and00011:O)| NONE(U2/b_reg_31)      | 1     |
+U2/b_reg_3_and0000(U2/b_reg_3_and00001:O)  | NONE(U2/b_reg_3)       | 1     |
+U2/b_reg_3_and0001(U2/b_reg_3_and00011:O)  | NONE(U2/b_reg_3)       | 1     |
+U2/b_reg_4_and0000(U2/b_reg_4_and00001:O)  | NONE(U2/b_reg_4)       | 1     |
+U2/b_reg_4_and0001(U2/b_reg_4_and00011:O)  | NONE(U2/b_reg_4)       | 1     |
+U2/b_reg_5_and0000(U2/b_reg_5_and00001:O)  | NONE(U2/b_reg_5)       | 1     |
+U2/b_reg_5_and0001(U2/b_reg_5_and00011:O)  | NONE(U2/b_reg_5)       | 1     |
+U2/b_reg_6_and0000(U2/b_reg_6_and00001:O)  | NONE(U2/b_reg_6)       | 1     |
+U2/b_reg_6_and0001(U2/b_reg_6_and00011:O)  | NONE(U2/b_reg_6)       | 1     |
+U2/b_reg_7_and0000(U2/b_reg_7_and00001:O)  | NONE(U2/b_reg_7)       | 1     |
+U2/b_reg_7_and0001(U2/b_reg_7_and00011:O)  | NONE(U2/b_reg_7)       | 1     |
+U2/b_reg_8_and0000(U2/b_reg_8_and00001:O)  | NONE(U2/b_reg_8)       | 1     |
+U2/b_reg_8_and0001(U2/b_reg_8_and00011:O)  | NONE(U2/b_reg_8)       | 1     |
+U2/b_reg_9_and0000(U2/b_reg_9_and00001:O)  | NONE(U2/b_reg_9)       | 1     |
+U2/b_reg_9_and0001(U2/b_reg_9_and00011:O)  | NONE(U2/b_reg_9)       | 1     |
+-------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 684.946ns (Maximum Frequency: 1.460MHz)
+   Minimum input arrival time before clock: 685.807ns
+   Maximum output required time after clock: 10.266ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 684.946ns (frequency: 1.460MHz)
+  Total number of paths / destination ports: 15669992506813548000000000 / 2159
+-------------------------------------------------------------------------
+Delay:               684.946ns (Levels of Logic = 619)
+  Source:            U2/i_cnt_0 (FF)
+  Destination:       U2/b_reg_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U2/i_cnt_0 to U2/b_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q            190   0.720   3.097  U2/i_cnt_0 (U2/i_cnt_0)
+     LUT3:I0->O            1   0.551   0.000  U2/Mmux_skey_mux0000_727 (U2/Mmux_skey_mux0000_727)
+     MUXF5:I1->O           1   0.360   0.000  U2/Mmux_skey_mux0000_6_f5_26 (U2/Mmux_skey_mux0000_6_f527)
+     MUXF6:I1->O           2   0.342   0.903  U2/Mmux_skey_mux0000_5_f6_26 (U2/Mmux_skey_mux0000_5_f627)
+     LUT4:I3->O            1   0.551   0.000  U2/i_cnt<3>271 (U2/i_cnt<3>27)
+     MUXF5:I1->O           1   0.360   0.996  U2/i_cnt<3>27_f5 (U2/skey_mux0000<5>)
+     LUT3:I1->O            1   0.551   0.000  U2/Maddsub_a_lut<5> (U2/Maddsub_a_lut<5>)
+     XORCY:LI->O           6   0.622   1.198  U2/Maddsub_a_xor<5> (U2/a<5>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh291281 (U2/Sh29128)
+     MUXF5:I1->O           2   0.360   1.072  U2/Sh29128_f5 (U2/Sh291)
+     LUT3_D:I1->O          1   0.551   0.869  U2/Sh351_SW1 (U2/Sh32320)
+     LUT3_D:I2->LO         1   0.551   0.168  U2/Sh351 (N926)
+     LUT3:I2->O            2   0.551   1.216  U2/Sh3671 (U2/Sh367)
+     LUT4:I0->O            4   0.551   1.112  U2/ab_xor<15> (U2/ab_xor<15>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh152 (U2/Sh1532)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh15_f5 (U2/Sh15)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh47302 (U2/Sh47301)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh4730_f5 (U2/Sh47)
+     LUT4:I1->O            1   0.551   0.000  U2/a_mux0000<15>1 (U2/a_mux0000<15>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/a_mux0000<15>_f5 (U2/a_mux0000<15>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<15> (U2/Maddsub_a_lut<15>)
+     XORCY:LI->O           6   0.622   1.071  U2/Maddsub_a_xor<15> (U2/a<15>)
+     LUT4:I2->O            1   0.551   0.000  U2/Sh301301 (U2/Sh30130)
+     MUXF5:I1->O           2   0.360   1.072  U2/Sh30130_f5 (U2/Sh301)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh329_SW1 (N136)
+     LUT3_D:I1->LO         1   0.551   0.168  U2/Sh333 (N918)
+     LUT3:I2->O            2   0.551   0.877  U2/Sh3811 (U2/Sh381)
+     MUXF5:S->O            4   0.621   0.985  U2/ab_xor<29>_f5 (U2/ab_xor<29>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh303012 (U2/Sh303011)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh30301_f5 (U2/Sh30)
+     LUT3:I1->O            1   0.551   0.869  U2/Sh6220 (U2/Sh6220)
+     LUT4:I2->O            3   0.551   0.933  U2/Sh6232 (U2/Sh62)
+     LUT4:I3->O            2   0.551   1.072  U2/a_mux0000<30>_SW0 (N158)
+     LUT4:I1->O            1   0.551   0.000  U2/Maddsub_a_lut<30> (U2/Maddsub_a_lut<30>)
+     XORCY:LI->O           7   0.622   1.405  U2/Maddsub_a_xor<30> (U2/a<30>)
+     LUT4:I0->O            1   0.551   0.000  U2/ba_xor<30>1 (U2/ba_xor<30>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ba_xor<30>_f5 (U2/ba_xor<30>)
+     LUT3:I1->O            2   0.551   0.945  U2/Sh222_SW0 (N300)
+     LUT3_D:I2->LO         1   0.551   0.295  U2/Sh192 (N989)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh228_SW1 (N597)
+     LUT3:I1->O            3   0.551   0.975  U2/Sh224 (U2/Sh224)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<16>1 (U2/b_mux0000<16>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/b_mux0000<16>_f5 (U2/b_mux0000<16>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<16> (U2/Maddsub_b_lut<16>)
+     XORCY:LI->O           7   0.622   1.405  U2/Maddsub_b_xor<16> (U2/b<16>)
+     LUT3:I0->O            3   0.551   1.102  U2/Sh11132 (U2/Sh111)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh14328_F (N839)
+     MUXF5:I0->O           4   0.360   0.985  U2/Sh14328 (U2/Sh143)
+     LUT4:I2->O            1   0.551   0.000  U2/ba_xor<15>2 (U2/ba_xor<15>2)
+     MUXF5:I0->O           5   0.360   1.116  U2/ba_xor<15>_f5 (U2/ba_xor<15>)
+     LUT4:I1->O            1   0.551   0.000  U2/Sh210291 (U2/Sh21029)
+     MUXF5:I1->O           5   0.360   0.989  U2/Sh21029_f5 (U2/Sh210)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh246282 (U2/Sh246281)
+     MUXF5:I0->O           2   0.360   0.877  U2/Sh24628_f5 (U2/Sh246)
+     MUXF5:S->O            1   0.621   1.140  U2/b_mux0000<22>_f5 (U2/b_mux0000<22>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<22> (U2/Maddsub_b_lut<22>)
+     XORCY:LI->O           6   0.622   1.071  U2/Maddsub_b_xor<22> (U2/b<22>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh11828_F (N815)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh11828 (U2/Sh118)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh150282 (U2/Sh150281)
+     MUXF5:I0->O           3   0.360   1.102  U2/Sh15028_f5 (U2/Sh150)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh1821 (N893)
+     LUT2:I1->O            1   0.551   0.827  U2/ba_xor<22>_SW0 (N257)
+     LUT4:I3->O            5   0.551   0.947  U2/ba_xor<22> (U2/ba_xor<22>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<22>1 (U2/ab_xor<22>1)
+     MUXF5:I1->O           3   0.360   0.975  U2/ab_xor<22>_f5 (U2/ab_xor<22>)
+     LUT3:I2->O            2   0.551   1.072  U2/Sh24_SW1 (N523)
+     LUT3:I1->O            4   0.551   1.112  U2/Sh22 (U2/Sh22)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh54282 (U2/Sh54281)
+     MUXF5:I0->O           3   0.360   0.907  U2/Sh5428_f5 (U2/Sh54)
+     MUXF5:S->O            1   0.621   1.140  U2/a_mux0000<22>_f5 (U2/a_mux0000<22>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<22> (U2/Maddsub_a_lut<22>)
+     XORCY:LI->O           6   0.622   1.198  U2/Maddsub_a_xor<22> (U2/a<22>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh308281 (U2/Sh30828)
+     MUXF5:I1->O           5   0.360   0.989  U2/Sh30828_f5 (U2/Sh308)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh336282 (U2/Sh336281)
+     MUXF5:I0->O           2   0.360   1.072  U2/Sh33628_f5 (U2/Sh336)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh3681 (U2/Sh368)
+     MUXF5:S->O            3   0.621   1.102  U2/ab_xor<16>_f5 (U2/ab_xor<16>)
+     LUT2:I1->O            3   0.551   1.246  U2/Sh173 (U2/Sh1616)
+     LUT3:I0->O            1   0.551   0.000  U2/Sh16292 (U2/Sh16291)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh1629_f5 (U2/Sh16)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh48302 (U2/Sh48301)
+     MUXF5:I0->O           3   0.360   0.907  U2/Sh4830_f5 (U2/Sh48)
+     MUXF5:S->O            1   0.621   1.140  U2/a_mux0000<16>_f5 (U2/a_mux0000<16>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<16> (U2/Maddsub_a_lut<16>)
+     XORCY:LI->O           4   0.622   1.256  U2/Maddsub_a_xor<16> (U2/a<16>)
+     LUT4_D:I0->LO         1   0.551   0.168  U2/ba_xor<16> (N952)
+     LUT3:I2->O            2   0.551   0.945  U2/Sh211_SW1 (N639)
+     LUT3_D:I2->LO         1   0.551   0.168  U2/Sh211 (N975)
+     LUT3:I2->O            2   0.551   1.072  U2/Sh255_SW1 (N124)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh251 (U2/Sh251)
+     MUXF5:S->O            1   0.621   1.140  U2/b_mux0000<27>_f5 (U2/b_mux0000<27>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<27> (U2/Maddsub_b_lut<27>)
+     XORCY:LI->O           5   0.622   1.116  U2/Maddsub_b_xor<27> (U2/b<27>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh123282 (U2/Sh123281)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh12328_f5 (U2/Sh123)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh155302 (U2/Sh155301)
+     MUXF5:I0->O           3   0.360   0.975  U2/Sh15530_f5 (U2/Sh155)
+     LUT4_L:I2->LO         1   0.551   0.126  U2/ba_xor<27>_SW0 (N251)
+     LUT4:I3->O            5   0.551   0.947  U2/ba_xor<27> (U2/ba_xor<27>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<27>1 (U2/ab_xor<27>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<27>_f5 (U2/ab_xor<27>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh27292 (U2/Sh27291)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh2729_f5 (U2/Sh27)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh59282 (U2/Sh59281)
+     MUXF5:I0->O           3   0.360   1.102  U2/Sh5928_f5 (U2/Sh59)
+     LUT4:I1->O            1   0.551   0.869  U2/a_mux0000<27>_SW1 (N216)
+     LUT3:I2->O            1   0.551   1.140  U2/a_mux0000<27> (U2/a_mux0000<27>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<27> (U2/Maddsub_a_lut<27>)
+     XORCY:LI->O           6   0.622   1.071  U2/Maddsub_a_xor<27> (U2/a<27>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh314312 (U2/Sh314311)
+     MUXF5:I0->O           2   0.360   0.945  U2/Sh31431_f5 (U2/Sh314)
+     LUT3:I2->O            2   0.551   0.945  U2/Sh334_SW1 (N108)
+     LUT3_D:I2->LO         1   0.551   0.295  U2/Sh334 (N909)
+     LUT3:I1->O            2   0.551   1.216  U2/Sh3661 (U2/Sh366)
+     LUT4:I0->O            5   0.551   0.989  U2/ab_xor<14> (U2/ab_xor<14>)
+     LUT4:I2->O            1   0.551   0.000  U2/Sh143111 (U2/Sh14311)
+     MUXF5:I1->O           4   0.360   1.112  U2/Sh14311_f5 (U2/Sh14)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh46292 (U2/Sh46291)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh4629_f5 (U2/Sh46)
+     LUT4:I1->O            1   0.551   0.000  U2/a_mux0000<14>1 (U2/a_mux0000<14>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/a_mux0000<14>_f5 (U2/a_mux0000<14>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<14> (U2/Maddsub_a_lut<14>)
+     XORCY:LI->O           5   0.622   1.116  U2/Maddsub_a_xor<14> (U2/a<14>)
+     LUT2:I1->O            3   0.551   1.246  U2/Sh3013 (U2/Sh3013)
+     LUT4_D:I0->LO         1   0.551   0.295  U2/Sh30231 (N920)
+     LUT3:I1->O            2   0.551   0.945  U2/Sh334_SW0 (N107)
+     LUT3_D:I2->LO         1   0.551   0.295  U2/Sh330 (N919)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh3621 (U2/Sh362)
+     MUXF5:S->O            3   0.621   0.975  U2/ab_xor<10>_f5 (U2/ab_xor<10>)
+     LUT3:I2->O            2   0.551   1.072  U2/Sh12_SW1 (N307)
+     LUT3:I1->O            4   0.551   1.112  U2/Sh10 (U2/Sh10)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh42282 (U2/Sh42281)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh4228_f5 (U2/Sh42)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<26> (U2/a_mux0000<26>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<26> (U2/Maddsub_a_lut<26>)
+     XORCY:LI->O           6   0.622   1.071  U2/Maddsub_a_xor<26> (U2/a<26>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh311281 (U2/Sh31128)
+     MUXF5:I1->O           2   0.360   1.072  U2/Sh31128_f5 (U2/Sh311)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh343_SW0 (N80)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh343 (N901)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh3751 (U2/Sh375)
+     MUXF5:S->O            4   0.621   1.112  U2/ab_xor<23>_f5 (U2/ab_xor<23>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh23302 (U2/Sh23301)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh2330_f5 (U2/Sh23)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh55282 (U2/Sh55281)
+     MUXF5:I0->O           3   0.360   0.907  U2/Sh5528_f5 (U2/Sh55)
+     MUXF5:S->O            1   0.621   1.140  U2/a_mux0000<23>_f5 (U2/a_mux0000<23>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<23> (U2/Maddsub_a_lut<23>)
+     XORCY:LI->O           6   0.622   1.342  U2/Maddsub_a_xor<23> (U2/a<23>)
+     LUT4_D:I0->LO         1   0.551   0.168  U2/ba_xor<23> (N945)
+     LUT3:I2->O            2   0.551   0.945  U2/Sh218_SW1 (N618)
+     LUT3:I2->O            3   0.551   1.102  U2/Sh218 (U2/Sh218)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh250312 (U2/Sh250311)
+     MUXF5:I0->O           2   0.360   0.877  U2/Sh25031_f5 (U2/Sh250)
+     MUXF5:S->O            1   0.621   1.140  U2/b_mux0000<26>_f5 (U2/b_mux0000<26>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<26> (U2/Maddsub_b_lut<26>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_b_cy<26> (U2/Maddsub_b_cy<26>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<27> (U2/Maddsub_b_cy<27>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<28> (U2/Maddsub_b_cy<28>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<29> (U2/Maddsub_b_cy<29>)
+     MUXCY:CI->O           0   0.064   0.000  U2/Maddsub_b_cy<30> (U2/Maddsub_b_cy<30>)
+     XORCY:CI->O           6   0.904   1.071  U2/Maddsub_b_xor<31> (U2/b<31>)
+     LUT4_L:I2->LO         1   0.551   0.439  U2/Sh12527 (U2/Sh12527)
+     LUT3:I0->O            4   0.551   1.112  U2/Sh12529 (U2/Sh125)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh157312 (U2/Sh157311)
+     MUXF5:I0->O           3   0.360   0.975  U2/Sh15731_f5 (U2/Sh157)
+     LUT4_L:I2->LO         1   0.551   0.126  U2/ba_xor<29>_SW0 (N247)
+     LUT4:I3->O            5   0.551   1.116  U2/ba_xor<29> (U2/ba_xor<29>)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh223_SW1 (N606)
+     LUT3_D:I1->LO         1   0.551   0.168  U2/Sh221 (N968)
+     LUT3:I2->O            2   0.551   1.072  U2/Sh233_SW1 (N582)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh229 (U2/Sh229)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<5>2 (U2/b_mux0000<5>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<5>_f5 (U2/b_mux0000<5>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<5> (U2/Maddsub_b_lut<5>)
+     XORCY:LI->O           6   0.622   1.198  U2/Maddsub_b_xor<5> (U2/b<5>)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh1007 (N916)
+     LUT3:I1->O            4   0.551   1.112  U2/Sh10131 (U2/Sh101)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh13331_F (N841)
+     MUXF5:I0->O           3   0.360   0.975  U2/Sh13331 (U2/Sh133)
+     LUT4_L:I2->LO         1   0.551   0.126  U2/ba_xor<5>_SW0 (N338)
+     LUT4:I3->O            6   0.551   1.029  U2/ba_xor<5> (U2/ba_xor<5>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<5>1 (U2/ab_xor<5>1)
+     MUXF5:I1->O           5   0.360   0.989  U2/ab_xor<5>_f5 (U2/ab_xor<5>)
+     LUT4:I2->O            1   0.551   0.000  U2/Sh52911 (U2/Sh5291)
+     MUXF5:I1->O           4   0.360   1.112  U2/Sh5291_f5 (U2/Sh5)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh37282 (U2/Sh37281)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh3728_f5 (U2/Sh37)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<21> (U2/a_mux0000<21>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<21> (U2/Maddsub_a_lut<21>)
+     XORCY:LI->O           7   0.622   1.405  U2/Maddsub_a_xor<21> (U2/a<21>)
+     LUT4:I0->O            1   0.551   0.000  U2/ba_xor<21>1 (U2/ba_xor<21>1)
+     MUXF5:I1->O           5   0.360   0.947  U2/ba_xor<21>_f5 (U2/ba_xor<21>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<21>1 (U2/ab_xor<21>1)
+     MUXF5:I1->O           3   0.360   1.102  U2/ab_xor<21>_f5 (U2/ab_xor<21>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh21302 (U2/Sh21301)
+     MUXF5:I0->O           6   0.360   1.071  U2/Sh2130_f5 (U2/Sh21)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh57302 (U2/Sh57301)
+     MUXF5:I0->O           3   0.360   0.907  U2/Sh5730_f5 (U2/Sh57)
+     MUXF5:S->O            1   0.621   1.140  U2/a_mux0000<25>_f5 (U2/a_mux0000<25>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<25> (U2/Maddsub_a_lut<25>)
+     XORCY:LI->O           6   0.622   1.342  U2/Maddsub_a_xor<25> (U2/a<25>)
+     LUT4:I0->O            5   0.551   0.947  U2/ba_xor<25> (U2/ba_xor<25>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<25>1 (U2/ab_xor<25>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<25>_f5 (U2/ab_xor<25>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh25282 (U2/Sh25281)
+     MUXF5:I0->O           4   0.360   0.985  U2/Sh2528_f5 (U2/Sh25)
+     LUT3:I2->O            4   0.551   0.917  U2/Sh616 (U2/Sh616)
+     MUXF5:S->O            2   0.621   0.945  U2/Sh6129_SW1 (N720)
+     LUT4:I2->O            1   0.551   0.000  U2/a_mux0000<13>_SW0_F (N845)
+     MUXF5:I0->O           1   0.360   0.996  U2/a_mux0000<13>_SW0 (N402)
+     LUT3:I1->O            1   0.551   1.140  U2/a_mux0000<13> (U2/a_mux0000<13>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<13> (U2/Maddsub_a_lut<13>)
+     XORCY:LI->O           6   0.622   1.342  U2/Maddsub_a_xor<13> (U2/a<13>)
+     LUT4_D:I0->O          4   0.551   0.943  U2/ba_xor<13> (U2/ba_xor<13>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<13>1 (U2/ab_xor<13>1)
+     MUXF5:I1->O           3   0.360   1.102  U2/ab_xor<13>_f5 (U2/ab_xor<13>)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh1471 (U2/Sh1320)
+     LUT3:I1->O            4   0.551   1.112  U2/Sh13311 (U2/Sh13)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh45292 (U2/Sh45291)
+     MUXF5:I0->O           2   0.360   1.216  U2/Sh4529_f5 (U2/Sh45)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<29> (U2/a_mux0000<29>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<29> (U2/Maddsub_a_lut<29>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_a_cy<29> (U2/Maddsub_a_cy<29>)
+     MUXCY:CI->O           0   0.064   0.000  U2/Maddsub_a_cy<30> (U2/Maddsub_a_cy<30>)
+     XORCY:CI->O           6   0.904   1.342  U2/Maddsub_a_xor<31> (U2/a<31>)
+     LUT4_D:I0->LO         1   0.551   0.168  U2/ba_xor<31> (N953)
+     LUT3:I2->O            2   0.551   0.945  U2/Sh194_SW1 (N684)
+     LUT3_D:I2->LO         1   0.551   0.168  U2/Sh194 (N987)
+     LUT3:I2->O            2   0.551   1.072  U2/Sh238_SW1 (N567)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh234 (U2/Sh234)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<10>2 (U2/b_mux0000<10>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<10>_f5 (U2/b_mux0000<10>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<10> (U2/Maddsub_b_lut<10>)
+     XORCY:LI->O           3   0.622   0.975  U2/Maddsub_b_xor<10> (U2/b<10>)
+     LUT3_D:I2->LO         1   0.551   0.295  U2/Sh10620 (N921)
+     LUT3:I1->O            3   0.551   1.102  U2/Sh10631 (U2/Sh106)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh13828_F (N877)
+     MUXF5:I0->O           3   0.360   1.102  U2/Sh13828 (U2/Sh138)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh1701 (N894)
+     LUT2:I1->O            1   0.551   0.827  U2/ba_xor<10>_SW0 (N269)
+     LUT4_D:I3->LO         1   0.551   0.295  U2/ba_xor<10> (N947)
+     LUT3:I1->O            2   0.551   0.945  U2/Sh204_SW1 (N657)
+     LUT3_D:I2->LO         1   0.551   0.295  U2/Sh204 (N981)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh240_SW1 (N564)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh236 (U2/Sh236)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<12>2 (U2/b_mux0000<12>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<12>_f5 (U2/b_mux0000<12>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<12> (U2/Maddsub_b_lut<12>)
+     XORCY:LI->O           5   0.622   0.989  U2/Maddsub_b_xor<12> (U2/b<12>)
+     LUT4:I2->O            1   0.551   0.000  U2/Sh14016_F (N821)
+     MUXF5:I0->O           2   0.360   1.216  U2/Sh14016 (U2/Sh1363)
+     LUT4_D:I0->LO         1   0.551   0.295  U2/Sh14031 (N902)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh1721 (U2/Sh172)
+     MUXF5:S->O            5   0.621   0.947  U2/ba_xor<12>_f5 (U2/ba_xor<12>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<12>1 (U2/ab_xor<12>1)
+     MUXF5:I1->O           5   0.360   1.116  U2/ab_xor<12>_f5 (U2/ab_xor<12>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh121 (U2/Sh1210)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh12_f5 (U2/Sh12)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh44302 (U2/Sh44301)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh4430_f5 (U2/Sh44)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<28> (U2/a_mux0000<28>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<28> (U2/Maddsub_a_lut<28>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_a_cy<28> (U2/Maddsub_a_cy<28>)
+     XORCY:CI->O           6   0.904   1.071  U2/Maddsub_a_xor<29> (U2/a<29>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh316302 (U2/Sh316301)
+     MUXF5:I0->O           3   0.360   1.102  U2/Sh31630_f5 (U2/Sh316)
+     LUT3:I1->O            2   0.551   0.945  U2/Sh344_SW1 (N91)
+     LUT3_D:I2->LO         1   0.551   0.439  U2/Sh344 (N904)
+     LUT3:I0->O            2   0.551   1.216  U2/Sh3601 (U2/Sh360)
+     LUT4_D:I0->LO         1   0.551   0.295  U2/ab_xor<8> (N903)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh8_SW0 (N364)
+     LUT3:I1->O            4   0.551   1.112  U2/Sh8 (U2/Sh8)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh40282 (U2/Sh40281)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh4028_f5 (U2/Sh40)
+     LUT4:I1->O            1   0.551   0.000  U2/a_mux0000<8>1 (U2/a_mux0000<8>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/a_mux0000<8>_f5 (U2/a_mux0000<8>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<8> (U2/Maddsub_a_lut<8>)
+     XORCY:LI->O           7   0.622   1.405  U2/Maddsub_a_xor<8> (U2/a<8>)
+     LUT4:I0->O            1   0.551   0.000  U2/ba_xor<8>1 (U2/ba_xor<8>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ba_xor<8>_f5 (U2/ba_xor<8>)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh202_SW1 (N660)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh200 (N983)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh236_SW1 (N573)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh232 (U2/Sh232)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<24>1 (U2/b_mux0000<24>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/b_mux0000<24>_f5 (U2/b_mux0000<24>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<24> (U2/Maddsub_b_lut<24>)
+     XORCY:LI->O           6   0.622   1.198  U2/Maddsub_b_xor<24> (U2/b<24>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh120302 (U2/Sh120301)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh12030_f5 (U2/Sh120)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh152282 (U2/Sh152281)
+     MUXF5:I0->O           3   0.360   0.975  U2/Sh15228_f5 (U2/Sh152)
+     LUT4_L:I2->LO         1   0.551   0.126  U2/ba_xor<24>_SW0 (N253)
+     LUT4:I3->O            5   0.551   0.947  U2/ba_xor<24> (U2/ba_xor<24>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<24>1 (U2/ab_xor<24>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<24>_f5 (U2/ab_xor<24>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh242 (U2/Sh2410)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh24_f5 (U2/Sh24)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh56292 (U2/Sh56291)
+     MUXF5:I0->O           2   0.360   1.216  U2/Sh5629_f5 (U2/Sh56)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<24> (U2/a_mux0000<24>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<24> (U2/Maddsub_a_lut<24>)
+     XORCY:LI->O           6   0.622   1.198  U2/Maddsub_a_xor<24> (U2/a<24>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh312302 (U2/Sh312301)
+     MUXF5:I0->O           3   0.360   1.102  U2/Sh31230_f5 (U2/Sh312)
+     LUT3:I1->O            3   0.551   1.102  U2/Sh340_SW1 (N55)
+     LUT4:I1->O            1   0.551   0.000  U2/Sh3402 (U2/Sh3402)
+     MUXF5:I0->O           2   0.360   1.072  U2/Sh340_f5 (U2/Sh340)
+     LUT3:I1->O            3   0.551   0.933  U2/Mxor_ab_xor_xor0001_Result<4>1 (U2/ab_xor_xor0001<4>)
+     LUT4_D:I3->LO         1   0.551   0.295  U2/ab_xor<4>1 (N951)
+     LUT3:I1->O            2   0.551   0.945  U2/Sh420 (U2/Sh420)
+     LUT4:I2->O            4   0.551   1.112  U2/Sh432 (U2/Sh4)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh36282 (U2/Sh36281)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh3628_f5 (U2/Sh36)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<20> (U2/a_mux0000<20>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<20> (U2/Maddsub_a_lut<20>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_a_cy<20> (U2/Maddsub_a_cy<20>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<21> (U2/Maddsub_a_cy<21>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<22> (U2/Maddsub_a_cy<22>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<23> (U2/Maddsub_a_cy<23>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<24> (U2/Maddsub_a_cy<24>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<25> (U2/Maddsub_a_cy<25>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<26> (U2/Maddsub_a_cy<26>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<27> (U2/Maddsub_a_cy<27>)
+     XORCY:CI->O           7   0.904   1.405  U2/Maddsub_a_xor<28> (U2/a<28>)
+     LUT4:I0->O            4   0.551   1.256  U2/ba_xor<28> (U2/ba_xor<28>)
+     LUT4:I0->O            1   0.551   0.000  U2/ab_xor<28>2 (U2/ab_xor<28>2)
+     MUXF5:I0->O           4   0.360   1.112  U2/ab_xor<28>_f5 (U2/ab_xor<28>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh282 (U2/Sh282)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh28_f5 (U2/Sh28)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh60302 (U2/Sh60301)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh6030_f5 (U2/Sh60)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<12> (U2/a_mux0000<12>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<12> (U2/Maddsub_a_lut<12>)
+     XORCY:LI->O           7   0.622   1.134  U2/Maddsub_a_xor<12> (U2/a<12>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh299282 (U2/Sh299281)
+     MUXF5:I0->O           2   0.360   1.072  U2/Sh29928_f5 (U2/Sh299)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh327_SW1 (N84)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh331 (N911)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh3631 (U2/Sh363)
+     MUXF5:S->O            3   0.621   1.102  U2/ab_xor<11>_f5 (U2/ab_xor<11>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh112 (U2/Sh1111)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh11_f5 (U2/Sh11)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh43282 (U2/Sh43281)
+     MUXF5:I0->O           3   0.360   1.102  U2/Sh4328_f5 (U2/Sh43)
+     LUT4:I1->O            1   0.551   0.000  U2/a_mux0000<11>1 (U2/a_mux0000<11>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/a_mux0000<11>_f5 (U2/a_mux0000<11>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<11> (U2/Maddsub_a_lut<11>)
+     XORCY:LI->O           7   0.622   1.405  U2/Maddsub_a_xor<11> (U2/a<11>)
+     LUT4:I0->O            1   0.551   0.000  U2/ba_xor<11>1 (U2/ba_xor<11>1)
+     MUXF5:I1->O           5   0.360   1.116  U2/ba_xor<11>_f5 (U2/ba_xor<11>)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh203_SW0 (N960)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh203 (U2/Sh203)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh239_SW1 (N955)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh235 (U2/Sh235)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<11>2 (U2/b_mux0000<11>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<11>_f5 (U2/b_mux0000<11>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<11> (U2/Maddsub_b_lut<11>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_b_cy<11> (U2/Maddsub_b_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<12> (U2/Maddsub_b_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<13> (U2/Maddsub_b_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<14> (U2/Maddsub_b_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<15> (U2/Maddsub_b_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<16> (U2/Maddsub_b_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<17> (U2/Maddsub_b_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<18> (U2/Maddsub_b_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<19> (U2/Maddsub_b_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<20> (U2/Maddsub_b_cy<20>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<21> (U2/Maddsub_b_cy<21>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<22> (U2/Maddsub_b_cy<22>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<23> (U2/Maddsub_b_cy<23>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<24> (U2/Maddsub_b_cy<24>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<25> (U2/Maddsub_b_cy<25>)
+     XORCY:CI->O           6   0.904   1.198  U2/Maddsub_b_xor<26> (U2/b<26>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh122282 (U2/Sh122281)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh12228_f5 (U2/Sh122)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh154312 (U2/Sh154311)
+     MUXF5:I0->O           3   0.360   0.975  U2/Sh15431_f5 (U2/Sh154)
+     LUT4:I2->O            1   0.551   0.000  U2/ba_xor<26>2 (U2/ba_xor<26>2)
+     MUXF5:I0->O           5   0.360   0.947  U2/ba_xor<26>_f5 (U2/ba_xor<26>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<26>1 (U2/ab_xor<26>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<26>_f5 (U2/ab_xor<26>)
+     LUT2:I1->O            2   0.551   1.072  U2/Sh2616 (U2/Sh2616)
+     LUT4:I1->O            1   0.551   0.000  U2/Sh26291 (U2/Sh2629)
+     MUXF5:I1->O           3   0.360   1.102  U2/Sh2629_f5 (U2/Sh26)
+     LUT2_D:I1->LO         1   0.551   0.439  U2/Sh623 (N924)
+     LUT4:I0->O            3   0.551   1.246  U2/Sh5831 (U2/Sh58)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<10> (U2/a_mux0000<10>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<10> (U2/Maddsub_a_lut<10>)
+     XORCY:LI->O           6   0.622   1.071  U2/Maddsub_a_xor<10> (U2/a<10>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh297312 (U2/Sh297311)
+     MUXF5:I0->O           2   0.360   1.072  U2/Sh29731_f5 (U2/Sh297)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh325_SW1 (N66)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh329 (N917)
+     LUT3:I1->O            2   0.551   1.216  U2/Sh3611 (U2/Sh361)
+     LUT4:I0->O            3   0.551   1.102  U2/ab_xor<9> (U2/ab_xor<9>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh9302 (U2/Sh9301)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh930_f5 (U2/Sh9)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh41292 (U2/Sh41291)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh4129_f5 (U2/Sh41)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<9> (U2/a_mux0000<9>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<9> (U2/Maddsub_a_lut<9>)
+     XORCY:LI->O           7   0.622   1.405  U2/Maddsub_a_xor<9> (U2/a<9>)
+     LUT4:I0->O            1   0.551   0.000  U2/ba_xor<9>1 (U2/ba_xor<9>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ba_xor<9>_f5 (U2/ba_xor<9>)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh203_SW1 (N529)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh201 (N982)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh237_SW1 (N570)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh233 (U2/Sh233)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<9>2 (U2/b_mux0000<9>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<9>_f5 (U2/b_mux0000<9>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<9> (U2/Maddsub_b_lut<9>)
+     XORCY:LI->O           3   0.622   1.102  U2/Maddsub_b_xor<9> (U2/b<9>)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh1027 (U2/Sh1027)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh10331 (N928)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh13520 (U2/Sh1317)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh13531 (U2/Sh135)
+     LUT4_L:I2->LO         1   0.551   0.126  U2/ba_xor<7>_SW0 (N239)
+     LUT4:I3->O            6   0.551   1.029  U2/ba_xor<7> (U2/ba_xor<7>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<7>1 (U2/ab_xor<7>1)
+     MUXF5:I1->O           3   0.360   1.102  U2/ab_xor<7>_f5 (U2/ab_xor<7>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh72 (U2/Sh72)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh7_f5 (U2/Sh7)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh39282 (U2/Sh39281)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh3928_f5 (U2/Sh39)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<7> (U2/a_mux0000<7>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<7> (U2/Maddsub_a_lut<7>)
+     XORCY:LI->O           6   0.622   1.071  U2/Maddsub_a_xor<7> (U2/a<7>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh294302 (U2/Sh294301)
+     MUXF5:I0->O           2   0.360   1.072  U2/Sh29430_f5 (U2/Sh294)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh326_SW0 (U2/Sh3227)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh326 (N900)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh3581 (U2/Sh358)
+     MUXF5:S->O            4   0.621   1.112  U2/ab_xor<6>_f5 (U2/ab_xor<6>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh6303 (U2/Sh6302)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh630_f5 (U2/Sh6)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh38282 (U2/Sh38281)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh3828_f5 (U2/Sh38)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<6> (U2/a_mux0000<6>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<6> (U2/Maddsub_a_lut<6>)
+     XORCY:LI->O           6   0.622   1.342  U2/Maddsub_a_xor<6> (U2/a<6>)
+     LUT4_D:I0->LO         1   0.551   0.295  U2/ba_xor<6> (N944)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh200_SW1 (N666)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh198 (N984)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh234_SW1 (N579)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh230 (U2/Sh230)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<6>2 (U2/b_mux0000<6>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<6>_f5 (U2/b_mux0000<6>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<6> (U2/Maddsub_b_lut<6>)
+     XORCY:LI->O           4   0.622   0.985  U2/Maddsub_b_xor<6> (U2/b<6>)
+     LUT3:I2->O            2   0.551   1.072  U2/Sh10020 (U2/Sh10020)
+     LUT3:I1->O            4   0.551   1.112  U2/Sh10031 (U2/Sh100)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh132282 (U2/Sh132281)
+     MUXF5:I0->O           3   0.360   0.933  U2/Sh13228_f5 (U2/Sh132)
+     LUT4:I3->O            1   0.551   0.000  U2/ba_xor<4>12 (U2/ba_xor<4>11)
+     MUXF5:I0->O          36   0.360   2.071  U2/ba_xor<4>1_f5 (U2/ba_xor<4>)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh198_SW1 (N672)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh196 (N986)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh232_SW1 (N585)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh228 (U2/Sh228)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<4>2 (U2/b_mux0000<4>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<4>_f5 (U2/b_mux0000<4>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<4> (U2/Maddsub_b_lut<4>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_b_cy<4> (U2/Maddsub_b_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<5> (U2/Maddsub_b_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<6> (U2/Maddsub_b_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<7> (U2/Maddsub_b_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<8> (U2/Maddsub_b_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<9> (U2/Maddsub_b_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<10> (U2/Maddsub_b_cy<10>)
+     XORCY:CI->O           3   0.904   1.102  U2/Maddsub_b_xor<11> (U2/b<11>)
+     LUT3:I1->O            3   0.551   1.246  U2/Sh1067 (U2/Sh1067)
+     LUT3_D:I0->LO         1   0.551   0.295  U2/Sh13120 (N992)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh13131 (U2/Sh131)
+     LUT4_L:I2->LO         1   0.551   0.126  U2/ba_xor<3>_SW0 (N243)
+     LUT4:I3->O           40   0.551   1.925  U2/ba_xor<3> (U2/ba_xor<3>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<3>1 (U2/ab_xor<3>1)
+     MUXF5:I1->O           5   0.360   1.116  U2/ab_xor<3>_f5 (U2/ab_xor<3>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh32912 (U2/Sh32911)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh3291_f5 (U2/Sh3)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh35282 (U2/Sh35281)
+     MUXF5:I0->O           4   0.360   0.985  U2/Sh3528_f5 (U2/Sh35)
+     LUT4:I2->O            1   0.551   0.000  U2/a_mux0000<19>1 (U2/a_mux0000<19>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/a_mux0000<19>_f5 (U2/a_mux0000<19>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<19> (U2/Maddsub_a_lut<19>)
+     XORCY:LI->O           6   0.622   1.342  U2/Maddsub_a_xor<19> (U2/a<19>)
+     LUT4:I0->O            5   0.551   0.947  U2/ba_xor<19> (U2/ba_xor<19>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<19>1 (U2/ab_xor<19>1)
+     MUXF5:I1->O           3   0.360   1.102  U2/ab_xor<19>_f5 (U2/ab_xor<19>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh199 (U2/Sh1911)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh19_f5 (U2/Sh19)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh51282 (U2/Sh51281)
+     MUXF5:I0->O           2   0.360   1.216  U2/Sh5128_f5 (U2/Sh51)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<3> (U2/a_mux0000<3>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<3> (U2/Maddsub_a_lut<3>)
+     XORCY:LI->O          41   0.622   2.244  U2/Maddsub_a_xor<3> (U2/a<3>)
+     LUT3_D:I0->LO         1   0.551   0.295  U2/Sh231_SW1 (N965)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh227 (U2/Sh227)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<3>2 (U2/b_mux0000<3>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<3>_f5 (U2/b_mux0000<3>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<3> (U2/Maddsub_b_lut<3>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_b_cy<3> (U2/Maddsub_b_cy<3>)
+     XORCY:CI->O           3   0.904   1.102  U2/Maddsub_b_xor<4> (U2/b<4>)
+     LUT4:I1->O            2   0.551   0.877  U2/Sh9819 (U2/Sh976)
+     MUXF5:S->O            4   0.621   1.112  U2/Sh9731_f5 (U2/Sh97)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh129312 (U2/Sh129311)
+     MUXF5:I0->O           3   0.360   0.975  U2/Sh12931_f5 (U2/Sh129)
+     LUT4:I2->O            1   0.551   0.000  U2/ba_xor<1>2 (U2/ba_xor<1>2)
+     MUXF5:I0->O          42   0.360   1.936  U2/ba_xor<1>_f5 (U2/ba_xor<1>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<1>1 (U2/ab_xor<1>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<1>_f5 (U2/ab_xor<1>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh130112 (U2/Sh130111)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh13011_f5 (U2/Sh1)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh33302 (U2/Sh33301)
+     MUXF5:I0->O           4   0.360   0.985  U2/Sh3330_f5 (U2/Sh33)
+     LUT4:I2->O            1   0.551   0.000  U2/a_mux0000<17>1 (U2/a_mux0000<17>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/a_mux0000<17>_f5 (U2/a_mux0000<17>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<17> (U2/Maddsub_a_lut<17>)
+     XORCY:LI->O           6   0.622   1.342  U2/Maddsub_a_xor<17> (U2/a<17>)
+     LUT4_D:I0->O          6   0.551   1.029  U2/ba_xor<17> (U2/ba_xor<17>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<17>1 (U2/ab_xor<17>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<17>_f5 (U2/ab_xor<17>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh17302 (U2/Sh17301)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh1730_f5 (U2/Sh17)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh49292 (U2/Sh49291)
+     MUXF5:I0->O           2   0.360   1.216  U2/Sh4929_f5 (U2/Sh49)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<1> (U2/a_mux0000<1>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<1> (U2/Maddsub_a_lut<1>)
+     XORCY:LI->O          42   0.622   2.249  U2/Maddsub_a_xor<1> (U2/a<1>)
+     LUT3:I0->O            5   0.551   1.116  U2/Sh214 (U2/Sh214)
+     LUT4:I1->O            1   0.551   0.000  U2/Sh2262 (U2/Sh2262)
+     MUXF5:I0->O           4   0.360   0.985  U2/Sh226_f5 (U2/Sh226)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<2>2 (U2/b_mux0000<2>2)
+     MUXF5:I0->O           1   0.360   0.801  U2/b_mux0000<2>_f5 (U2/b_mux0000<2>)
+     MUXCY:DI->O           1   0.889   0.000  U2/Maddsub_b_cy<2> (U2/Maddsub_b_cy<2>)
+     XORCY:CI->O           9   0.904   1.319  U2/Maddsub_b_xor<3> (U2/b<3>)
+     LUT4:I1->O            1   0.551   0.000  U2/Sh98321 (U2/Sh9832)
+     MUXF5:I1->O           3   0.360   1.102  U2/Sh9832_f5 (U2/Sh98)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh13020 (U2/Sh13020)
+     LUT3:I1->O            3   0.551   0.975  U2/Sh13031 (U2/Sh130)
+     LUT4:I2->O            1   0.551   0.000  U2/ba_xor<2>2 (U2/ba_xor<2>2)
+     MUXF5:I0->O          41   0.360   2.244  U2/ba_xor<2>_f5 (U2/ba_xor<2>)
+     LUT3_D:I0->O          1   0.551   0.869  U2/Sh338 (U2/Sh338)
+     LUT3:I2->O            2   0.551   0.877  U2/Sh3541 (U2/Sh354)
+     MUXF5:S->O            3   0.621   1.102  U2/ab_xor<2>_f5 (U2/ab_xor<2>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh23012 (U2/Sh23012)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh2301_f5 (U2/Sh2)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh34282 (U2/Sh34281)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh3428_f5 (U2/Sh34)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<18> (U2/a_mux0000<18>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<18> (U2/Maddsub_a_lut<18>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_a_cy<18> (U2/Maddsub_a_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<19> (U2/Maddsub_a_cy<19>)
+     XORCY:CI->O           7   0.904   1.405  U2/Maddsub_a_xor<20> (U2/a<20>)
+     LUT4:I0->O            1   0.551   0.000  U2/ba_xor<20>1 (U2/ba_xor<20>1)
+     MUXF5:I1->O           5   0.360   0.947  U2/ba_xor<20>_f5 (U2/ba_xor<20>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<20>1 (U2/ab_xor<20>1)
+     MUXF5:I1->O           3   0.360   1.102  U2/ab_xor<20>_f5 (U2/ab_xor<20>)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh22_SW1 (N959)
+     LUT3:I1->O            4   0.551   1.112  U2/Sh20 (U2/Sh20)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh52302 (U2/Sh52301)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh5230_f5 (U2/Sh52)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<4> (U2/a_mux0000<4>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<4> (U2/Maddsub_a_lut<4>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_a_cy<4> (U2/Maddsub_a_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<5> (U2/Maddsub_a_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<6> (U2/Maddsub_a_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<7> (U2/Maddsub_a_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<8> (U2/Maddsub_a_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<9> (U2/Maddsub_a_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<10> (U2/Maddsub_a_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<11> (U2/Maddsub_a_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<12> (U2/Maddsub_a_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<13> (U2/Maddsub_a_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<14> (U2/Maddsub_a_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<15> (U2/Maddsub_a_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<16> (U2/Maddsub_a_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<17> (U2/Maddsub_a_cy<17>)
+     XORCY:CI->O           5   0.904   1.260  U2/Maddsub_a_xor<18> (U2/a<18>)
+     LUT4:I0->O            6   0.551   1.029  U2/ba_xor<18> (U2/ba_xor<18>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<18>1 (U2/ab_xor<18>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<18>_f5 (U2/ab_xor<18>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh18292 (U2/Sh18291)
+     MUXF5:I0->O           3   0.360   1.102  U2/Sh1829_f5 (U2/Sh18)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh50302 (U2/Sh50301)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh5030_f5 (U2/Sh50)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<2> (U2/a_mux0000<2>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<2> (U2/Maddsub_a_lut<2>)
+     XORCY:LI->O          43   0.622   2.255  U2/Maddsub_a_xor<2> (U2/a<2>)
+     LUT3:I0->O            4   0.551   0.985  U2/Sh225 (U2/Sh225)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<1>2 (U2/b_mux0000<1>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<1>_f5 (U2/b_mux0000<1>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<1> (U2/Maddsub_b_lut<1>)
+     XORCY:LI->O           7   0.622   1.134  U2/Maddsub_b_xor<1> (U2/b<1>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh96302 (U2/Sh96301)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh9630_f5 (U2/Sh96)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh128282 (U2/Sh128281)
+     MUXF5:I0->O           2   0.360   1.072  U2/Sh12828_f5 (U2/Sh128)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh1602 (U2/Sh160)
+     MUXF5:S->O           69   0.621   2.091  U2/ba_xor<0>_f5 (U2/ba_xor<0>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<0>1 (U2/ab_xor<0>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<0>_f5 (U2/ab_xor<0>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh384302 (U2/Sh384301)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh38430_f5 (U2/Sh)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh322812 (U2/Sh322811)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh32281_f5 (U2/Sh32)
+     LUT3:I0->O            1   0.551   0.801  U2/a_mux0000<0> (U2/a_mux0000<0>)
+     MUXCY:DI->O           1   0.889   0.000  U2/Maddsub_a_cy<0> (U2/Maddsub_a_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<1> (U2/Maddsub_a_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<2> (U2/Maddsub_a_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<3> (U2/Maddsub_a_cy<3>)
+     XORCY:CI->O          69   0.904   2.404  U2/Maddsub_a_xor<4> (U2/a<4>)
+     LUT3:I0->O            1   0.551   1.140  U2/b_mux0000<0> (U2/b_mux0000<0>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<0> (U2/Maddsub_b_lut<0>)
+     XORCY:LI->O           6   0.622   1.029  U2/Maddsub_b_xor<0> (U2/b<0>)
+     LUT4:I3->O            1   0.551   0.996  U2/b_reg_0_mux000033_SW0 (N703)
+     LUT4:I1->O            1   0.551   0.000  U2/b_reg_0_mux000045 (U2/b_reg_0_mux0000)
+     FDCP:D                    0.203          U2/b_reg_0
+    ----------------------------------------
+    Total                    684.946ns (300.051ns logic, 384.895ns route)
+                                       (43.8% logic, 56.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1081838758640912200000000 / 208
+-------------------------------------------------------------------------
+Offset:              685.807ns (Levels of Logic = 616)
+  Source:            enc (PAD)
+  Destination:       U2/b_reg_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: enc to U2/b_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           453   0.821   4.265  enc_IBUF (enc_IBUF)
+     INV:I->O             67   0.551   2.122  U2/a_round_mux00013_INV_0 (U2/a_round_mux0001)
+     LUT3:I2->O            1   0.551   0.000  U2/Maddsub_a_lut<0> (U2/Maddsub_a_lut<0>)
+     XORCY:LI->O          42   0.622   1.978  U2/Maddsub_a_xor<0> (U2/a<0>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh319312 (U2/Sh319311)
+     MUXF5:I0->O           2   0.360   1.072  U2/Sh31931_f5 (U2/Sh319)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh347_SW1 (N111)
+     LUT3_D:I1->LO         1   0.551   0.168  U2/Sh351 (N926)
+     LUT3:I2->O            2   0.551   1.216  U2/Sh3671 (U2/Sh367)
+     LUT4:I0->O            4   0.551   1.112  U2/ab_xor<15> (U2/ab_xor<15>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh152 (U2/Sh1532)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh15_f5 (U2/Sh15)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh47302 (U2/Sh47301)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh4730_f5 (U2/Sh47)
+     LUT4:I1->O            1   0.551   0.000  U2/a_mux0000<15>1 (U2/a_mux0000<15>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/a_mux0000<15>_f5 (U2/a_mux0000<15>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<15> (U2/Maddsub_a_lut<15>)
+     XORCY:LI->O           6   0.622   1.071  U2/Maddsub_a_xor<15> (U2/a<15>)
+     LUT4:I2->O            1   0.551   0.000  U2/Sh301301 (U2/Sh30130)
+     MUXF5:I1->O           2   0.360   1.072  U2/Sh30130_f5 (U2/Sh301)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh329_SW1 (N136)
+     LUT3_D:I1->LO         1   0.551   0.168  U2/Sh333 (N918)
+     LUT3:I2->O            2   0.551   0.877  U2/Sh3811 (U2/Sh381)
+     MUXF5:S->O            4   0.621   0.985  U2/ab_xor<29>_f5 (U2/ab_xor<29>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh303012 (U2/Sh303011)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh30301_f5 (U2/Sh30)
+     LUT3:I1->O            1   0.551   0.869  U2/Sh6220 (U2/Sh6220)
+     LUT4:I2->O            3   0.551   0.933  U2/Sh6232 (U2/Sh62)
+     LUT4:I3->O            2   0.551   1.072  U2/a_mux0000<30>_SW0 (N158)
+     LUT4:I1->O            1   0.551   0.000  U2/Maddsub_a_lut<30> (U2/Maddsub_a_lut<30>)
+     XORCY:LI->O           7   0.622   1.405  U2/Maddsub_a_xor<30> (U2/a<30>)
+     LUT4:I0->O            1   0.551   0.000  U2/ba_xor<30>1 (U2/ba_xor<30>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ba_xor<30>_f5 (U2/ba_xor<30>)
+     LUT3:I1->O            2   0.551   0.945  U2/Sh222_SW0 (N300)
+     LUT3_D:I2->LO         1   0.551   0.295  U2/Sh192 (N989)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh228_SW1 (N597)
+     LUT3:I1->O            3   0.551   0.975  U2/Sh224 (U2/Sh224)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<16>1 (U2/b_mux0000<16>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/b_mux0000<16>_f5 (U2/b_mux0000<16>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<16> (U2/Maddsub_b_lut<16>)
+     XORCY:LI->O           7   0.622   1.405  U2/Maddsub_b_xor<16> (U2/b<16>)
+     LUT3:I0->O            3   0.551   1.102  U2/Sh11132 (U2/Sh111)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh14328_F (N839)
+     MUXF5:I0->O           4   0.360   0.985  U2/Sh14328 (U2/Sh143)
+     LUT4:I2->O            1   0.551   0.000  U2/ba_xor<15>2 (U2/ba_xor<15>2)
+     MUXF5:I0->O           5   0.360   1.116  U2/ba_xor<15>_f5 (U2/ba_xor<15>)
+     LUT4:I1->O            1   0.551   0.000  U2/Sh210291 (U2/Sh21029)
+     MUXF5:I1->O           5   0.360   0.989  U2/Sh21029_f5 (U2/Sh210)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh246282 (U2/Sh246281)
+     MUXF5:I0->O           2   0.360   0.877  U2/Sh24628_f5 (U2/Sh246)
+     MUXF5:S->O            1   0.621   1.140  U2/b_mux0000<22>_f5 (U2/b_mux0000<22>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<22> (U2/Maddsub_b_lut<22>)
+     XORCY:LI->O           6   0.622   1.071  U2/Maddsub_b_xor<22> (U2/b<22>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh11828_F (N815)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh11828 (U2/Sh118)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh150282 (U2/Sh150281)
+     MUXF5:I0->O           3   0.360   1.102  U2/Sh15028_f5 (U2/Sh150)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh1821 (N893)
+     LUT2:I1->O            1   0.551   0.827  U2/ba_xor<22>_SW0 (N257)
+     LUT4:I3->O            5   0.551   0.947  U2/ba_xor<22> (U2/ba_xor<22>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<22>1 (U2/ab_xor<22>1)
+     MUXF5:I1->O           3   0.360   0.975  U2/ab_xor<22>_f5 (U2/ab_xor<22>)
+     LUT3:I2->O            2   0.551   1.072  U2/Sh24_SW1 (N523)
+     LUT3:I1->O            4   0.551   1.112  U2/Sh22 (U2/Sh22)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh54282 (U2/Sh54281)
+     MUXF5:I0->O           3   0.360   0.907  U2/Sh5428_f5 (U2/Sh54)
+     MUXF5:S->O            1   0.621   1.140  U2/a_mux0000<22>_f5 (U2/a_mux0000<22>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<22> (U2/Maddsub_a_lut<22>)
+     XORCY:LI->O           6   0.622   1.198  U2/Maddsub_a_xor<22> (U2/a<22>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh308281 (U2/Sh30828)
+     MUXF5:I1->O           5   0.360   0.989  U2/Sh30828_f5 (U2/Sh308)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh336282 (U2/Sh336281)
+     MUXF5:I0->O           2   0.360   1.072  U2/Sh33628_f5 (U2/Sh336)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh3681 (U2/Sh368)
+     MUXF5:S->O            3   0.621   1.102  U2/ab_xor<16>_f5 (U2/ab_xor<16>)
+     LUT2:I1->O            3   0.551   1.246  U2/Sh173 (U2/Sh1616)
+     LUT3:I0->O            1   0.551   0.000  U2/Sh16292 (U2/Sh16291)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh1629_f5 (U2/Sh16)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh48302 (U2/Sh48301)
+     MUXF5:I0->O           3   0.360   0.907  U2/Sh4830_f5 (U2/Sh48)
+     MUXF5:S->O            1   0.621   1.140  U2/a_mux0000<16>_f5 (U2/a_mux0000<16>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<16> (U2/Maddsub_a_lut<16>)
+     XORCY:LI->O           4   0.622   1.256  U2/Maddsub_a_xor<16> (U2/a<16>)
+     LUT4_D:I0->LO         1   0.551   0.168  U2/ba_xor<16> (N952)
+     LUT3:I2->O            2   0.551   0.945  U2/Sh211_SW1 (N639)
+     LUT3_D:I2->LO         1   0.551   0.168  U2/Sh211 (N975)
+     LUT3:I2->O            2   0.551   1.072  U2/Sh255_SW1 (N124)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh251 (U2/Sh251)
+     MUXF5:S->O            1   0.621   1.140  U2/b_mux0000<27>_f5 (U2/b_mux0000<27>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<27> (U2/Maddsub_b_lut<27>)
+     XORCY:LI->O           5   0.622   1.116  U2/Maddsub_b_xor<27> (U2/b<27>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh123282 (U2/Sh123281)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh12328_f5 (U2/Sh123)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh155302 (U2/Sh155301)
+     MUXF5:I0->O           3   0.360   0.975  U2/Sh15530_f5 (U2/Sh155)
+     LUT4_L:I2->LO         1   0.551   0.126  U2/ba_xor<27>_SW0 (N251)
+     LUT4:I3->O            5   0.551   0.947  U2/ba_xor<27> (U2/ba_xor<27>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<27>1 (U2/ab_xor<27>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<27>_f5 (U2/ab_xor<27>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh27292 (U2/Sh27291)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh2729_f5 (U2/Sh27)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh59282 (U2/Sh59281)
+     MUXF5:I0->O           3   0.360   1.102  U2/Sh5928_f5 (U2/Sh59)
+     LUT4:I1->O            1   0.551   0.869  U2/a_mux0000<27>_SW1 (N216)
+     LUT3:I2->O            1   0.551   1.140  U2/a_mux0000<27> (U2/a_mux0000<27>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<27> (U2/Maddsub_a_lut<27>)
+     XORCY:LI->O           6   0.622   1.071  U2/Maddsub_a_xor<27> (U2/a<27>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh314312 (U2/Sh314311)
+     MUXF5:I0->O           2   0.360   0.945  U2/Sh31431_f5 (U2/Sh314)
+     LUT3:I2->O            2   0.551   0.945  U2/Sh334_SW1 (N108)
+     LUT3_D:I2->LO         1   0.551   0.295  U2/Sh334 (N909)
+     LUT3:I1->O            2   0.551   1.216  U2/Sh3661 (U2/Sh366)
+     LUT4:I0->O            5   0.551   0.989  U2/ab_xor<14> (U2/ab_xor<14>)
+     LUT4:I2->O            1   0.551   0.000  U2/Sh143111 (U2/Sh14311)
+     MUXF5:I1->O           4   0.360   1.112  U2/Sh14311_f5 (U2/Sh14)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh46292 (U2/Sh46291)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh4629_f5 (U2/Sh46)
+     LUT4:I1->O            1   0.551   0.000  U2/a_mux0000<14>1 (U2/a_mux0000<14>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/a_mux0000<14>_f5 (U2/a_mux0000<14>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<14> (U2/Maddsub_a_lut<14>)
+     XORCY:LI->O           5   0.622   1.116  U2/Maddsub_a_xor<14> (U2/a<14>)
+     LUT2:I1->O            3   0.551   1.246  U2/Sh3013 (U2/Sh3013)
+     LUT4_D:I0->LO         1   0.551   0.295  U2/Sh30231 (N920)
+     LUT3:I1->O            2   0.551   0.945  U2/Sh334_SW0 (N107)
+     LUT3_D:I2->LO         1   0.551   0.295  U2/Sh330 (N919)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh3621 (U2/Sh362)
+     MUXF5:S->O            3   0.621   0.975  U2/ab_xor<10>_f5 (U2/ab_xor<10>)
+     LUT3:I2->O            2   0.551   1.072  U2/Sh12_SW1 (N307)
+     LUT3:I1->O            4   0.551   1.112  U2/Sh10 (U2/Sh10)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh42282 (U2/Sh42281)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh4228_f5 (U2/Sh42)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<26> (U2/a_mux0000<26>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<26> (U2/Maddsub_a_lut<26>)
+     XORCY:LI->O           6   0.622   1.071  U2/Maddsub_a_xor<26> (U2/a<26>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh311281 (U2/Sh31128)
+     MUXF5:I1->O           2   0.360   1.072  U2/Sh31128_f5 (U2/Sh311)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh343_SW0 (N80)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh343 (N901)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh3751 (U2/Sh375)
+     MUXF5:S->O            4   0.621   1.112  U2/ab_xor<23>_f5 (U2/ab_xor<23>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh23302 (U2/Sh23301)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh2330_f5 (U2/Sh23)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh55282 (U2/Sh55281)
+     MUXF5:I0->O           3   0.360   0.907  U2/Sh5528_f5 (U2/Sh55)
+     MUXF5:S->O            1   0.621   1.140  U2/a_mux0000<23>_f5 (U2/a_mux0000<23>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<23> (U2/Maddsub_a_lut<23>)
+     XORCY:LI->O           6   0.622   1.342  U2/Maddsub_a_xor<23> (U2/a<23>)
+     LUT4_D:I0->LO         1   0.551   0.168  U2/ba_xor<23> (N945)
+     LUT3:I2->O            2   0.551   0.945  U2/Sh218_SW1 (N618)
+     LUT3:I2->O            3   0.551   1.102  U2/Sh218 (U2/Sh218)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh250312 (U2/Sh250311)
+     MUXF5:I0->O           2   0.360   0.877  U2/Sh25031_f5 (U2/Sh250)
+     MUXF5:S->O            1   0.621   1.140  U2/b_mux0000<26>_f5 (U2/b_mux0000<26>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<26> (U2/Maddsub_b_lut<26>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_b_cy<26> (U2/Maddsub_b_cy<26>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<27> (U2/Maddsub_b_cy<27>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<28> (U2/Maddsub_b_cy<28>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<29> (U2/Maddsub_b_cy<29>)
+     MUXCY:CI->O           0   0.064   0.000  U2/Maddsub_b_cy<30> (U2/Maddsub_b_cy<30>)
+     XORCY:CI->O           6   0.904   1.071  U2/Maddsub_b_xor<31> (U2/b<31>)
+     LUT4_L:I2->LO         1   0.551   0.439  U2/Sh12527 (U2/Sh12527)
+     LUT3:I0->O            4   0.551   1.112  U2/Sh12529 (U2/Sh125)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh157312 (U2/Sh157311)
+     MUXF5:I0->O           3   0.360   0.975  U2/Sh15731_f5 (U2/Sh157)
+     LUT4_L:I2->LO         1   0.551   0.126  U2/ba_xor<29>_SW0 (N247)
+     LUT4:I3->O            5   0.551   1.116  U2/ba_xor<29> (U2/ba_xor<29>)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh223_SW1 (N606)
+     LUT3_D:I1->LO         1   0.551   0.168  U2/Sh221 (N968)
+     LUT3:I2->O            2   0.551   1.072  U2/Sh233_SW1 (N582)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh229 (U2/Sh229)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<5>2 (U2/b_mux0000<5>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<5>_f5 (U2/b_mux0000<5>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<5> (U2/Maddsub_b_lut<5>)
+     XORCY:LI->O           6   0.622   1.198  U2/Maddsub_b_xor<5> (U2/b<5>)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh1007 (N916)
+     LUT3:I1->O            4   0.551   1.112  U2/Sh10131 (U2/Sh101)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh13331_F (N841)
+     MUXF5:I0->O           3   0.360   0.975  U2/Sh13331 (U2/Sh133)
+     LUT4_L:I2->LO         1   0.551   0.126  U2/ba_xor<5>_SW0 (N338)
+     LUT4:I3->O            6   0.551   1.029  U2/ba_xor<5> (U2/ba_xor<5>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<5>1 (U2/ab_xor<5>1)
+     MUXF5:I1->O           5   0.360   0.989  U2/ab_xor<5>_f5 (U2/ab_xor<5>)
+     LUT4:I2->O            1   0.551   0.000  U2/Sh52911 (U2/Sh5291)
+     MUXF5:I1->O           4   0.360   1.112  U2/Sh5291_f5 (U2/Sh5)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh37282 (U2/Sh37281)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh3728_f5 (U2/Sh37)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<21> (U2/a_mux0000<21>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<21> (U2/Maddsub_a_lut<21>)
+     XORCY:LI->O           7   0.622   1.405  U2/Maddsub_a_xor<21> (U2/a<21>)
+     LUT4:I0->O            1   0.551   0.000  U2/ba_xor<21>1 (U2/ba_xor<21>1)
+     MUXF5:I1->O           5   0.360   0.947  U2/ba_xor<21>_f5 (U2/ba_xor<21>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<21>1 (U2/ab_xor<21>1)
+     MUXF5:I1->O           3   0.360   1.102  U2/ab_xor<21>_f5 (U2/ab_xor<21>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh21302 (U2/Sh21301)
+     MUXF5:I0->O           6   0.360   1.071  U2/Sh2130_f5 (U2/Sh21)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh57302 (U2/Sh57301)
+     MUXF5:I0->O           3   0.360   0.907  U2/Sh5730_f5 (U2/Sh57)
+     MUXF5:S->O            1   0.621   1.140  U2/a_mux0000<25>_f5 (U2/a_mux0000<25>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<25> (U2/Maddsub_a_lut<25>)
+     XORCY:LI->O           6   0.622   1.342  U2/Maddsub_a_xor<25> (U2/a<25>)
+     LUT4:I0->O            5   0.551   0.947  U2/ba_xor<25> (U2/ba_xor<25>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<25>1 (U2/ab_xor<25>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<25>_f5 (U2/ab_xor<25>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh25282 (U2/Sh25281)
+     MUXF5:I0->O           4   0.360   0.985  U2/Sh2528_f5 (U2/Sh25)
+     LUT3:I2->O            4   0.551   0.917  U2/Sh616 (U2/Sh616)
+     MUXF5:S->O            2   0.621   0.945  U2/Sh6129_SW1 (N720)
+     LUT4:I2->O            1   0.551   0.000  U2/a_mux0000<13>_SW0_F (N845)
+     MUXF5:I0->O           1   0.360   0.996  U2/a_mux0000<13>_SW0 (N402)
+     LUT3:I1->O            1   0.551   1.140  U2/a_mux0000<13> (U2/a_mux0000<13>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<13> (U2/Maddsub_a_lut<13>)
+     XORCY:LI->O           6   0.622   1.342  U2/Maddsub_a_xor<13> (U2/a<13>)
+     LUT4_D:I0->O          4   0.551   0.943  U2/ba_xor<13> (U2/ba_xor<13>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<13>1 (U2/ab_xor<13>1)
+     MUXF5:I1->O           3   0.360   1.102  U2/ab_xor<13>_f5 (U2/ab_xor<13>)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh1471 (U2/Sh1320)
+     LUT3:I1->O            4   0.551   1.112  U2/Sh13311 (U2/Sh13)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh45292 (U2/Sh45291)
+     MUXF5:I0->O           2   0.360   1.216  U2/Sh4529_f5 (U2/Sh45)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<29> (U2/a_mux0000<29>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<29> (U2/Maddsub_a_lut<29>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_a_cy<29> (U2/Maddsub_a_cy<29>)
+     MUXCY:CI->O           0   0.064   0.000  U2/Maddsub_a_cy<30> (U2/Maddsub_a_cy<30>)
+     XORCY:CI->O           6   0.904   1.342  U2/Maddsub_a_xor<31> (U2/a<31>)
+     LUT4_D:I0->LO         1   0.551   0.168  U2/ba_xor<31> (N953)
+     LUT3:I2->O            2   0.551   0.945  U2/Sh194_SW1 (N684)
+     LUT3_D:I2->LO         1   0.551   0.168  U2/Sh194 (N987)
+     LUT3:I2->O            2   0.551   1.072  U2/Sh238_SW1 (N567)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh234 (U2/Sh234)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<10>2 (U2/b_mux0000<10>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<10>_f5 (U2/b_mux0000<10>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<10> (U2/Maddsub_b_lut<10>)
+     XORCY:LI->O           3   0.622   0.975  U2/Maddsub_b_xor<10> (U2/b<10>)
+     LUT3_D:I2->LO         1   0.551   0.295  U2/Sh10620 (N921)
+     LUT3:I1->O            3   0.551   1.102  U2/Sh10631 (U2/Sh106)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh13828_F (N877)
+     MUXF5:I0->O           3   0.360   1.102  U2/Sh13828 (U2/Sh138)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh1701 (N894)
+     LUT2:I1->O            1   0.551   0.827  U2/ba_xor<10>_SW0 (N269)
+     LUT4_D:I3->LO         1   0.551   0.295  U2/ba_xor<10> (N947)
+     LUT3:I1->O            2   0.551   0.945  U2/Sh204_SW1 (N657)
+     LUT3_D:I2->LO         1   0.551   0.295  U2/Sh204 (N981)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh240_SW1 (N564)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh236 (U2/Sh236)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<12>2 (U2/b_mux0000<12>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<12>_f5 (U2/b_mux0000<12>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<12> (U2/Maddsub_b_lut<12>)
+     XORCY:LI->O           5   0.622   0.989  U2/Maddsub_b_xor<12> (U2/b<12>)
+     LUT4:I2->O            1   0.551   0.000  U2/Sh14016_F (N821)
+     MUXF5:I0->O           2   0.360   1.216  U2/Sh14016 (U2/Sh1363)
+     LUT4_D:I0->LO         1   0.551   0.295  U2/Sh14031 (N902)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh1721 (U2/Sh172)
+     MUXF5:S->O            5   0.621   0.947  U2/ba_xor<12>_f5 (U2/ba_xor<12>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<12>1 (U2/ab_xor<12>1)
+     MUXF5:I1->O           5   0.360   1.116  U2/ab_xor<12>_f5 (U2/ab_xor<12>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh121 (U2/Sh1210)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh12_f5 (U2/Sh12)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh44302 (U2/Sh44301)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh4430_f5 (U2/Sh44)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<28> (U2/a_mux0000<28>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<28> (U2/Maddsub_a_lut<28>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_a_cy<28> (U2/Maddsub_a_cy<28>)
+     XORCY:CI->O           6   0.904   1.071  U2/Maddsub_a_xor<29> (U2/a<29>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh316302 (U2/Sh316301)
+     MUXF5:I0->O           3   0.360   1.102  U2/Sh31630_f5 (U2/Sh316)
+     LUT3:I1->O            2   0.551   0.945  U2/Sh344_SW1 (N91)
+     LUT3_D:I2->LO         1   0.551   0.439  U2/Sh344 (N904)
+     LUT3:I0->O            2   0.551   1.216  U2/Sh3601 (U2/Sh360)
+     LUT4_D:I0->LO         1   0.551   0.295  U2/ab_xor<8> (N903)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh8_SW0 (N364)
+     LUT3:I1->O            4   0.551   1.112  U2/Sh8 (U2/Sh8)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh40282 (U2/Sh40281)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh4028_f5 (U2/Sh40)
+     LUT4:I1->O            1   0.551   0.000  U2/a_mux0000<8>1 (U2/a_mux0000<8>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/a_mux0000<8>_f5 (U2/a_mux0000<8>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<8> (U2/Maddsub_a_lut<8>)
+     XORCY:LI->O           7   0.622   1.405  U2/Maddsub_a_xor<8> (U2/a<8>)
+     LUT4:I0->O            1   0.551   0.000  U2/ba_xor<8>1 (U2/ba_xor<8>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ba_xor<8>_f5 (U2/ba_xor<8>)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh202_SW1 (N660)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh200 (N983)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh236_SW1 (N573)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh232 (U2/Sh232)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<24>1 (U2/b_mux0000<24>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/b_mux0000<24>_f5 (U2/b_mux0000<24>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<24> (U2/Maddsub_b_lut<24>)
+     XORCY:LI->O           6   0.622   1.198  U2/Maddsub_b_xor<24> (U2/b<24>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh120302 (U2/Sh120301)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh12030_f5 (U2/Sh120)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh152282 (U2/Sh152281)
+     MUXF5:I0->O           3   0.360   0.975  U2/Sh15228_f5 (U2/Sh152)
+     LUT4_L:I2->LO         1   0.551   0.126  U2/ba_xor<24>_SW0 (N253)
+     LUT4:I3->O            5   0.551   0.947  U2/ba_xor<24> (U2/ba_xor<24>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<24>1 (U2/ab_xor<24>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<24>_f5 (U2/ab_xor<24>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh242 (U2/Sh2410)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh24_f5 (U2/Sh24)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh56292 (U2/Sh56291)
+     MUXF5:I0->O           2   0.360   1.216  U2/Sh5629_f5 (U2/Sh56)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<24> (U2/a_mux0000<24>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<24> (U2/Maddsub_a_lut<24>)
+     XORCY:LI->O           6   0.622   1.198  U2/Maddsub_a_xor<24> (U2/a<24>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh312302 (U2/Sh312301)
+     MUXF5:I0->O           3   0.360   1.102  U2/Sh31230_f5 (U2/Sh312)
+     LUT3:I1->O            3   0.551   1.102  U2/Sh340_SW1 (N55)
+     LUT4:I1->O            1   0.551   0.000  U2/Sh3402 (U2/Sh3402)
+     MUXF5:I0->O           2   0.360   1.072  U2/Sh340_f5 (U2/Sh340)
+     LUT3:I1->O            3   0.551   0.933  U2/Mxor_ab_xor_xor0001_Result<4>1 (U2/ab_xor_xor0001<4>)
+     LUT4_D:I3->LO         1   0.551   0.295  U2/ab_xor<4>1 (N951)
+     LUT3:I1->O            2   0.551   0.945  U2/Sh420 (U2/Sh420)
+     LUT4:I2->O            4   0.551   1.112  U2/Sh432 (U2/Sh4)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh36282 (U2/Sh36281)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh3628_f5 (U2/Sh36)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<20> (U2/a_mux0000<20>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<20> (U2/Maddsub_a_lut<20>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_a_cy<20> (U2/Maddsub_a_cy<20>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<21> (U2/Maddsub_a_cy<21>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<22> (U2/Maddsub_a_cy<22>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<23> (U2/Maddsub_a_cy<23>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<24> (U2/Maddsub_a_cy<24>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<25> (U2/Maddsub_a_cy<25>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<26> (U2/Maddsub_a_cy<26>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<27> (U2/Maddsub_a_cy<27>)
+     XORCY:CI->O           7   0.904   1.405  U2/Maddsub_a_xor<28> (U2/a<28>)
+     LUT4:I0->O            4   0.551   1.256  U2/ba_xor<28> (U2/ba_xor<28>)
+     LUT4:I0->O            1   0.551   0.000  U2/ab_xor<28>2 (U2/ab_xor<28>2)
+     MUXF5:I0->O           4   0.360   1.112  U2/ab_xor<28>_f5 (U2/ab_xor<28>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh282 (U2/Sh282)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh28_f5 (U2/Sh28)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh60302 (U2/Sh60301)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh6030_f5 (U2/Sh60)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<12> (U2/a_mux0000<12>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<12> (U2/Maddsub_a_lut<12>)
+     XORCY:LI->O           7   0.622   1.134  U2/Maddsub_a_xor<12> (U2/a<12>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh299282 (U2/Sh299281)
+     MUXF5:I0->O           2   0.360   1.072  U2/Sh29928_f5 (U2/Sh299)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh327_SW1 (N84)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh331 (N911)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh3631 (U2/Sh363)
+     MUXF5:S->O            3   0.621   1.102  U2/ab_xor<11>_f5 (U2/ab_xor<11>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh112 (U2/Sh1111)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh11_f5 (U2/Sh11)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh43282 (U2/Sh43281)
+     MUXF5:I0->O           3   0.360   1.102  U2/Sh4328_f5 (U2/Sh43)
+     LUT4:I1->O            1   0.551   0.000  U2/a_mux0000<11>1 (U2/a_mux0000<11>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/a_mux0000<11>_f5 (U2/a_mux0000<11>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<11> (U2/Maddsub_a_lut<11>)
+     XORCY:LI->O           7   0.622   1.405  U2/Maddsub_a_xor<11> (U2/a<11>)
+     LUT4:I0->O            1   0.551   0.000  U2/ba_xor<11>1 (U2/ba_xor<11>1)
+     MUXF5:I1->O           5   0.360   1.116  U2/ba_xor<11>_f5 (U2/ba_xor<11>)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh203_SW0 (N960)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh203 (U2/Sh203)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh239_SW1 (N955)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh235 (U2/Sh235)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<11>2 (U2/b_mux0000<11>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<11>_f5 (U2/b_mux0000<11>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<11> (U2/Maddsub_b_lut<11>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_b_cy<11> (U2/Maddsub_b_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<12> (U2/Maddsub_b_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<13> (U2/Maddsub_b_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<14> (U2/Maddsub_b_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<15> (U2/Maddsub_b_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<16> (U2/Maddsub_b_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<17> (U2/Maddsub_b_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<18> (U2/Maddsub_b_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<19> (U2/Maddsub_b_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<20> (U2/Maddsub_b_cy<20>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<21> (U2/Maddsub_b_cy<21>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<22> (U2/Maddsub_b_cy<22>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<23> (U2/Maddsub_b_cy<23>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<24> (U2/Maddsub_b_cy<24>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<25> (U2/Maddsub_b_cy<25>)
+     XORCY:CI->O           6   0.904   1.198  U2/Maddsub_b_xor<26> (U2/b<26>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh122282 (U2/Sh122281)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh12228_f5 (U2/Sh122)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh154312 (U2/Sh154311)
+     MUXF5:I0->O           3   0.360   0.975  U2/Sh15431_f5 (U2/Sh154)
+     LUT4:I2->O            1   0.551   0.000  U2/ba_xor<26>2 (U2/ba_xor<26>2)
+     MUXF5:I0->O           5   0.360   0.947  U2/ba_xor<26>_f5 (U2/ba_xor<26>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<26>1 (U2/ab_xor<26>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<26>_f5 (U2/ab_xor<26>)
+     LUT2:I1->O            2   0.551   1.072  U2/Sh2616 (U2/Sh2616)
+     LUT4:I1->O            1   0.551   0.000  U2/Sh26291 (U2/Sh2629)
+     MUXF5:I1->O           3   0.360   1.102  U2/Sh2629_f5 (U2/Sh26)
+     LUT2_D:I1->LO         1   0.551   0.439  U2/Sh623 (N924)
+     LUT4:I0->O            3   0.551   1.246  U2/Sh5831 (U2/Sh58)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<10> (U2/a_mux0000<10>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<10> (U2/Maddsub_a_lut<10>)
+     XORCY:LI->O           6   0.622   1.071  U2/Maddsub_a_xor<10> (U2/a<10>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh297312 (U2/Sh297311)
+     MUXF5:I0->O           2   0.360   1.072  U2/Sh29731_f5 (U2/Sh297)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh325_SW1 (N66)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh329 (N917)
+     LUT3:I1->O            2   0.551   1.216  U2/Sh3611 (U2/Sh361)
+     LUT4:I0->O            3   0.551   1.102  U2/ab_xor<9> (U2/ab_xor<9>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh9302 (U2/Sh9301)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh930_f5 (U2/Sh9)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh41292 (U2/Sh41291)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh4129_f5 (U2/Sh41)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<9> (U2/a_mux0000<9>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<9> (U2/Maddsub_a_lut<9>)
+     XORCY:LI->O           7   0.622   1.405  U2/Maddsub_a_xor<9> (U2/a<9>)
+     LUT4:I0->O            1   0.551   0.000  U2/ba_xor<9>1 (U2/ba_xor<9>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ba_xor<9>_f5 (U2/ba_xor<9>)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh203_SW1 (N529)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh201 (N982)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh237_SW1 (N570)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh233 (U2/Sh233)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<9>2 (U2/b_mux0000<9>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<9>_f5 (U2/b_mux0000<9>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<9> (U2/Maddsub_b_lut<9>)
+     XORCY:LI->O           3   0.622   1.102  U2/Maddsub_b_xor<9> (U2/b<9>)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh1027 (U2/Sh1027)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh10331 (N928)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh13520 (U2/Sh1317)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh13531 (U2/Sh135)
+     LUT4_L:I2->LO         1   0.551   0.126  U2/ba_xor<7>_SW0 (N239)
+     LUT4:I3->O            6   0.551   1.029  U2/ba_xor<7> (U2/ba_xor<7>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<7>1 (U2/ab_xor<7>1)
+     MUXF5:I1->O           3   0.360   1.102  U2/ab_xor<7>_f5 (U2/ab_xor<7>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh72 (U2/Sh72)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh7_f5 (U2/Sh7)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh39282 (U2/Sh39281)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh3928_f5 (U2/Sh39)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<7> (U2/a_mux0000<7>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<7> (U2/Maddsub_a_lut<7>)
+     XORCY:LI->O           6   0.622   1.071  U2/Maddsub_a_xor<7> (U2/a<7>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh294302 (U2/Sh294301)
+     MUXF5:I0->O           2   0.360   1.072  U2/Sh29430_f5 (U2/Sh294)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh326_SW0 (U2/Sh3227)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh326 (N900)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh3581 (U2/Sh358)
+     MUXF5:S->O            4   0.621   1.112  U2/ab_xor<6>_f5 (U2/ab_xor<6>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh6303 (U2/Sh6302)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh630_f5 (U2/Sh6)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh38282 (U2/Sh38281)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh3828_f5 (U2/Sh38)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<6> (U2/a_mux0000<6>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<6> (U2/Maddsub_a_lut<6>)
+     XORCY:LI->O           6   0.622   1.342  U2/Maddsub_a_xor<6> (U2/a<6>)
+     LUT4_D:I0->LO         1   0.551   0.295  U2/ba_xor<6> (N944)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh200_SW1 (N666)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh198 (N984)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh234_SW1 (N579)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh230 (U2/Sh230)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<6>2 (U2/b_mux0000<6>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<6>_f5 (U2/b_mux0000<6>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<6> (U2/Maddsub_b_lut<6>)
+     XORCY:LI->O           4   0.622   0.985  U2/Maddsub_b_xor<6> (U2/b<6>)
+     LUT3:I2->O            2   0.551   1.072  U2/Sh10020 (U2/Sh10020)
+     LUT3:I1->O            4   0.551   1.112  U2/Sh10031 (U2/Sh100)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh132282 (U2/Sh132281)
+     MUXF5:I0->O           3   0.360   0.933  U2/Sh13228_f5 (U2/Sh132)
+     LUT4:I3->O            1   0.551   0.000  U2/ba_xor<4>12 (U2/ba_xor<4>11)
+     MUXF5:I0->O          36   0.360   2.071  U2/ba_xor<4>1_f5 (U2/ba_xor<4>)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh198_SW1 (N672)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh196 (N986)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh232_SW1 (N585)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh228 (U2/Sh228)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<4>2 (U2/b_mux0000<4>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<4>_f5 (U2/b_mux0000<4>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<4> (U2/Maddsub_b_lut<4>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_b_cy<4> (U2/Maddsub_b_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<5> (U2/Maddsub_b_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<6> (U2/Maddsub_b_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<7> (U2/Maddsub_b_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<8> (U2/Maddsub_b_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<9> (U2/Maddsub_b_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_b_cy<10> (U2/Maddsub_b_cy<10>)
+     XORCY:CI->O           3   0.904   1.102  U2/Maddsub_b_xor<11> (U2/b<11>)
+     LUT3:I1->O            3   0.551   1.246  U2/Sh1067 (U2/Sh1067)
+     LUT3_D:I0->LO         1   0.551   0.295  U2/Sh13120 (N992)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh13131 (U2/Sh131)
+     LUT4_L:I2->LO         1   0.551   0.126  U2/ba_xor<3>_SW0 (N243)
+     LUT4:I3->O           40   0.551   1.925  U2/ba_xor<3> (U2/ba_xor<3>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<3>1 (U2/ab_xor<3>1)
+     MUXF5:I1->O           5   0.360   1.116  U2/ab_xor<3>_f5 (U2/ab_xor<3>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh32912 (U2/Sh32911)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh3291_f5 (U2/Sh3)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh35282 (U2/Sh35281)
+     MUXF5:I0->O           4   0.360   0.985  U2/Sh3528_f5 (U2/Sh35)
+     LUT4:I2->O            1   0.551   0.000  U2/a_mux0000<19>1 (U2/a_mux0000<19>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/a_mux0000<19>_f5 (U2/a_mux0000<19>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<19> (U2/Maddsub_a_lut<19>)
+     XORCY:LI->O           6   0.622   1.342  U2/Maddsub_a_xor<19> (U2/a<19>)
+     LUT4:I0->O            5   0.551   0.947  U2/ba_xor<19> (U2/ba_xor<19>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<19>1 (U2/ab_xor<19>1)
+     MUXF5:I1->O           3   0.360   1.102  U2/ab_xor<19>_f5 (U2/ab_xor<19>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh199 (U2/Sh1911)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh19_f5 (U2/Sh19)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh51282 (U2/Sh51281)
+     MUXF5:I0->O           2   0.360   1.216  U2/Sh5128_f5 (U2/Sh51)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<3> (U2/a_mux0000<3>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<3> (U2/Maddsub_a_lut<3>)
+     XORCY:LI->O          41   0.622   2.244  U2/Maddsub_a_xor<3> (U2/a<3>)
+     LUT3_D:I0->LO         1   0.551   0.295  U2/Sh231_SW1 (N965)
+     LUT3:I1->O            4   0.551   0.985  U2/Sh227 (U2/Sh227)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<3>2 (U2/b_mux0000<3>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<3>_f5 (U2/b_mux0000<3>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<3> (U2/Maddsub_b_lut<3>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_b_cy<3> (U2/Maddsub_b_cy<3>)
+     XORCY:CI->O           3   0.904   1.102  U2/Maddsub_b_xor<4> (U2/b<4>)
+     LUT4:I1->O            2   0.551   0.877  U2/Sh9819 (U2/Sh976)
+     MUXF5:S->O            4   0.621   1.112  U2/Sh9731_f5 (U2/Sh97)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh129312 (U2/Sh129311)
+     MUXF5:I0->O           3   0.360   0.975  U2/Sh12931_f5 (U2/Sh129)
+     LUT4:I2->O            1   0.551   0.000  U2/ba_xor<1>2 (U2/ba_xor<1>2)
+     MUXF5:I0->O          42   0.360   1.936  U2/ba_xor<1>_f5 (U2/ba_xor<1>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<1>1 (U2/ab_xor<1>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<1>_f5 (U2/ab_xor<1>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh130112 (U2/Sh130111)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh13011_f5 (U2/Sh1)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh33302 (U2/Sh33301)
+     MUXF5:I0->O           4   0.360   0.985  U2/Sh3330_f5 (U2/Sh33)
+     LUT4:I2->O            1   0.551   0.000  U2/a_mux0000<17>1 (U2/a_mux0000<17>1)
+     MUXF5:I1->O           1   0.360   1.140  U2/a_mux0000<17>_f5 (U2/a_mux0000<17>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<17> (U2/Maddsub_a_lut<17>)
+     XORCY:LI->O           6   0.622   1.342  U2/Maddsub_a_xor<17> (U2/a<17>)
+     LUT4_D:I0->O          6   0.551   1.029  U2/ba_xor<17> (U2/ba_xor<17>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<17>1 (U2/ab_xor<17>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<17>_f5 (U2/ab_xor<17>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh17302 (U2/Sh17301)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh1730_f5 (U2/Sh17)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh49292 (U2/Sh49291)
+     MUXF5:I0->O           2   0.360   1.216  U2/Sh4929_f5 (U2/Sh49)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<1> (U2/a_mux0000<1>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<1> (U2/Maddsub_a_lut<1>)
+     XORCY:LI->O          42   0.622   2.249  U2/Maddsub_a_xor<1> (U2/a<1>)
+     LUT3:I0->O            5   0.551   1.116  U2/Sh214 (U2/Sh214)
+     LUT4:I1->O            1   0.551   0.000  U2/Sh2262 (U2/Sh2262)
+     MUXF5:I0->O           4   0.360   0.985  U2/Sh226_f5 (U2/Sh226)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<2>2 (U2/b_mux0000<2>2)
+     MUXF5:I0->O           1   0.360   0.801  U2/b_mux0000<2>_f5 (U2/b_mux0000<2>)
+     MUXCY:DI->O           1   0.889   0.000  U2/Maddsub_b_cy<2> (U2/Maddsub_b_cy<2>)
+     XORCY:CI->O           9   0.904   1.319  U2/Maddsub_b_xor<3> (U2/b<3>)
+     LUT4:I1->O            1   0.551   0.000  U2/Sh98321 (U2/Sh9832)
+     MUXF5:I1->O           3   0.360   1.102  U2/Sh9832_f5 (U2/Sh98)
+     LUT3:I1->O            2   0.551   1.072  U2/Sh13020 (U2/Sh13020)
+     LUT3:I1->O            3   0.551   0.975  U2/Sh13031 (U2/Sh130)
+     LUT4:I2->O            1   0.551   0.000  U2/ba_xor<2>2 (U2/ba_xor<2>2)
+     MUXF5:I0->O          41   0.360   2.244  U2/ba_xor<2>_f5 (U2/ba_xor<2>)
+     LUT3_D:I0->O          1   0.551   0.869  U2/Sh338 (U2/Sh338)
+     LUT3:I2->O            2   0.551   0.877  U2/Sh3541 (U2/Sh354)
+     MUXF5:S->O            3   0.621   1.102  U2/ab_xor<2>_f5 (U2/ab_xor<2>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh23012 (U2/Sh23012)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh2301_f5 (U2/Sh2)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh34282 (U2/Sh34281)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh3428_f5 (U2/Sh34)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<18> (U2/a_mux0000<18>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<18> (U2/Maddsub_a_lut<18>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_a_cy<18> (U2/Maddsub_a_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<19> (U2/Maddsub_a_cy<19>)
+     XORCY:CI->O           7   0.904   1.405  U2/Maddsub_a_xor<20> (U2/a<20>)
+     LUT4:I0->O            1   0.551   0.000  U2/ba_xor<20>1 (U2/ba_xor<20>1)
+     MUXF5:I1->O           5   0.360   0.947  U2/ba_xor<20>_f5 (U2/ba_xor<20>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<20>1 (U2/ab_xor<20>1)
+     MUXF5:I1->O           3   0.360   1.102  U2/ab_xor<20>_f5 (U2/ab_xor<20>)
+     LUT3_D:I1->LO         1   0.551   0.295  U2/Sh22_SW1 (N959)
+     LUT3:I1->O            4   0.551   1.112  U2/Sh20 (U2/Sh20)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh52302 (U2/Sh52301)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh5230_f5 (U2/Sh52)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<4> (U2/a_mux0000<4>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<4> (U2/Maddsub_a_lut<4>)
+     MUXCY:S->O            1   0.500   0.000  U2/Maddsub_a_cy<4> (U2/Maddsub_a_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<5> (U2/Maddsub_a_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<6> (U2/Maddsub_a_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<7> (U2/Maddsub_a_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<8> (U2/Maddsub_a_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<9> (U2/Maddsub_a_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<10> (U2/Maddsub_a_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<11> (U2/Maddsub_a_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<12> (U2/Maddsub_a_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<13> (U2/Maddsub_a_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<14> (U2/Maddsub_a_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<15> (U2/Maddsub_a_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<16> (U2/Maddsub_a_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<17> (U2/Maddsub_a_cy<17>)
+     XORCY:CI->O           5   0.904   1.260  U2/Maddsub_a_xor<18> (U2/a<18>)
+     LUT4:I0->O            6   0.551   1.029  U2/ba_xor<18> (U2/ba_xor<18>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<18>1 (U2/ab_xor<18>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<18>_f5 (U2/ab_xor<18>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh18292 (U2/Sh18291)
+     MUXF5:I0->O           3   0.360   1.102  U2/Sh1829_f5 (U2/Sh18)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh50302 (U2/Sh50301)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh5030_f5 (U2/Sh50)
+     LUT3:I0->O            1   0.551   1.140  U2/a_mux0000<2> (U2/a_mux0000<2>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_a_lut<2> (U2/Maddsub_a_lut<2>)
+     XORCY:LI->O          43   0.622   2.255  U2/Maddsub_a_xor<2> (U2/a<2>)
+     LUT3:I0->O            4   0.551   0.985  U2/Sh225 (U2/Sh225)
+     LUT4:I2->O            1   0.551   0.000  U2/b_mux0000<1>2 (U2/b_mux0000<1>2)
+     MUXF5:I0->O           1   0.360   1.140  U2/b_mux0000<1>_f5 (U2/b_mux0000<1>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<1> (U2/Maddsub_b_lut<1>)
+     XORCY:LI->O           7   0.622   1.134  U2/Maddsub_b_xor<1> (U2/b<1>)
+     LUT3:I2->O            1   0.551   0.000  U2/Sh96302 (U2/Sh96301)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh9630_f5 (U2/Sh96)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh128282 (U2/Sh128281)
+     MUXF5:I0->O           2   0.360   1.072  U2/Sh12828_f5 (U2/Sh128)
+     LUT3:I1->O            2   0.551   0.877  U2/Sh1602 (U2/Sh160)
+     MUXF5:S->O           69   0.621   2.091  U2/ba_xor<0>_f5 (U2/ba_xor<0>)
+     LUT4:I3->O            1   0.551   0.000  U2/ab_xor<0>1 (U2/ab_xor<0>1)
+     MUXF5:I1->O           4   0.360   1.112  U2/ab_xor<0>_f5 (U2/ab_xor<0>)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh384302 (U2/Sh384301)
+     MUXF5:I0->O           4   0.360   1.112  U2/Sh38430_f5 (U2/Sh)
+     LUT3:I1->O            1   0.551   0.000  U2/Sh322812 (U2/Sh322811)
+     MUXF5:I0->O           3   0.360   1.246  U2/Sh32281_f5 (U2/Sh32)
+     LUT3:I0->O            1   0.551   0.801  U2/a_mux0000<0> (U2/a_mux0000<0>)
+     MUXCY:DI->O           1   0.889   0.000  U2/Maddsub_a_cy<0> (U2/Maddsub_a_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<1> (U2/Maddsub_a_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<2> (U2/Maddsub_a_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  U2/Maddsub_a_cy<3> (U2/Maddsub_a_cy<3>)
+     XORCY:CI->O          69   0.904   2.404  U2/Maddsub_a_xor<4> (U2/a<4>)
+     LUT3:I0->O            1   0.551   1.140  U2/b_mux0000<0> (U2/b_mux0000<0>)
+     LUT3:I0->O            1   0.551   0.000  U2/Maddsub_b_lut<0> (U2/Maddsub_b_lut<0>)
+     XORCY:LI->O           6   0.622   1.029  U2/Maddsub_b_xor<0> (U2/b<0>)
+     LUT4:I3->O            1   0.551   0.996  U2/b_reg_0_mux000033_SW0 (N703)
+     LUT4:I1->O            1   0.551   0.000  U2/b_reg_0_mux000045 (U2/b_reg_0_mux0000)
+     FDCP:D                    0.203          U2/b_reg_0
+    ----------------------------------------
+    Total                    685.807ns (298.539ns logic, 387.269ns route)
+                                       (43.5% logic, 56.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 69 / 66
+-------------------------------------------------------------------------
+Offset:              10.266ns (Levels of Logic = 2)
+  Source:            U1/state_FSM_FFd2 (FF)
+  Destination:       key_rdy (PAD)
+  Source Clock:      clk rising
+
+  Data Path: U1/state_FSM_FFd2 to key_rdy
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             76   0.720   2.444  U1/state_FSM_FFd2 (U1/state_FSM_FFd2)
+     LUT2:I0->O            3   0.551   0.907  U1/state_FSM_Out31 (key_rdy_OBUF)
+     OBUF:I->O                 5.644          key_rdy_OBUF (key_rdy)
+    ----------------------------------------
+    Total                     10.266ns (6.915ns logic, 3.351ns route)
+                                       (67.4% logic, 32.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 55.00 secs
+Total CPU time to Xst completion: 54.15 secs
+ 
+--> 
+
+Total memory usage is 360568 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   55 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

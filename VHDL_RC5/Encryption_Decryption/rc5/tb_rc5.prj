@@ -1,0 +1,6 @@
+vhdl work "../rotRight.vhd"
+vhdl work "../rotLeft.vhd"
+vhdl work "../rc5_pkg.vhd"
+vhdl work "../rc5_key.vhd"
+vhdl work "../rc5.vhd"
+vhdl work "../tb_rc5.vhd"

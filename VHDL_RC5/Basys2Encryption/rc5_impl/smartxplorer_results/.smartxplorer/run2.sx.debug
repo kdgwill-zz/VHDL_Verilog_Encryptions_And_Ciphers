@@ -1,0 +1,49 @@
+strategySpecString = ':oc:sqmap:sq:cl:sp:sq:sp:dstiming:sp:dsol:sphigh:sp:dsxe:spn:sp:dsregister_duplication:spon:sp:dslogic_opt:spon:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:spC:clcl:clbslSkyDrive:clbslSchool:clbslPolytechnic:clbslEL6463_AdvancedHardwareDesign:clbslLabs:clbslLab7:clbslrc5_impl:sp:dsp:spxc3s100e:dscp132:ds4:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp4:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:sprc5.twx:sp:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp2:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:sq:cm:sp:sqname:sq:cl:sp:sqMapPhysSynthesis:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.7:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sqC:cl:bsl:bslSkyDrive:bsl:bslSchool:bsl:bslPolytechnic:bsl:bslEL6463_AdvancedHardwareDesign:bsl:bslLabs:bsl:bslLab7:bsl:bslrc5_impl:sq:cc'
+Xilinx Environment Variables:
+
+{'XILINXD_LICENSE_FILE': 'C:\\.Xilinx'
+'XILINX_PLANAHEAD': 'C:\\Xilinx\\14.7\\ISE_DS\\PlanAhead'
+'XILINX_DSP': 'C:\\Xilinx\\14.7\\ISE_DS\\ISE'
+'XILINX_EDK': 'C:\\Xilinx\\14.7\\ISE_DS\\EDK'
+'LM_LICENSE_FILE': 'C:\\.Xilinx'
+'XILINX': 'C:\\Xilinx\\14.7\\ISE_DS\\ISE\\'
+'PATH': 'C:\\Xilinx\\14.7\\ISE_DS\\ISE\\\\lib\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\ISE\\\\bin\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\ISE\\bin\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\ISE\\lib\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\ISE\\..\\..\\..\\DocNav;C:\\Xilinx\\14.7\\ISE_DS\\PlanAhead\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\bin\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\lib\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\nt\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\powerpc-eabi\\nt\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnuwin\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\arm\\nt\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\linux_toolchain\\nt64_be\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\linux_toolchain\\nt64_le\\bin;C:\\Xilinx\\14.7\\ISE_DS\\common\\bin\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\common\\lib\\nt64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python33\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Dell\\Dell Wireless WLAN Card;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Android\\android-sdk\\platform-tools;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\MATLAB\\R2014b\\bin;C:\\Program Files (x86)\\PharosSystems\\Core;C:\\Program Files (x86)\\Digilent\\AdeptUtilities;c:\\altera\\11.1\\modelsim_ase\\win32aloem;C:\\Modeltech_pe_edu_10.4\\win32pe_edu'}
+envDict = {}
+Dynasty_1.stat:C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\smartxplorer_results\.smartxplorer\.sx.keepAlive.Dynasty_1
+INFO: total number of threads running this host None
+...searching for file: mapphyssynthesis.xds
+Creating XDS file ... mapphyssynthesis.xds
+###################################
+
+      <property name = "Map:Perform Timing-Driven Packing and Placement"
+               value = "true" />
+      <property name = "Map:Map Effort Level"
+               value = "High" />
+      <property name = "Map:Extra Effort"
+               value = "Normal" />
+      <property name = "Map:Register Duplication"
+               value = "On" />
+      <property name = "Map:Combinatorial Logic Optimization"
+               value = "true" />
+      <property name = "Place &amp; Route:Place &amp; Route Effort Level (Overall)"
+               value = "High" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Number of Paths in Error/Verbose Report"
+               value = "3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Type"
+               value = "Verbose Report" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Change Device Speed To"
+               value = "-4" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Paths by Endpoint"
+               value = "3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Fastest Path(s) in Each Constraint"
+               value = "true" />
+###################################
+launching map with options  -timing -ol high -xe n -register_duplication on -logic_opt on  -p xc3s100e-cp132-4 -o rc5_map.ncd  C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun2:bslrc5.pcf...
+runTask: map rc5.ngd -timing -ol high -xe n -register_duplication on -logic_opt on -p xc3s100e-cp132-4 -o rc5_map.ncd C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\smartxplorer_results\run2\rc5.pcf
+args = ['map', 'rc5.ngd', '-timing', '-ol', 'high', '-xe', 'n', '-register_duplication', 'on', '-logic_opt', 'on', '-p', 'xc3s100e-cp132-4', '-o', 'rc5_map.ncd', 'C:\\SkyDrive\\School\\Polytechnic\\EL6463_AdvancedHardwareDesign\\Labs\\Lab7\\rc5_impl\\smartxplorer_results\\run2\\rc5.pcf']
+launching par with options  -ol high  -w rc5.ncd  C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun2:bslrc5.pcf...
+runTask: par rc5_map.ncd -ol high -w rc5.ncd C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\smartxplorer_results\run2\rc5.pcf
+args = ['par', 'rc5_map.ncd', '-ol', 'high', '-w', 'rc5.ncd', 'C:\\SkyDrive\\School\\Polytechnic\\EL6463_AdvancedHardwareDesign\\Labs\\Lab7\\rc5_impl\\smartxplorer_results\\run2\\rc5.pcf']
+launching trce...
+runTask: trce C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\smartxplorer_results\run2\rc5.ncd C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\smartxplorer_results\run2\rc5.pcf -xml C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\smartxplorer_results\run2\rc5.twx -v 3 -s 4 -n 3 -fastpaths -o C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\smartxplorer_results\run2\rc5.twr
+args = ['trce', 'C:\\SkyDrive\\School\\Polytechnic\\EL6463_AdvancedHardwareDesign\\Labs\\Lab7\\rc5_impl\\smartxplorer_results\\run2\\rc5.ncd', 'C:\\SkyDrive\\School\\Polytechnic\\EL6463_AdvancedHardwareDesign\\Labs\\Lab7\\rc5_impl\\smartxplorer_results\\run2\\rc5.pcf', '-xml', 'C:\\SkyDrive\\School\\Polytechnic\\EL6463_AdvancedHardwareDesign\\Labs\\Lab7\\rc5_impl\\smartxplorer_results\\run2\\rc5.twx', '-v', '3', '-s', '4', '-n', '3', '-fastpaths', '-o', 'C:\\SkyDrive\\School\\Polytechnic\\EL6463_AdvancedHardwareDesign\\Labs\\Lab7\\rc5_impl\\smartxplorer_results\\run2\\rc5.twr']

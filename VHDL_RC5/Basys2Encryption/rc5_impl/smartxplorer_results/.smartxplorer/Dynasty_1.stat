@@ -1,0 +1,46 @@
+START:Strategy:2:MapPhysSynthesis
+REMOTE_PID:9680
+RUNNING:9680:7604:MapPhysSynthesis:map:rc5.ngd: -timing -ol high -xe n -register_duplication on -logic_opt on  -p xc3s100e-cp132-4 -o rc5_map.ncd  C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun2:bslrc5.pcf
+STATUS:MapPhysSynthesis:map:Score:None:lut:None:slice_reg:94 (4%):slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:35.34 secs 
+STATUS:MapPhysSynthesis:map:Score:None:lut:710 (36%):slice_reg:94 (4%):slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:35.34 secs 
+STATUS:MapPhysSynthesis:map:Score:None:lut:710 (36%):slice_reg:94 (4%):slice:389 (40%):bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:35.34 secs 
+STATUS:MapPhysSynthesis:map:Score:None:lut:734 (38%):slice_reg:94 (4%):slice:389 (40%):bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:35.34 secs 
+DONE:map:0
+RUNNING:9680:9780:MapPhysSynthesis:par:rc5_map.ncd: -ol high  -w rc5.ncd  C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun2:bslrc5.pcf
+STATUS:MapPhysSynthesis:par:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:50.42 secs 
+STATUS:MapPhysSynthesis:par:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:14.190ns:Time:50.43 secs 
+DONE:par:0
+RUNNING:9680:8232:MapPhysSynthesis:trce:C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\smartxplorer_results\run2\rc5.ncd:C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun2:bslrc5.pcf -xml C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun2:bslrc5.twx -v 3 -s 4 -n 3 -fastpaths    -o C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun2:bslrc5.twr
+STATUS:MapPhysSynthesis:trce:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:60.46 secs 
+DONE:trce:0
+START:Strategy:4:ParHighEffort2
+REMOTE_PID:3132
+RUNNING:3132:6344:ParHighEffort2:map:rc5.ngd: -cm area -t 2 -p xc3s100e-cp132-4 -o rc5_map.ncd  C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun4:bslrc5.pcf
+STATUS:ParHighEffort2:map:Score:None:lut:None:slice_reg:94 (4%):slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:10.15 secs 
+STATUS:ParHighEffort2:map:Score:None:lut:710 (36%):slice_reg:94 (4%):slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:10.15 secs 
+STATUS:ParHighEffort2:map:Score:None:lut:710 (36%):slice_reg:94 (4%):slice:380 (39%):bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:10.15 secs 
+STATUS:ParHighEffort2:map:Score:None:lut:734 (38%):slice_reg:94 (4%):slice:380 (39%):bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:10.15 secs 
+DONE:map:0
+RUNNING:3132:148:ParHighEffort2:par:rc5_map.ncd: -ol high -t 2 -w rc5.ncd  C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun4:bslrc5.pcf
+STATUS:ParHighEffort2:par:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:30.47 secs 
+STATUS:ParHighEffort2:par:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:12.036ns:Time:30.47 secs 
+DONE:par:0
+RUNNING:3132:8772:ParHighEffort2:trce:C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\smartxplorer_results\run4\rc5.ncd:C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun4:bslrc5.pcf -xml C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun4:bslrc5.twx -v 3 -s 4 -n 3 -fastpaths    -o C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun4:bslrc5.twr
+STATUS:ParHighEffort2:trce:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:40.55 secs 
+DONE:trce:0
+START:Strategy:6:MapTiming2
+REMOTE_PID:7572
+RUNNING:7572:8272:MapTiming2:map:rc5.ngd: -timing -ol high -t 9 -p xc3s100e-cp132-4 -o rc5_map.ncd  C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun6:bslrc5.pcf
+STATUS:MapTiming2:map:Score:None:lut:None:slice_reg:94 (4%):slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:20.25 secs 
+STATUS:MapTiming2:map:Score:None:lut:710 (36%):slice_reg:94 (4%):slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:20.25 secs 
+STATUS:MapTiming2:map:Score:None:lut:710 (36%):slice_reg:94 (4%):slice:388 (40%):bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:20.25 secs 
+STATUS:MapTiming2:map:Score:None:lut:734 (38%):slice_reg:94 (4%):slice:388 (40%):bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:20.25 secs 
+DONE:map:0
+RUNNING:7572:992:MapTiming2:par:rc5_map.ncd: -ol high -t 9 -w rc5.ncd  C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun6:bslrc5.pcf
+STATUS:MapTiming2:par:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:45.32 secs 
+STATUS:MapTiming2:par:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:14.478ns:Time:45.32 secs 
+DONE:par:0
+RUNNING:7572:4436:MapTiming2:trce:C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab7\rc5_impl\smartxplorer_results\run6\rc5.ncd:C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun6:bslrc5.pcf -xml C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun6:bslrc5.twx -v 3 -s 4 -n 3 -fastpaths    -o C:cl:bslSkyDrive:bslSchool:bslPolytechnic:bslEL6463_AdvancedHardwareDesign:bslLabs:bslLab7:bslrc5_impl:bslsmartxplorer_results:bslrun6:bslrc5.twr
+STATUS:MapTiming2:trce:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:50.45 secs 
+DONE:trce:0
+DONE:Xplorer

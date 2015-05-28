@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="790" filtered="1" delta="new" >&quot;<arg fmt="%s" index="1">C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab7/rc5.vhd</arg>&quot; line <arg fmt="%d" index="2">88</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" filtered="1" delta="new" >&quot;<arg fmt="%s" index="1">C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab7/rc5.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab7/rc5.vhd</arg>&quot; line <arg fmt="%d" index="2">100</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;din&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab7/rc5.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;din&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab7/hex2sevenseg.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="646" filtered="1" delta="new" >Signal &lt;<arg fmt="%s" index="1">dout&lt;63:16&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">st_post_round</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+</messages>
+

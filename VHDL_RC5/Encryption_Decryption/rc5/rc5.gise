@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="rc5.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="compxlib.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/par/tb_rc5_timesim.nlf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/par/tb_rc5_timesim.sdf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/par/tb_rc5_timesim.vhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="tb_rc5.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="tb_rc5.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="tb_rc5.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="tb_rc5.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="tb_rc5.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="tb_rc5.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="tb_rc5.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="tb_rc5.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="tb_rc5.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="tb_rc5.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_rc5.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="tb_rc5.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="tb_rc5.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="tb_rc5.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="tb_rc5.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="tb_rc5.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="tb_rc5.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="tb_rc5.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="tb_rc5.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="tb_rc5_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="tb_rc5_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="tb_rc5_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="tb_rc5_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="tb_rc5_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="tb_rc5_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="tb_rc5_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="tb_rc5_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="tb_rc5_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="tb_rc5_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="tb_rc5_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="tb_rc5_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="tb_rc5_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="tb_rc5_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_rc5_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="tb_rc5_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1427880947" xil_pn:name="TRANEXT_compLibraries_FPGA" xil_pn:prop_ck="9037746670282032734" xil_pn:start_ts="1427879830">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="compxlib.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1427863687" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1427863687">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1427863687" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="4171097163851148642" xil_pn:start_ts="1427863687">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1427863687" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7194089467420450374" xil_pn:start_ts="1427863687">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1427863687" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1427863687">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1427863687" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7417257377282233002" xil_pn:start_ts="1427863687">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1427863687" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1110319057727724918" xil_pn:start_ts="1427863687">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1427863687" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="8737214693400157764" xil_pn:start_ts="1427863687">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1427906965" xil_pn:in_ck="-9058283495019132261" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="7857386382582706148" xil_pn:start_ts="1427906905">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="tb_rc5.lso"/>
+      <outfile xil_pn:name="tb_rc5.ngc"/>
+      <outfile xil_pn:name="tb_rc5.ngr"/>
+      <outfile xil_pn:name="tb_rc5.prj"/>
+      <outfile xil_pn:name="tb_rc5.stx"/>
+      <outfile xil_pn:name="tb_rc5.syr"/>
+      <outfile xil_pn:name="tb_rc5.xst"/>
+      <outfile xil_pn:name="tb_rc5_vhdl.prj"/>
+      <outfile xil_pn:name="tb_rc5_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1427863738" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="7904223231295272863" xil_pn:start_ts="1427863738">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1427906974" xil_pn:in_ck="5525760153679557" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-146180006876762910" xil_pn:start_ts="1427906965">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="tb_rc5.bld"/>
+      <outfile xil_pn:name="tb_rc5.ngd"/>
+      <outfile xil_pn:name="tb_rc5_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1427906986" xil_pn:in_ck="5525760153679558" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-684010993939208968" xil_pn:start_ts="1427906974">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="tb_rc5.pcf"/>
+      <outfile xil_pn:name="tb_rc5_map.map"/>
+      <outfile xil_pn:name="tb_rc5_map.mrp"/>
+      <outfile xil_pn:name="tb_rc5_map.ncd"/>
+      <outfile xil_pn:name="tb_rc5_map.ngm"/>
+      <outfile xil_pn:name="tb_rc5_map.xrpt"/>
+      <outfile xil_pn:name="tb_rc5_summary.xml"/>
+      <outfile xil_pn:name="tb_rc5_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1427907258" xil_pn:in_ck="4520863131717712095" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3333849164707216606" xil_pn:start_ts="1427906986">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="tb_rc5.ncd"/>
+      <outfile xil_pn:name="tb_rc5.pad"/>
+      <outfile xil_pn:name="tb_rc5.par"/>
+      <outfile xil_pn:name="tb_rc5.ptwx"/>
+      <outfile xil_pn:name="tb_rc5.unroutes"/>
+      <outfile xil_pn:name="tb_rc5.xpi"/>
+      <outfile xil_pn:name="tb_rc5_pad.csv"/>
+      <outfile xil_pn:name="tb_rc5_pad.txt"/>
+      <outfile xil_pn:name="tb_rc5_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1427907289" xil_pn:in_ck="5525760153679426" xil_pn:name="TRAN_postParSimModel" xil_pn:prop_ck="1758826865068964224" xil_pn:start_ts="1427907258">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/par/tb_rc5_timesim.nlf"/>
+      <outfile xil_pn:name="netgen/par/tb_rc5_timesim.sdf"/>
+      <outfile xil_pn:name="netgen/par/tb_rc5_timesim.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1427907258" xil_pn:in_ck="5525760153679426" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1427907245">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="tb_rc5.twr"/>
+      <outfile xil_pn:name="tb_rc5.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

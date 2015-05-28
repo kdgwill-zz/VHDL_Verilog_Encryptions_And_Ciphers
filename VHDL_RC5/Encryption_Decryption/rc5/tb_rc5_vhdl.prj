@@ -1,0 +1,6 @@
+vhdl work "C:\OneDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab6\rotRight.vhd"
+vhdl work "C:\OneDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab6\rotLeft.vhd"
+vhdl work "C:\OneDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab6\rc5_pkg.vhd"
+vhdl work "C:\OneDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab6\rc5_key.vhd"
+vhdl work "C:\OneDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab6\rc5.vhd"
+vhdl work "C:\OneDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\Lab6\tb_rc5.vhd"

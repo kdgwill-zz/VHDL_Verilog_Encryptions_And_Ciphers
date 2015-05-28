@@ -1,0 +1,6 @@
+AR rc5 rtl C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab7/rc5.vhd sub00/vhpl05 1428441969
+AR rotleft rtl C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab7/rotLeft.vhd sub00/vhpl01 1428441965
+AR hex_7seg behavioral C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab7/hex2sevenseg.vhd sub00/vhpl03 1428441967
+EN rotleft NULL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab7/rotLeft.vhd sub00/vhpl00 1428441964
+EN hex_7seg NULL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab7/hex2sevenseg.vhd sub00/vhpl02 1428441966
+EN rc5 NULL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/Lab7/rc5.vhd sub00/vhpl04 1428441968
