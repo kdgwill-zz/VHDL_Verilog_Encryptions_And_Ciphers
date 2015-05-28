@@ -1,0 +1,6 @@
+AR trivium rtl C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium.vhd sub00/vhpl01 1431305719
+AR hex_7seg behavioral C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/hex2sevenseg.vhd sub00/vhpl03 1431305721
+EN tb_trivium NULL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/tb_trivium.vhd sub00/vhpl04 1431305722
+EN hex_7seg NULL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/hex2sevenseg.vhd sub00/vhpl02 1431305720
+EN trivium NULL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium.vhd sub00/vhpl00 1431305718
+AR tb_trivium behavioral C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/tb_trivium.vhd sub00/vhpl05 1431305723

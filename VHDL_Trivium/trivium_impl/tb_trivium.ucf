@@ -1,0 +1,45 @@
+
+#Created by Constraints Editor (xc3s100e-cp132-4) - 2015/05/10
+NET "clk_25" TNM_NET = clk_25;
+TIMESPEC TS_clk_25 = PERIOD "clk_25" 40 ns HIGH 50 %;
+
+# PlanAhead Generated physical constraints 
+
+NET "clk_25" LOC = B8;
+NET "input[7]" LOC = N3;
+NET "input[6]" LOC = E2;
+NET "input[5]" LOC = F3;
+NET "input[4]" LOC = G3;
+NET "input[3]" LOC = B4;
+NET "input[2]" LOC = K3;
+NET "input[1]" LOC = L3;
+NET "input[0]" LOC = P11;
+NET "swtch_led[7]" LOC = G1;
+NET "swtch_led[6]" LOC = P4;
+NET "swtch_led[5]" LOC = N4;
+NET "swtch_led[4]" LOC = N5;
+NET "swtch_led[3]" LOC = P6;
+NET "swtch_led[2]" LOC = P7;
+NET "swtch_led[1]" LOC = M11;
+NET "swtch_led[0]" LOC = M5;
+NET "segment_a_i" LOC = L14;
+NET "segment_b_i" LOC = H12;
+NET "segment_c_i" LOC = N14;
+NET "segment_d_i" LOC = N11;
+NET "segment_e_i" LOC = P12;
+NET "segment_f_i" LOC = L13;
+NET "segment_g_i" LOC = M12;
+NET "AN[3]" LOC = K14;
+NET "AN[2]" LOC = M13;
+NET "AN[1]" LOC = J12;
+NET "AN[0]" LOC = F12;
+NET "rst" LOC = G12;
+NET "nxt" LOC = A7;
+NET "skp" LOC = M4;
+
+# PlanAhead Generated IO constraints 
+
+NET "rst" PULLUP;
+NET "nxt" PULLUP;
+NET "skp" PULLUP;
+

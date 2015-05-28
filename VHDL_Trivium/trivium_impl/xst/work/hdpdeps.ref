@@ -1,0 +1,24 @@
+V3 11
+FL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/hex2sevenseg.vhd 2015/05/10.15:45:23 P.20131013
+EN work/hex_7seg 1431305720 \
+      FL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/hex2sevenseg.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/hex_7seg/behavioral 1431305721 \
+      FL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/hex2sevenseg.vhd \
+      EN work/hex_7seg 1431305720
+FL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/tb_trivium.vhd 2015/05/10.18:40:43 P.20131013
+EN work/tb_trivium 1431305722 \
+      FL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/tb_trivium.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/tb_trivium/behavioral 1431305723 \
+      FL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/tb_trivium.vhd \
+      EN work/tb_trivium 1431305722 CP work/trivium CP work/hex_7seg
+FL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium.vhd 2015/05/10.20:55:08 P.20131013
+EN work/trivium 1431305718 \
+      FL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/trivium/rtl 1431305719 \
+      FL C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium.vhd \
+      EN work/trivium 1431305718

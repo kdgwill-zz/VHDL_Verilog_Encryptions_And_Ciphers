@@ -1,0 +1,223 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun May 10 20:55:49 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "skp" LOCATE = SITE "M4" LEVEL 1;
+COMP "nxt" LOCATE = SITE "A7" LEVEL 1;
+COMP "rst" LOCATE = SITE "G12" LEVEL 1;
+COMP "AN<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "AN<1>" LOCATE = SITE "J12" LEVEL 1;
+COMP "AN<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "AN<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "segment_a_i" LOCATE = SITE "L14" LEVEL 1;
+COMP "segment_b_i" LOCATE = SITE "H12" LEVEL 1;
+COMP "segment_c_i" LOCATE = SITE "N14" LEVEL 1;
+COMP "segment_d_i" LOCATE = SITE "N11" LEVEL 1;
+COMP "segment_e_i" LOCATE = SITE "P12" LEVEL 1;
+COMP "segment_f_i" LOCATE = SITE "L13" LEVEL 1;
+COMP "segment_g_i" LOCATE = SITE "M12" LEVEL 1;
+COMP "clk_25" LOCATE = SITE "B8" LEVEL 1;
+COMP "input<0>" LOCATE = SITE "P11" LEVEL 1;
+COMP "input<1>" LOCATE = SITE "L3" LEVEL 1;
+COMP "input<2>" LOCATE = SITE "K3" LEVEL 1;
+COMP "input<3>" LOCATE = SITE "B4" LEVEL 1;
+COMP "input<4>" LOCATE = SITE "G3" LEVEL 1;
+COMP "input<5>" LOCATE = SITE "F3" LEVEL 1;
+COMP "input<6>" LOCATE = SITE "E2" LEVEL 1;
+COMP "input<7>" LOCATE = SITE "N3" LEVEL 1;
+COMP "swtch_led<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "swtch_led<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "swtch_led<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "swtch_led<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "swtch_led<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "swtch_led<5>" LOCATE = SITE "N4" LEVEL 1;
+COMP "swtch_led<6>" LOCATE = SITE "P4" LEVEL 1;
+COMP "swtch_led<7>" LOCATE = SITE "G1" LEVEL 1;
+NET "clk_25_BUFGP/IBUFG" BEL "clk_25_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk_25 = BEL "AN_0" BEL "AN_1" BEL "AN_2" BEL "AN_3" BEL "key_0" BEL
+        "key_1" BEL "key_2" BEL "key_3" BEL "key_4" BEL "key_5" BEL "key_6"
+        BEL "key_7" BEL "key_8" BEL "key_9" BEL "key_10" BEL "key_11" BEL
+        "key_12" BEL "key_13" BEL "key_14" BEL "key_15" BEL "key_16" BEL
+        "key_17" BEL "key_18" BEL "key_19" BEL "key_20" BEL "key_21" BEL
+        "key_22" BEL "key_23" BEL "key_24" BEL "key_25" BEL "key_26" BEL
+        "key_27" BEL "key_28" BEL "key_29" BEL "key_30" BEL "key_31" BEL
+        "key_32" BEL "key_33" BEL "key_34" BEL "key_35" BEL "key_36" BEL
+        "key_37" BEL "key_38" BEL "key_39" BEL "key_40" BEL "key_41" BEL
+        "key_42" BEL "key_43" BEL "key_44" BEL "key_45" BEL "key_46" BEL
+        "key_47" BEL "key_48" BEL "key_49" BEL "key_50" BEL "key_51" BEL
+        "key_52" BEL "key_53" BEL "key_54" BEL "key_55" BEL "key_56" BEL
+        "key_57" BEL "key_58" BEL "key_59" BEL "key_60" BEL "key_61" BEL
+        "key_62" BEL "key_63" BEL "key_64" BEL "key_65" BEL "key_66" BEL
+        "key_67" BEL "key_68" BEL "key_69" BEL "key_70" BEL "key_71" BEL
+        "key_72" BEL "key_73" BEL "key_74" BEL "key_75" BEL "key_76" BEL
+        "key_77" BEL "key_78" BEL "key_79" BEL "skp_buf_cur" BEL "nxt_buf_cur"
+        BEL "inputCnt_0" BEL "inputCnt_1" BEL "inputCnt_2" BEL "inputCnt_3"
+        BEL "inputCnt_4" BEL "inputCnt_5" BEL "inputCnt_6" BEL "inputCnt_7"
+        BEL "inputCnt_8" BEL "inputCnt_9" BEL "inputCnt_10" BEL "inputCnt_11"
+        BEL "inputCnt_12" BEL "inputCnt_13" BEL "inputCnt_14" BEL
+        "inputCnt_15" BEL "inputCnt_16" BEL "inputCnt_17" BEL "inputCnt_18"
+        BEL "inputCnt_19" BEL "inputCnt_20" BEL "inputCnt_21" BEL
+        "inputCnt_22" BEL "inputCnt_23" BEL "inputCnt_24" BEL "inputCnt_25"
+        BEL "inputCnt_26" BEL "inputCnt_27" BEL "inputCnt_28" BEL
+        "inputCnt_29" BEL "inputCnt_30" BEL "inputCnt_31" BEL "IV_0" BEL
+        "IV_1" BEL "IV_2" BEL "IV_3" BEL "IV_4" BEL "IV_5" BEL "IV_6" BEL
+        "IV_7" BEL "IV_8" BEL "IV_9" BEL "IV_10" BEL "IV_11" BEL "IV_12" BEL
+        "IV_13" BEL "IV_14" BEL "IV_15" BEL "IV_16" BEL "IV_17" BEL "IV_18"
+        BEL "IV_19" BEL "IV_20" BEL "IV_21" BEL "IV_22" BEL "IV_23" BEL
+        "IV_24" BEL "IV_25" BEL "IV_26" BEL "IV_27" BEL "IV_28" BEL "IV_29"
+        BEL "IV_30" BEL "IV_31" BEL "IV_32" BEL "IV_33" BEL "IV_34" BEL
+        "IV_35" BEL "IV_36" BEL "IV_37" BEL "IV_38" BEL "IV_39" BEL "IV_40"
+        BEL "IV_41" BEL "IV_42" BEL "IV_43" BEL "IV_44" BEL "IV_45" BEL
+        "IV_46" BEL "IV_47" BEL "IV_48" BEL "IV_49" BEL "IV_50" BEL "IV_51"
+        BEL "IV_52" BEL "IV_53" BEL "IV_54" BEL "IV_55" BEL "IV_56" BEL
+        "IV_57" BEL "IV_58" BEL "IV_59" BEL "IV_60" BEL "IV_61" BEL "IV_62"
+        BEL "IV_63" BEL "IV_64" BEL "IV_65" BEL "IV_66" BEL "IV_67" BEL
+        "IV_68" BEL "IV_69" BEL "IV_70" BEL "IV_71" BEL "IV_72" BEL "IV_73"
+        BEL "IV_74" BEL "IV_75" BEL "IV_76" BEL "IV_77" BEL "IV_78" BEL
+        "IV_79" BEL "trivRst" BEL "hex_digit_i_0" BEL "hex_digit_i_1" BEL
+        "hex_digit_i_2" BEL "hex_digit_i_3" BEL "hex_digit_i_4" BEL
+        "nxt_buf_prev" BEL "hld" BEL "skp_buf_prev" BEL "LED_flash_cnt_0" BEL
+        "LED_flash_cnt_1" BEL "LED_flash_cnt_2" BEL "LED_flash_cnt_3" BEL
+        "LED_flash_cnt_4" BEL "LED_flash_cnt_5" BEL "LED_flash_cnt_6" BEL
+        "LED_flash_cnt_7" BEL "LED_flash_cnt_8" BEL "LED_flash_cnt_9" BEL
+        "state_FSM_FFd1" BEL "state_FSM_FFd2" BEL "state_FSM_FFd4" BEL
+        "state_FSM_FFd5" BEL "trivium/count_31" BEL "trivium/count2_31" BEL
+        "trivium/count2_30" BEL "trivium/count2_29" BEL "trivium/count2_28"
+        BEL "trivium/count2_27" BEL "trivium/count2_26" BEL
+        "trivium/count2_25" BEL "trivium/count2_24" BEL "trivium/count2_23"
+        BEL "trivium/count2_22" BEL "trivium/count2_21" BEL
+        "trivium/count2_20" BEL "trivium/count2_19" BEL "trivium/count2_18"
+        BEL "trivium/count2_17" BEL "trivium/count2_16" BEL
+        "trivium/count2_15" BEL "trivium/count2_14" BEL "trivium/count2_13"
+        BEL "trivium/count2_12" BEL "trivium/count2_11" BEL
+        "trivium/count2_10" BEL "trivium/count2_9" BEL "trivium/count2_8" BEL
+        "trivium/count2_7" BEL "trivium/count2_6" BEL "trivium/count2_5" BEL
+        "trivium/count2_4" BEL "trivium/count2_3" BEL "trivium/count2_2" BEL
+        "trivium/count2_1" BEL "trivium/count2_0" BEL "trivium/count_30" BEL
+        "trivium/count_29" BEL "trivium/count_28" BEL "trivium/count_27" BEL
+        "trivium/count_25" BEL "trivium/count_24" BEL "trivium/count_26" BEL
+        "trivium/count_23" BEL "trivium/count_22" BEL "trivium/count_20" BEL
+        "trivium/count_19" BEL "trivium/count_21" BEL "trivium/count_18" BEL
+        "trivium/count_17" BEL "trivium/count_15" BEL "trivium/count_14" BEL
+        "trivium/count_16" BEL "trivium/count_13" BEL "trivium/count_12" BEL
+        "trivium/count_10" BEL "trivium/count_9" BEL "trivium/count_11" BEL
+        "trivium/count_8" BEL "trivium/count_7" BEL "trivium/count_5" BEL
+        "trivium/count_4" BEL "trivium/count_6" BEL "trivium/count_3" BEL
+        "trivium/count_2" BEL "trivium/count_0" BEL "trivium/count_1" BEL
+        "trivium/state_FSM_FFd2" BEL "trivium/state_FSM_FFd1" BEL
+        "trivium/z_reg_14" BEL "trivium/z_reg_13" BEL "trivium/z_reg_15" BEL
+        "trivium/z_reg_12" BEL "trivium/z_reg_11" BEL "trivium/z_reg_10" BEL
+        "trivium/z_reg_9" BEL "trivium/z_reg_8" BEL "trivium/z_reg_5" BEL
+        "trivium/z_reg_4" BEL "trivium/z_reg_6" BEL "trivium/z_reg_3" BEL
+        "trivium/z_reg_2" BEL "trivium/z_reg_0" BEL "trivium/z_reg_1" BEL
+        "trivium/z_reg_Buf_15" BEL "trivium/z_reg_Buf_14" BEL
+        "trivium/z_reg_Buf_13" BEL "trivium/z_reg_Buf_12" BEL
+        "trivium/z_reg_Buf_11" BEL "trivium/z_reg_Buf_10" BEL
+        "trivium/z_reg_Buf_9" BEL "trivium/z_reg_Buf_8" BEL
+        "trivium/z_reg_Buf_7" BEL "trivium/z_reg_Buf_6" BEL
+        "trivium/z_reg_Buf_5" BEL "trivium/z_reg_Buf_4" BEL
+        "trivium/z_reg_Buf_3" BEL "trivium/z_reg_Buf_2" BEL
+        "trivium/z_reg_Buf_1" BEL "trivium/z_reg_7" BEL "trivium/s_reg_66" BEL
+        "trivium/s_reg_65" BEL "trivium/s_reg_64" BEL "trivium/s_reg_63" BEL
+        "trivium/s_reg_62" BEL "trivium/s_reg_61" BEL "trivium/s_reg_60" BEL
+        "trivium/s_reg_59" BEL "trivium/s_reg_58" BEL "trivium/s_reg_57" BEL
+        "trivium/s_reg_56" BEL "trivium/s_reg_55" BEL "trivium/s_reg_54" BEL
+        "trivium/s_reg_53" BEL "trivium/s_reg_52" BEL "trivium/s_reg_51" BEL
+        "trivium/s_reg_50" BEL "trivium/s_reg_49" BEL "trivium/s_reg_48" BEL
+        "trivium/s_reg_47" BEL "trivium/s_reg_46" BEL "trivium/s_reg_45" BEL
+        "trivium/s_reg_44" BEL "trivium/s_reg_43" BEL "trivium/s_reg_42" BEL
+        "trivium/s_reg_41" BEL "trivium/s_reg_40" BEL "trivium/s_reg_39" BEL
+        "trivium/s_reg_38" BEL "trivium/s_reg_37" BEL "trivium/s_reg_36" BEL
+        "trivium/s_reg_35" BEL "trivium/s_reg_34" BEL "trivium/s_reg_33" BEL
+        "trivium/s_reg_32" BEL "trivium/s_reg_31" BEL "trivium/s_reg_30" BEL
+        "trivium/s_reg_29" BEL "trivium/s_reg_28" BEL "trivium/s_reg_27" BEL
+        "trivium/s_reg_26" BEL "trivium/s_reg_25" BEL "trivium/s_reg_24" BEL
+        "trivium/s_reg_23" BEL "trivium/s_reg_22" BEL "trivium/s_reg_21" BEL
+        "trivium/s_reg_20" BEL "trivium/s_reg_19" BEL "trivium/s_reg_18" BEL
+        "trivium/s_reg_17" BEL "trivium/s_reg_16" BEL "trivium/s_reg_15" BEL
+        "trivium/s_reg_14" BEL "trivium/s_reg_13" BEL "trivium/s_reg_12" BEL
+        "trivium/s_reg_11" BEL "trivium/s_reg_10" BEL "trivium/s_reg_9" BEL
+        "trivium/s_reg_8" BEL "trivium/s_reg_7" BEL "trivium/s_reg_6" BEL
+        "trivium/s_reg_5" BEL "trivium/s_reg_4" BEL "trivium/s_reg_3" BEL
+        "trivium/s_reg_2" BEL "trivium/s_reg_1" BEL "trivium/s_reg_162" BEL
+        "trivium/s_reg_161" BEL "trivium/s_reg_160" BEL "trivium/s_reg_159"
+        BEL "trivium/s_reg_158" BEL "trivium/s_reg_157" BEL
+        "trivium/s_reg_156" BEL "trivium/s_reg_155" BEL "trivium/s_reg_154"
+        BEL "trivium/s_reg_153" BEL "trivium/s_reg_152" BEL
+        "trivium/s_reg_151" BEL "trivium/s_reg_150" BEL "trivium/s_reg_149"
+        BEL "trivium/s_reg_148" BEL "trivium/s_reg_147" BEL
+        "trivium/s_reg_146" BEL "trivium/s_reg_145" BEL "trivium/s_reg_144"
+        BEL "trivium/s_reg_143" BEL "trivium/s_reg_142" BEL
+        "trivium/s_reg_141" BEL "trivium/s_reg_140" BEL "trivium/s_reg_139"
+        BEL "trivium/s_reg_138" BEL "trivium/s_reg_137" BEL
+        "trivium/s_reg_136" BEL "trivium/s_reg_135" BEL "trivium/s_reg_134"
+        BEL "trivium/s_reg_133" BEL "trivium/s_reg_132" BEL
+        "trivium/s_reg_131" BEL "trivium/s_reg_130" BEL "trivium/s_reg_129"
+        BEL "trivium/s_reg_288" BEL "trivium/s_reg_128" BEL
+        "trivium/s_reg_287" BEL "trivium/s_reg_127" BEL "trivium/s_reg_286"
+        BEL "trivium/s_reg_126" BEL "trivium/s_reg_125" BEL
+        "trivium/s_reg_124" BEL "trivium/s_reg_123" BEL "trivium/s_reg_122"
+        BEL "trivium/s_reg_121" BEL "trivium/s_reg_120" BEL
+        "trivium/s_reg_119" BEL "trivium/s_reg_118" BEL "trivium/s_reg_117"
+        BEL "trivium/s_reg_116" BEL "trivium/s_reg_115" BEL
+        "trivium/s_reg_114" BEL "trivium/s_reg_113" BEL "trivium/s_reg_112"
+        BEL "trivium/s_reg_111" BEL "trivium/s_reg_93" BEL "trivium/s_reg_110"
+        BEL "trivium/s_reg_92" BEL "trivium/s_reg_109" BEL "trivium/s_reg_108"
+        BEL "trivium/s_reg_107" BEL "trivium/s_reg_106" BEL
+        "trivium/s_reg_105" BEL "trivium/s_reg_104" BEL "trivium/s_reg_103"
+        BEL "trivium/s_reg_102" BEL "trivium/s_reg_101" BEL
+        "trivium/s_reg_100" BEL "trivium/s_reg_99" BEL "trivium/s_reg_98" BEL
+        "trivium/s_reg_177" BEL "trivium/s_reg_97" BEL "trivium/s_reg_176" BEL
+        "trivium/s_reg_80" BEL "trivium/s_reg_96" BEL "trivium/s_reg_175" BEL
+        "trivium/s_reg_79" BEL "trivium/s_reg_95" BEL "trivium/s_reg_174" BEL
+        "trivium/s_reg_78" BEL "trivium/s_reg_94" BEL "trivium/s_reg_173" BEL
+        "trivium/s_reg_77" BEL "trivium/s_reg_76" BEL "trivium/s_reg_172" BEL
+        "trivium/s_reg_171" BEL "trivium/s_reg_75" BEL "trivium/s_reg_170" BEL
+        "trivium/s_reg_74" BEL "trivium/s_reg_169" BEL "trivium/s_reg_73" BEL
+        "trivium/s_reg_168" BEL "trivium/s_reg_72" BEL "trivium/s_reg_167" BEL
+        "trivium/s_reg_71" BEL "trivium/s_reg_166" BEL "trivium/s_reg_70" BEL
+        "trivium/o_vld" BEL "trivium/s_reg_165" BEL "trivium/s_reg_69" BEL
+        "trivium/s_reg_164" BEL "trivium/s_reg_68" BEL "trivium/s_reg_67" BEL
+        "trivium/s_reg_163" BEL "state_FSM_FFd3" BEL
+        "trivium/Mshreg_s_reg_243_0" BEL
+        "trivium/Mshreg_s_reg_243_1.SLICEM_GMC15_BLACKBOX" BEL
+        "trivium/Mshreg_s_reg_243_1" BEL
+        "trivium/Mshreg_s_reg_243_1.SLICEM_FMC15_BLACKBOX" BEL
+        "trivium/Mshreg_s_reg_243_2" BEL
+        "trivium/s_reg_2431.SLICEM_GMC15_BLACKBOX" BEL
+        "trivium/Mshreg_s_reg_243_3" BEL "trivium/s_reg_2431" BEL
+        "trivium/Mshreg_s_reg_91" BEL "trivium/s_reg_911" BEL
+        "trivium/Mshreg_s_reg_264_0" BEL
+        "trivium/s_reg_2641.SLICEM_GMC15_BLACKBOX" BEL
+        "trivium/Mshreg_s_reg_264_1" BEL "trivium/s_reg_2641" BEL
+        "trivium/Mshreg_s_reg_285_0" BEL
+        "trivium/s_reg_2851.SLICEM_GMC15_BLACKBOX" BEL
+        "trivium/Mshreg_s_reg_285_1" BEL "trivium/s_reg_2851" BEL
+        "trivRst_shift1" BEL "trivRst_shift2" BEL "trivRst_shift3" BEL
+        "trivRst_shift4" BEL "trivRst_shift5" BEL "trivRst_shift6" BEL
+        "trivRst_shift7" BEL "trivRst_shift8" BEL "trivRst_shift9" BEL
+        "trivRst_shift10" BEL "trivRst_shift11" BEL "trivRst_shift12" BEL
+        "trivRst_shift13" BEL "trivRst_shift14" BEL "trivRst_shift15" BEL
+        "trivRst_shift16" BEL "trivRst_shift17" BEL "trivRst_shift18" BEL
+        "trivRst_shift19" BEL "trivRst_shift20" BEL "trivRst_shift21" BEL
+        "trivRst_shift22" BEL "trivRst_shift23" BEL "trivRst_shift24" BEL
+        "trivRst_shift25" BEL "trivRst_shift26" BEL "trivRst_shift27" BEL
+        "trivRst_shift28" BEL "trivRst_shift29" BEL "trivRst_shift30" BEL
+        "trivRst_shift31" BEL "trivRst_shift32" BEL "trivRst_shift33" BEL
+        "trivRst_shift34" BEL "trivRst_shift35" BEL "trivRst_shift36" BEL
+        "trivRst_shift37" BEL "trivRst_shift38" BEL "trivRst_shift39" BEL
+        "trivRst_shift40" BEL "trivRst_shift41" BEL "trivRst_shift42" BEL
+        "trivRst_shift43" BEL "trivRst_shift44" BEL "trivRst_shift45" BEL
+        "trivRst_shift46" BEL "trivRst_shift47" BEL "trivRst_shift48" BEL
+        "trivRst_shift49" BEL "trivRst_shift50" BEL "trivRst_shift51" BEL
+        "trivRst_shift52" BEL "trivRst_shift53" BEL "trivRst_shift54" BEL
+        "trivRst_shift55" BEL "trivRst_shift56" BEL "trivRst_shift57" BEL
+        "trivRst_shift58" BEL "trivRst_shift59" BEL "trivRst_shift60" BEL
+        "trivRst_shift61" BEL "trivRst_shift62" BEL "trivRst_shift63" BEL
+        "trivRst_shift64" BEL "trivRst_shift65" BEL "trivium/s_reg_91" BEL
+        "trivium/s_reg_264" BEL "trivium/s_reg_285" BEL "trivium/s_reg_243"
+        BEL "clk_25_BUFGP/BUFG.GCLKMUX" BEL "clk_25_BUFGP/BUFG";
+TS_clk_25 = PERIOD TIMEGRP "clk_25" 40 ns HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,224 @@
+library ieee ;
+use ieee.std_logic_1164.all ;
+use ieee.std_logic_unsigned.all ;
+
+entity tb_trivium is
+	port(	
+		--Basic System Clock
+	    clk_25		 : in std_logic; 	
+		--Active low reset
+		rst			 : in std_logic; 	
+		--Next 8 bit input
+		nxt 		 : in std_logic;
+		--Skip to next input i.e complete shift and go to iv input
+		skp 		 : in std_logic;
+		--Use switches to shift in either
+		--80-bit in key or
+		--80-bit Initialization vector  
+		input		 : in std_logic_vector(7 downto 0);		
+		-- 7 Segment Display-bit output
+		segment_a_i	 : out std_logic; 
+		segment_b_i	 : out std_logic; 
+		segment_c_i	 : out std_logic; 
+		segment_d_i	 : out std_logic; 
+		segment_e_i	 : out std_logic; 
+		segment_f_i	 : out std_logic; 
+		segment_g_i	 : out std_logic; 
+		-- 7 Segment Control
+		--Control Which of the four 7-Segment Display is active
+		AN			 : out std_logic_vector(3 downto 0);
+		--Lets assume if Data was not ready then LED would remain off	
+		--o_vld	: out std_logic;		
+		--OUTPUT FOR DISPLAYING LED ON
+		swtch_led 	 : out std_logic_vector(7 DOWNTO 0));
+end tb_trivium;
+
+architecture behavioral of tb_trivium is 
+--I/O CONTROLS
+	--used to check prev button state to determine button press
+	signal nxt_buf_cur : std_logic;
+	signal nxt_buf_prev : std_logic;
+	--used to check prev button state to determine button press
+	signal skp_buf_cur : std_logic;
+	signal skp_buf_prev : std_logic;
+--STATE CONTROLS
+	-- trivium state machine has five states: keyInput, iv_input, run
+   TYPE StateType IS(
+			ST_IDLE,	 -- In this The System in powering on
+			ST_KEY_INPUT,-- In this state the key is added
+            ST_IV_INPUT, -- In this state the initialization vector is added
+			ST_RUN_SYST, -- In this Trivium is free to run its cipher
+			ST_READY 	 -- In this state Trivium is producing proper encryption pattern
+    );	
+	signal  state   :   StateType;
+--TRIVIUM CONTROLS
+	--Secret 80-bit key input port
+	signal key	    : std_logic_vector(79 downto 0); 
+	--80-bit Initialization vector input port
+	signal IV	    : std_logic_vector(79 downto 0); 
+	--shift in input counter for key and iv since input is 8 and size is 80
+	signal inputCnt : integer;	
+	--reset for trivium active low
+	signal trivRst : std_logic;
+	--Output Data Valid 
+	signal o_rdy : std_logic;
+	--Bit Stream
+	signal z_bitOut : std_logic_vector(15 downto 0);
+--LED CONTROLS
+	--LED Control
+	signal hex_digit_i	 		: std_logic_vector(4 DOWNTO 0);
+	--Count to flash the LED
+	signal LED_flash_cnt	 	: std_logic_vector(9 DOWNTO 0);
+begin
+--Quick trick to enable led over switches if active
+swtch_led <= input;
+
+state_control:
+	process(rst, clk_25) begin
+		if(rst='1') then
+			state<=ST_IDLE;
+			trivRst <= '1';
+		elsif(rising_edge(clk_25))then
+			case state is
+				when ST_IDLE=> 
+					state<=ST_KEY_INPUT;
+				when ST_KEY_INPUT=>
+					--need to add or skip to if block
+					if(inputCnt = 10)then --10 = 80bits/(8 input bits)
+						state<=ST_IV_INPUT;
+					end if;
+				when ST_IV_INPUT=>
+					--need to add or skip to if block
+					if(inputCnt = 10)then --10 = 80bits/(8 input bits)
+						state<=ST_RUN_SYST;
+						trivRst <= '0';
+					end if;
+				when ST_RUN_SYST=>
+					if(o_rdy = '1')then --Output ready to propogate
+						state<=ST_READY;
+					end if;
+				when ST_READY=>
+			end case;
+		end if;
+	end process;
+
+shift_in_input:
+		process(rst,clk_25)begin
+			if(rst='1')then
+				key <= (others => '0');
+				IV <= (others => '0');
+				inputCnt <= 1;
+				nxt_buf_prev <= '0';
+				skp_buf_prev <= '0';
+			elsif(rising_edge(clk_25))then
+				case state is 
+					when ST_KEY_INPUT | ST_IV_INPUT =>
+						--we check button press by determining if current state is 0 and prev state is 1
+						--first we impliment skp if it is tru then input count is automatically 10
+						if(skp_buf_prev = '1' and skp_buf_cur = '0')then
+							inputCnt <= 10;
+						elsif(nxt_buf_prev = '1' and nxt_buf_cur = '0')then
+							--count button presses
+							inputCnt  <= inputCnt  + 1;
+							--always shift into input 
+							if(state = ST_KEY_INPUT)then
+								key(79 downto 0) <= key(71 downto 0) & input(7 downto 0);
+							else
+								IV(79 downto 0)  <= IV(71 downto 0) & input(7 downto 0);
+							end if;
+						end if;						
+						--update prev button press
+						nxt_buf_prev <= nxt_buf_cur;
+						skp_buf_prev <= skp_buf_cur;
+					when others =>
+						inputCnt <= 1;
+				end case;
+			end if;
+		end process;
+-------------------------------------------------
+---------------BUTTON DEBOUNCE-------------------
+-------------------------------------------------
+	--Debouncing Algorithm
+	nxt_debounce : entity work.debouncing
+		port map(
+			clock  => clk_25,
+			reset  => rst,  
+			input => nxt,
+			debounced   => nxt_buf_cur
+		);
+	skp_debounce : entity work.debouncing
+		port map(
+			clock  => clk_25,
+			reset  => rst,  
+			input => skp,
+			debounced   => skp_buf_cur
+		);
+-------------------------------------------------
+-------------------Trivium-----------------------
+-------------------------------------------------
+	--Trivium encryption algorithm
+	trivium : entity work.trivium
+		port map(
+			clk  => clk_25,
+			rst  => trivRst,  
+			key  => key,	 	  --Secret 80-bit key input port
+			IV   => IV,	 	  --80-bit Initialization vector input port
+			o_vld=> o_rdy,		  --Output Data Ready
+			z	  => z_bitOut --Cipher stream output
+		);
+-------------------------------------------------
+-------------------LED CONTROL-------------------
+-------------------------------------------------
+	--hex to 7 Segment Display
+	hex2_7seg : entity work.hex_7seg
+		port map(
+			hex_digit => hex_digit_i,
+			segment_a => segment_a_i,
+			segment_b => segment_b_i,
+			segment_c => segment_c_i,
+			segment_d => segment_d_i,
+			segment_e => segment_e_i,
+			segment_f => segment_f_i,
+			segment_g => segment_g_i
+		);		
+	--Flash the LED with the last 4 bytes of dout
+	process(rst,clk_25)
+	begin
+		if(rst='1')then
+			hex_digit_i 	<= (others => '0');
+			LED_flash_cnt	<= (others => '0');
+			AN 				<= (others => '1');--All LED OFF
+		elsif(rising_edge(clk_25)) then
+			LED_flash_cnt <= LED_flash_cnt + '1';
+			case LED_flash_cnt(9 downto 8) is
+				when "00" =>
+					--First 7-Seg-LED
+					hex_digit_i <= '0' & z_bitOut(15 downto 12);--LED output
+					AN			<= "0111";			  --Enables LED
+				when "01" =>
+					--Second 7-Seg-LED
+					hex_digit_i <= '0' & z_bitOut(11 downto 8);
+					AN			<= "1011";
+				when "10" =>
+					--Third 7-Seg-LED
+					hex_digit_i <= '0' & z_bitOut(7 downto 4);
+					AN			<= "1101";
+				when "11" =>
+					--Fourth 7-Seg-LED
+					hex_digit_i <= '0' & z_bitOut(3 downto 0);
+					AN			<= "1110";
+				when others => null;
+			end case;
+		end if;
+	end process;
+end behavioral;
+
+
+
+
+
+
+
+
+
+

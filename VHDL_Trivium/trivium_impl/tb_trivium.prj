@@ -1,0 +1,3 @@
+vhdl work "../trivium.vhd"
+vhdl work "../hex2sevenseg.vhd"
+vhdl work "../tb_trivium.vhd"

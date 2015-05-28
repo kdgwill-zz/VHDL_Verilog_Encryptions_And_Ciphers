@@ -1,0 +1,82 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/pa.fromNcd.tcl
+# create_project -name trivium -dir "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/planAhead_run_1" -part xc3s100ecp132-4
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/tb_trivium.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl} }
+# set_property target_constrs_file "tb_trivium.ucf" [current_fileset -constrset]
+Adding file 'C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/tb_trivium.ucf' to fileset 'constrs_1'
+# add_files [list {tb_trivium.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s100ecp132-4
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design tb_trivium.ngc ...
+WARNING:NetListWriters:298 - No output is written to tb_trivium.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus trivium/Mcompar_state_cmp_ge0000_lut<8 :
+   1> on block tb_trivium is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus trivium/s<178 : 1> on block tb_trivium
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus trivium/s_reg<288 : 1> on block
+   tb_trivium is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file tb_trivium.edif ...
+ngc2edif: Total memory usage is 76932 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/trivium.data/cache/tb_trivium_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/trivium.data/cache/tb_trivium_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+WARNING: [Netlist 29-43] Netlist 'tb_trivium' is not ideal for floorplanning, since the cellview 'tb_trivium' defined in file 'tb_trivium.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/tb_trivium.ucf]
+Finished Parsing UCF File [C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/tb_trivium.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 19a10c7d
+link_design: Time (s): elapsed = 00:00:15 . Memory (MB): peak = 531.156 ; gain = 94.363
+# read_xdl -file "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/tb_trivium.ncd"
+Release 14.7 - xdl P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '3s100e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "tb_trivium" is an NCD, version 3.2, device xc3s100e, package cp132, speed -4
+Successfully converted design 'C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\FinalProject\trivium_impl\tb_trivium.ncd' to 'C:\SkyDrive\School\Polytechnic\EL6463_AdvancedHardwareDesign\Labs\FinalProject\trivium_impl\tb_trivium.xdl'.
+INFO: [Designutils 20-669] Parsing Placement File : C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/tb_trivium.ncd
+INFO: [Designutils 20-658] Finished Parsing Placement File : C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/tb_trivium.ncd
+INFO: [Designutils 20-671] Placed 1327 instances
+read_xdl: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 532.223 ; gain = 0.000
+# if {[catch {read_twx -name results_1 -file "C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/tb_trivium.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/tb_trivium.twx\": $eInfo"
+# }
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun May 10 19:22:29 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

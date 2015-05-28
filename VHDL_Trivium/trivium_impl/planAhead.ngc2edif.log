@@ -1,0 +1,36 @@
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design tb_trivium.ngc ...
+WARNING:NetListWriters:298 - No output is written to tb_trivium.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus trivium/Mcompar_count_cmp_ge0000_lut<8 :
+   1> on block tb_trivium is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus trivium/s<178 : 1> on block tb_trivium
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus trivium/s_reg<288 : 1> on block
+   tb_trivium is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file tb_trivium.edif ...
+ngc2edif: Total memory usage is 77828 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design tb_trivium.ngc ...
+WARNING:NetListWriters:298 - No output is written to tb_trivium.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus trivium/Mcompar_state_cmp_ge0000_lut<8 :
+   1> on block tb_trivium is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus trivium/s<178 : 1> on block tb_trivium
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus trivium/s_reg<288 : 1> on block
+   tb_trivium is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file tb_trivium.edif ...
+ngc2edif: Total memory usage is 76932 kilobytes
+

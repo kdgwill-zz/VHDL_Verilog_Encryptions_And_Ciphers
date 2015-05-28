@@ -1,0 +1,268 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4/examples
+Edebounce
+Z0 w1431260661
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject
+Z5 8debounce.vhd
+Z6 Fdebounce.vhd
+l0
+L29
+VdJ>PZC]O=;^6c3Cnm:bci3
+!s100 DG12Pf[RA9U;0NAcHITl_3
+Z7 OP;C;10.4;61
+32
+Z8 !s110 1431260934
+!i10b 1
+Z9 !s108 1431260934.174000
+Z10 !s90 -reportprogress|300|debounce.vhd|hex2sevenseg.vhd|trivium.vhd|tb_trivium.vhd|
+Z11 !s107 tb_trivium.vhd|trivium.vhd|hex2sevenseg.vhd|debounce.vhd|
+!i113 1
+o-O0
+Z12 tExplicit 1
+Artl
+R1
+R2
+R3
+DEx4 work 8 debounce 0 22 dJ>PZC]O=;^6c3Cnm:bci3
+l49
+L43
+V^cSd0Jb5SH0zi@g41]kiB2
+!s100 URl;;B?;bCL3ORi@@1EkR0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-O0
+R12
+vdebouncing
+!s110 1431237132
+!i10b 1
+!s100 g=E7lzPOGQeE^B]m5]WhN2
+IKLMhcbM9EMfnB2GRo4f1I0
+VDg1SIo80bB@j0V0VzS_@n1
+R4
+w1431236175
+8debouncing.v
+Fdebouncing.v
+L0 3
+OP;L;10.4;61
+r1
+!s85 0
+31
+!s108 1431237132.122000
+!s107 debouncing.v|
+!s90 -reportprogress|300|debouncing.v|
+!s101 -O0
+!i113 1
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+Ehex_7seg
+Z13 w1431287123
+Z14 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z15 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
+R3
+R4
+Z16 8hex2sevenseg.vhd
+Z17 Fhex2sevenseg.vhd
+l0
+L12
+Ve@NTKklC`7nN4a0dkBc[_3
+!s100 oE[6kQRL`5PmSR>e94W]F0
+R7
+32
+Z18 !s110 1431310899
+!i10b 1
+Z19 !s108 1431310898.815000
+Z20 !s90 -reportprogress|300|hex2sevenseg.vhd|trivium.vhd|tb_trivium.vhd|
+Z21 !s107 tb_trivium.vhd|trivium.vhd|hex2sevenseg.vhd|
+!i113 1
+o-O0
+R12
+Abehavioral
+R14
+R15
+R2
+R3
+Z22 DEx4 work 8 hex_7seg 0 22 e@NTKklC`7nN4a0dkBc[_3
+l26
+L24
+Z23 VUCTR;fKl<[1VhW^;g1eRB3
+Z24 !s100 Lej1Q=i;HIMJ[6]dWaa^11
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+o-O0
+R12
+Etb_trivium
+Z25 w1431297643
+R15
+R14
+R2
+R3
+R4
+Z26 8tb_trivium.vhd
+Z27 Ftb_trivium.vhd
+l0
+L24
+VGZ`Mb4hWmY[eW]H>H:V4[0
+!s100 e;k[8z37kmkk_=Oce2kmS1
+R7
+32
+Z28 !s110 1431310900
+!i10b 1
+R19
+R20
+R21
+!i113 1
+o-O0
+R12
+Abehavioral
+R22
+Z29 DEx4 work 7 trivium 0 22 :B8P2HM29`=5`B`IDB2;N1
+R15
+R14
+R2
+R3
+Z30 DEx4 work 10 tb_trivium 0 22 GZ`Mb4hWmY[eW]H>H:V4[0
+l91
+L53
+Z31 V`]8Mz4RBW]dZYYe2Z`^S<3
+Z32 !s100 38dFVK<Q2:z>d4oY_UhkO2
+R7
+32
+R28
+!i10b 1
+R19
+R20
+R21
+!i113 1
+o-O0
+R12
+Astructure
+DPx9 vital2000 16 vital_primitives 0 22 `a]zGa`>UD04SCd]1aJR_3
+DPx7 simprim 8 vpackage 0 22 ieF@fNI[UF]T6R2Q0ZG:61
+DPx9 vital2000 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+DPx7 simprim 11 vcomponents 0 22 DgFaojEEYblW>If<>z2eN2
+R2
+R3
+DEx4 work 10 tb_trivium 0 22 <FUbNDRmc2j11l@]Lg5a03
+l3623
+L60
+Vj6dghzP?4TPUS<9Q=`OTc3
+!s100 YMNUCZZBzRjW8Ho:X_Z8d2
+R7
+32
+!s110 1431301220
+!i10b 1
+!s108 1431301218.944000
+!s90 -reportprogress|300|-work|work|C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/netgen/par/tb_trivium_timesim.vhd|
+!s107 C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/netgen/par/tb_trivium_timesim.vhd|
+!i113 1
+o-work work -O0
+R12
+FC:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/netgen/par/tb_trivium_timesim.vhd
+w1431299728
+8C:/SkyDrive/School/Polytechnic/EL6463_AdvancedHardwareDesign/Labs/FinalProject/trivium_impl/netgen/par/tb_trivium_timesim.vhd
+Etrivium
+Z33 w1431305708
+R2
+R3
+R4
+Z34 8trivium.vhd
+Z35 Ftrivium.vhd
+l0
+L16
+V:B8P2HM29`=5`B`IDB2;N1
+!s100 JZSH3=jz]JO53jccfC0O<1
+R7
+32
+R28
+!i10b 1
+R19
+R20
+R21
+!i113 1
+o-O0
+R12
+Artl
+R2
+R3
+R29
+l63
+L30
+Vl[Qjg<Q@8715mQTg1Q^420
+!s100 PgmGHZ7z>jAz6e_h4UkE[2
+R7
+32
+R28
+!i10b 1
+R19
+R20
+R21
+!i113 1
+o-O0
+R12
+Abehavioral
+R14
+R15
+R2
+R3
+DEx4 work 7 trivium 0 22 [<:_1VDkXQ^KgL<nm[fi93
+l92
+L65
+VoG:6U]a^N^44N1MY9DL2T3
+!s100 ^m2F:mL8OaZj>8M2zbcLQ2
+R7
+32
+!s110 1431198976
+!i10b 1
+!s108 1431198976.681000
+!s90 -reportprogress|300|trivium4.vhd|
+!s107 trivium4.vhd|
+!i113 1
+o-O0
+R12
+Ftrivium4.vhd
+w1431198973
+8trivium4.vhd
+Ado_it
+R2
+R3
+DEx4 work 7 trivium 0 22 528^I7RGgRZjEMKWhi]1g0
+l43
+L26
+V4V]R^6ncCc`SbPggzSBo63
+!s100 VF3:WC0nmoGh:;A^?8lf70
+R7
+32
+!s110 1431197035
+!i10b 1
+!s108 1431197035.696000
+!s90 -reportprogress|300|trivium3.vhd|
+!s107 trivium3.vhd|
+!i113 1
+o-O0
+R12
+Ftrivium3.vhd
+w1431160216
+8trivium3.vhd
